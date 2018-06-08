@@ -2,6 +2,7 @@
 \usepackage{amsmath,ifthen,amsthm,amssymb,enumerate}
 \usepackage[margin=1in]{geometry}
 \usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+\usepackage{tikz,pgfplots}
 
 \newenvironment{problem}[1]
 {
@@ -51,22 +52,28 @@
 \begin{document}
 \begin{flushleft}
 
-\startModule{F}
-\startStandard{F1}
-\input{modules/1-F/exercises/F1.tex} \newpage
-
-\startModule{H}
-\startStandard{H1}
-\input{modules/2-H/exercises/H1.tex} \newpage
-
+\startModule{C}
+\startStandard{C1}
+\input{modules/1-C/exercises/C1.tex} \newpage
+\input{modules/1-C/exercises/C2.tex} \newpage
+\input{modules/1-C/exercises/C3.tex} \newpage
 
 \startModule{S}
 \startStandard{S1}
-\input{modules/3-S/exercises/S1.tex} \newpage
+\input{modules/2-S/exercises/S1.tex} \newpage
+
+
+\startModule{F}
+\startStandard{F1}
+\input{modules/3-F/exercises/F1.tex} \newpage
+
+\startModule{N}
+\startStandard{N1}
+\input{modules/4-N/exercises/N1.tex} \newpage
 
 \startModule{D}
 \startStandard{D1}
-\input{modules/4-D/exercises/D1.tex} \newpage
+\input{modules/5-D/exercises/D1.tex} \newpage
 
 
 \end{flushleft}
