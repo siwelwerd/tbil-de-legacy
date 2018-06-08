@@ -1,9 +1,18 @@
 \BOOKMARK [0][-]{section*.1}{Module I: Introduction}{}% 1
 \BOOKMARK [1][-]{section*.2}{Section I.0}{section*.1}% 2
-\BOOKMARK [0][-]{section*.3}{Module E: Solving Systems of Linear Equations}{}% 3
-\BOOKMARK [1][-]{section*.7}{Section E.0}{section*.3}% 4
-\BOOKMARK [1][-]{section*.8}{Section E.1}{section*.3}% 5
-\BOOKMARK [1][-]{section*.9}{Section E.2}{section*.3}% 6
-\BOOKMARK [0][-]{section*.10}{Module H: Higher Order ODEs}{}% 7
-\BOOKMARK [0][-]{section*.14}{Module S: Systems of ODEs}{}% 8
-\BOOKMARK [0][-]{section*.18}{Module D: Discontinuous functions in ODEs}{}% 9
+\BOOKMARK [0][-]{section*.3}{Module C: Constant coefficient linear ODEs}{}% 3
+\BOOKMARK [1][-]{section*.7}{Section C.0}{section*.3}% 4
+\BOOKMARK [1][-]{section*.8}{Section C.1}{section*.3}% 5
+\BOOKMARK [1][-]{section*.9}{Section C.2}{section*.3}% 6
+\BOOKMARK [0][-]{section*.10}{Module S: Systems of ODEs}{}% 7
+\BOOKMARK [1][-]{section*.14}{Section S.1}{section*.10}% 8
+\BOOKMARK [1][-]{section*.15}{Section S.2}{section*.10}% 9
+\BOOKMARK [0][-]{section*.16}{Module F: First order ODEs}{}% 10
+\BOOKMARK [1][-]{section*.20}{Section F.0}{section*.16}% 11
+\BOOKMARK [1][-]{section*.21}{Section F.1}{section*.16}% 12
+\BOOKMARK [0][-]{section*.22}{Module N: Numerical}{}% 13
+\BOOKMARK [1][-]{section*.25}{Section N.1}{section*.22}% 14
+\BOOKMARK [1][-]{section*.26}{Section N.2}{section*.22}% 15
+\BOOKMARK [0][-]{section*.27}{Module D: Discontinuous functions in ODEs}{}% 16
+\BOOKMARK [1][-]{section*.30}{Section D.1}{section*.27}% 17
+\BOOKMARK [1][-]{section*.31}{Section D.2}{section*.27}% 18

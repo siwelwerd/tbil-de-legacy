@@ -1,10 +1,19 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{Module I{}}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Section I{}.0}{4}{0}{1}
-\beamer@sectionintoc {2}{Module E{}}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{Section E{}.0}{13}{0}{2}
-\beamer@subsectionintoc {2}{2}{Section E{}.1}{26}{0}{2}
-\beamer@subsectionintoc {2}{3}{Section E{}.2}{39}{0}{2}
-\beamer@sectionintoc {3}{Module H{}}{55}{0}{3}
-\beamer@sectionintoc {4}{Module S{}}{60}{0}{4}
-\beamer@sectionintoc {5}{Module D{}}{65}{0}{5}
+\beamer@sectionintoc {2}{Module C{}}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Section C{}.0}{13}{0}{2}
+\beamer@subsectionintoc {2}{2}{Section C{}.1}{26}{0}{2}
+\beamer@subsectionintoc {2}{3}{Section C{}.2}{39}{0}{2}
+\beamer@sectionintoc {3}{Module S{}}{55}{0}{3}
+\beamer@subsectionintoc {3}{1}{Section S{}.1}{60}{0}{3}
+\beamer@subsectionintoc {3}{2}{Section S{}.2}{72}{0}{3}
+\beamer@sectionintoc {4}{Module F{}}{85}{0}{4}
+\beamer@subsectionintoc {4}{1}{Section F{}.0}{90}{0}{4}
+\beamer@subsectionintoc {4}{2}{Section F{}.1}{110}{0}{4}
+\beamer@sectionintoc {5}{Module N{}}{124}{0}{5}
+\beamer@subsectionintoc {5}{1}{Section N{}.1}{128}{0}{5}
+\beamer@subsectionintoc {5}{2}{Section N{}.2}{144}{0}{5}
+\beamer@sectionintoc {6}{Module D{}}{159}{0}{6}
+\beamer@subsectionintoc {6}{1}{Section D{}.1}{163}{0}{6}
+\beamer@subsectionintoc {6}{2}{Section D{}.2}{179}{0}{6}
