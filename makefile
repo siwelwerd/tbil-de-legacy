@@ -1,7 +1,25 @@
-all: pdf/rats/rat-*.pdf pdf/slides/slides*pdf pdf/course-notes.pdf \
+all: build 
+
+pre-build:
+	@echo "Prebuilding!"; \
+	cd tex; \
+	for dir in `ls -d modules/*`; \
+	do \
+		if [ -f "$$dir/sections.tex" ]; then \
+			rm "$$dir/sections.tex"; \
+		fi; \
+		for sec in `ls $$dir/sections/*tex`; \
+		do \
+			echo "\input{$$sec}" >> $$dir/sections.tex  ; \
+		done \
+	done
+
+build: pre-build pdf/rats/rat-*.pdf pdf/slides/slides*pdf pdf/course-notes.pdf \
 	pdf/course-slides.pdf pdf/standards.pdf \
 	pdf/exercise-library.pdf pdf/homework.pdf pdf/sample-exercises.pdf \
 	pdf/facilitator-notes.pdf 
+
+
 
 pdf/course-notes.pdf: tex/course-notes.sty tex/tbil-de.sty tex/course-notes.tex \
 						tex/modules/*/sections/*.tex
