@@ -1,0 +1,151 @@
+\usepackage{enumerate,amssymb,tikz,amsmath,amsthm,multicol,hyperref,environ,etoolbox,graphicx}
+\usetikzlibrary{arrows.meta}
+
+
+
+\renewcommand{\vec}{\mathbf}
+\newcommand{\vect}{\vec} %SC used \vect while DL used \vec
+
+\newcommand{\circledNumber}[1]{ % https://tex.stackexchange.com/a/7045
+\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}
+}
+
+
+\newcommand{\unknown}{\,\textcolor{gray}{?}\,}
+
+
+
+%%%New Commands/Math operators%%%
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\IC}{\mathbb{C}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\Im}{\operatorname{Im}}
+\newcommand{\RREF}{\operatorname{RREF}}
+\newcommand{\vspan}{\operatorname{span}}
+\newcommand{\setList}[1]{\left\{#1\right\}}
+\newcommand{\setBuilder}[2]{\left\{#1\,\middle|\,#2\right\}}
+
+
+%%%Custom Counters%%%
+\newcommand{\moduleLetter}{X}
+\newcounter{SectionCounter}
+\newcounter{ActivityCounter}
+\newcounter{SubactivityCounter}
+
+%This code allows for augmented matrices, e.g. by \begin{bmatrix}[cc|c] ...
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand{\term}{\textbf}
+
+\newcommand{\systemWithOneSolutionA}[1][0.25]{
+\begin{tikzpicture}[scale=#1]
+\draw[thin,gray,<->] (-5,0) -- (5,0);
+\draw[thin,gray,<->] (0,-5) -- (0,5);
+\draw[thick,blue] (-5,4.5) -- (5,-0.5);
+\draw[thick,red] (-5,-3.67) -- (5,3);
+\end{tikzpicture}
+}
+
+\newcommand{\systemWithOneSolutionB}[1][0.25]{
+\begin{tikzpicture}[scale=#1]
+\draw[thin,gray,<->] (-5,0) -- (5,0);
+\draw[thin,gray,<->] (0,-5) -- (0,5);
+\draw[thick,blue] (-5,-3) -- (5,-0.5);
+\draw[thick,red] (-5,-4) -- (5,2);
+\end{tikzpicture}
+}
+
+\newcommand{\systemWithInfinitelyManySolutions}[1][0.25]{
+\begin{tikzpicture}[scale=#1]
+\draw[thin,gray,<->] (-5,0) -- (5,0);
+\draw[thin,gray,<->] (0,-5) -- (0,5);
+\draw[thick,purple] (-3,5) -- (5,-3);
+\end{tikzpicture}
+}
+
+\newcommand{\systemWithNoSolutions}[1][0.25]{
+\begin{tikzpicture}[scale=#1]
+\draw[thin,gray,<->] (-5,0) -- (5,0);
+\draw[thin,gray,<->] (0,-5) -- (0,5);
+\draw[thick,blue] (3,-5) -- (1,5);
+\draw[thick,red] (0,-5) -- (-2,5);
+\end{tikzpicture}
+}
+
+\newcommand{\vectorSpaceProperties}{
+\begin{multicols}{2}
+\begin{itemize}
+  \item \textbf{Addition is associative.}
+
+        \(\vect u+(\vect v+\vect w)=
+        (\vect u+\vect v)+\vect w\).
+  \item \textbf{Addition is commutative.}
+
+        \(\vect u+\vect v=
+        \vect v+\vect u\).
+  \item \textbf{Additive identity exists.}
+
+        There exists some \(\vect z\)
+        where \(\vect v+\vect z=\vect v\).
+  \item \textbf{Additive inverses exist.}
+
+        There exists some \(-\vect v\)
+        where \(\vect v+(-\vect v)=\vect z\).
+  \columnbreak
+  \item \textbf{Scalar multiplication is associative.}
+
+        \(a(b\vect v)=(ab)\vect v\).
+  \item \textbf{$1$ is a scalar multiplicative identity.}
+
+        \(1\vect v=\vect v\).
+  \item \textbf{Scalar multiplication distributes over vector addition.}
+
+        \(a(\vect u+\vect v)=a\vect u+a\vect v\).
+  \item \textbf{Scalar multiplication distributes over scalar addition.}
+
+        \((a+b)\vect v=a\vect v+b\vect v\).
+\end{itemize}
+\end{multicols}
+}
+
+\newcommand{\vectorSpacePropertiesO}{
+\begin{multicols}{2}
+\begin{itemize}
+  \item \textbf{Addition associativity.}
+
+        \(\vect u\oplus(\vect v\oplus\vect w)=
+        (\vect u\oplus\vect v)\oplus\vect w\).
+  \item \textbf{Addition commutivity.}
+
+        \(\vect u\oplus\vect v=
+        \vect v\oplus\vect u\).
+  \item \textbf{Addition identity.}
+
+        There exists some \(\vect z\)
+        where \(\vect v\oplus\vect z=\vect v\).
+  \item \textbf{Addition inverse.}
+
+        There exists some \(-\vect v\)
+        where \(\vect v\oplus(-\vect v)=\vect z\).
+  \item \textbf{Scalar multiplication associativity.}
+
+        \(a\odot(b\odot\vect v)=(ab)\odot\vect v\).
+  \item \textbf{Scalar multiplication identity.}
+
+        \(1\odot\vect v=\vect v\).
+  \item \textbf{Scalar distribution.}
+
+        \(a\odot(\vect u\oplus\vect v)=
+        (a\odot\vect u)\oplus (a\odot\vect v)\).
+  \item \textbf{Vector distribution.}
+
+        \((a+b)\odot\vect v=(a\odot\vect v)\oplus (b\odot\vect v)\).
+\end{itemize}
+\end{multicols}
+}

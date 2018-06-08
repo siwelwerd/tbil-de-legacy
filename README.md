@@ -1,45 +1,37 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# tbil-la
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Source files and built PDFs for running a Team-Based Inquiry Learning
+differential equations course.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## For instructors
 
----
+All the needed materials are available in the PDF folder.
+See `facilitator-notes.pdf` for more information on implementing
+these materials in your classroom.
 
-## Edit a file
+## Development
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+All source files are located within `./tex`. These files are designed
+to be built by `pdflatex` run from within this folder, so `.tex` files
+located in this folder (not within a subfolder) may be built directly
+for development purposes.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Before each commit, run `bin/build` to compile all `.tex` files and
+move their resulting PDFs to the `./pdf` folder.
 
----
+For convenience, files ignored by Git (e.g. TeX auxiliary files) may be
+removed by running `git clean -fX`.
 
-## Create a file
+### Style Guide
 
-Next, you’ll add a new file to this repository.
+- Definitions should use `\term{}` for the term being defined.
+- LaTeX-style math delimiters `\(x\)` and `\[x\]` should be used in
+  place of TeX-style delimiters `$x$` and `$$x$$`.
+- Bracket delimiters should follow [BSD/Allman style][allman].
+    - Exceptions can be made for e.g. `\newcommand` issues
+- Sets should use the provided `\setBuilder` and `\setList` commands.
+- Use `alignat` or `alignedat` environments for systems of equations.
+- Unless necessary, limit lines to 80 characters for clean `git diff`s.
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+[allman]: https://en.wikipedia.org/wiki/Indentation_style#Allman_style

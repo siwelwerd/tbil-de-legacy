@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{amsmath,ifthen,amsthm,amssymb,enumerate}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+
+\newenvironment{problem}[1]
+{
+	\textbf{#1.}
+	\ignorespaces
+}{
+
+}
+
+\newenvironment{solution}
+{
+	\textit{Solution.}
+	\ignorespaces
+}{
+	\qed
+
+	\vspace{1em}
+}
+
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\IC}{\mathbb{C}}
+\renewcommand{\P}{\mathcal{P}}
+\newcommand{\setList}[1]{\left\{#1\right\}}
+\let\Im\relax\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\RREF}{RREF}
+\DeclareMathOperator{\vspan}{span}
+\newcommand{\setBuilder}[2]{\left\{#1\,\middle|\,#2\right\}}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newcommand{\startModule}[1]
+{
+	\section*{Module #1}
+	\addcontentsline{toc}{section}{Module #1}
+}
+\newcommand{\startStandard}[1]
+{
+	\subsection*{Standard #1}
+	\addcontentsline{toc}{subsection}{Standard #1}
+}
+
+\begin{document}
+\begin{flushleft}
+
+\startModule{F}
+\startStandard{F1}
+\input{modules/1-F/exercises/F1.tex} \newpage
+
+\startModule{H}
+\startStandard{H1}
+\input{modules/2-H/exercises/H1.tex} \newpage
+
+
+\startModule{S}
+\startStandard{S1}
+\input{modules/3-S/exercises/S1.tex} \newpage
+
+\startModule{D}
+\startStandard{D1}
+\input{modules/4-D/exercises/D1.tex} \newpage
+
+
+\end{flushleft}
+\end{document}
