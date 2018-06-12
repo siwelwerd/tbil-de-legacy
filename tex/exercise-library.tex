@@ -9,7 +9,7 @@
 	\textbf{#1.}
 	\ignorespaces
 }{
-
+\vspace{0.2in}
 }
 
 \newenvironment{solution}
@@ -21,22 +21,6 @@
 
 	\vspace{1em}
 }
-
-\newcommand{\IR}{\mathbb{R}}
-\newcommand{\IC}{\mathbb{C}}
-\renewcommand{\P}{\mathcal{P}}
-\newcommand{\setList}[1]{\left\{#1\right\}}
-\let\Im\relax\DeclareMathOperator{\Im}{Im}
-\DeclareMathOperator{\RREF}{RREF}
-\DeclareMathOperator{\vspan}{span}
-\newcommand{\setBuilder}[2]{\left\{#1\,\middle|\,#2\right\}}
-
-\makeatletter
-\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
-  \hskip -\arraycolsep
-  \let\@ifnextchar\new@ifnextchar
-  \array{#1}}
-\makeatother
 
 \newcommand{\startModule}[1]
 {
@@ -57,6 +41,8 @@
 \input{modules/1-C/exercises/C1.tex} \newpage
 \input{modules/1-C/exercises/C2.tex} \newpage
 \input{modules/1-C/exercises/C3.tex} \newpage
+\input{modules/1-C/exercises/C4.tex} \newpage
+\input{modules/1-C/exercises/C5.tex} \newpage
 
 \startModule{S}
 \startStandard{S1}
@@ -66,14 +52,17 @@
 \startModule{F}
 \startStandard{F1}
 \input{modules/3-F/exercises/F1.tex} \newpage
+\input{modules/3-F/exercises/F2.tex} \newpage
+\input{modules/3-F/exercises/F3.tex} \newpage
+\input{modules/3-F/exercises/F4.tex} \newpage
 
 \startModule{N}
 \startStandard{N1}
-\input{modules/4-N/exercises/N1.tex} \newpage
+%\input{modules/4-N/exercises/N1.tex} \newpage
 
 \startModule{D}
 \startStandard{D1}
-\input{modules/5-D/exercises/D1.tex} \newpage
+%\input{modules/5-D/exercises/D1.tex} \newpage
 
 
 \end{flushleft}
