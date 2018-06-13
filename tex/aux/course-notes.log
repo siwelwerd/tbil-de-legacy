@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  8 JUN 2018 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  13 JUN 2018 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -808,9 +808,9 @@ Package rerunfilecheck Info: File `course-notes.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8.
  ) 
 Here is how much of TeX's memory you used:
- 17962 strings out of 494910
- 330411 string characters out of 6179836
- 467546 words of memory out of 5000000
+ 17963 strings out of 494910
+ 330419 string characters out of 6179836
+ 467547 words of memory out of 5000000
  20465 multiletter control sequences out of 15000+600000
  7990 words of font info for 31 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -827,10 +827,10 @@ amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on aux/course-notes.pdf (73 pages, 322275 bytes).
+Output written on aux/course-notes.pdf (73 pages, 322290 bytes).
 PDF statistics:
- 852 PDF objects out of 1000 (max. 8388607)
- 757 compressed objects within 8 object streams
- 381 named destinations out of 1000 (max. 500000)
+ 853 PDF objects out of 1000 (max. 8388607)
+ 758 compressed objects within 8 object streams
+ 382 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
