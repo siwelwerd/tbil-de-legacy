@@ -128,4 +128,44 @@ Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution is
 \[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
 \end{solution}
 
+\begin{problem}{C4}
+Find the general solution to \[y''+6y'+13y=13t^2-t-4.\]
+\end{problem}
+\begin{solution}
+First, we find a general solution to the homogenous equation \(y''+6y'+13y=0\).  We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the roots.  There are many ways to do this; here, we complete  the square:
+\[0=r^2+6r+13=r^2+6r+9+4=(r+3)^2+4.\]
+Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution to the homogeneous equation is
+\[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
+To find a particular solution to  \(y''+6y'+13y=13t^2-t-4\), we set \(y_p=At^2+Bt+D\) and determine the coefficients \(A,B,D\).  
+\begin{align*}
+y_p ^{\prime\ \prime}+6y_p ^\prime +13y_p &= (2A)+6(2At+B)+13(At^2+Bt+D) \\
+&= (13A)t^2 + (12A+13B)t+(2A+6B+13D)
+\end{align*}
+This gives us the system of equations
+\begin{align*}
+13A &= 13 \\
+12A+13B &= -1 \\
+2A+6B+13D &= -4
+\end{align*}
+Then we easily deduce \(A=1\), \(B=-1\), and \(D=0\), so that \(y_p = t^2-t\).  Thus, the general solution to the nonhomogeneous equation is \[y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) +t^2-t .\]
+
+\end{solution}
+
+
+\begin{problem}{C5}
+Find the solution to
+\[
+y'' + 10y' + 24y = 0
+\]
+when \(y(0)=-3\) and \(y'(0)=2\).
+\end{problem}
+\begin{solution}
+The auxilliary equation is \(r^2+10r+24=0\), which has roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\).  
+\begin{align*}
+-3 &= y(0) &= c_1+c_2 \\
+2 &= y'(0) & = -4c_1+6c_2 
+\end{align*}
+Solving this system yields \(c_1 =-2\) and \(c_2 = -1\), so the solution to the IVP is \[y=-2e^{-4t}-e^{6t}\]
+\end{solution}
+
 \end{document}
