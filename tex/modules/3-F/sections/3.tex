@@ -4,66 +4,6 @@
 \begin{applicationActivities}
 
 
-
-\begin{activity}{5}
-  How many vectors are required to span \(\IR^2\)?
-  Sketch a drawing in the \(xy\) plane to support your answer.
-  \begin{enumerate}[(a)]
-  \item $1$
-  \item $2$
-  \item $3$
-  \item $4$
-  \item Infinitely Many
-  \end{enumerate}
-\end{activity}
-
-\begin{activity}{5}
-  How many vectors are required to span \(\IR^3\)?
-  \begin{enumerate}[(a)]
-  \item $1$
-  \item $2$
-  \item $3$
-  \item $4$
-  \item Infinitely Many
-  \end{enumerate}
-\end{activity}
-
-\begin{fact}
-  At least \(n\) vectors are required to span \(\IR^n\).
-
-  \begin{center}
-  \begin{tikzpicture}[scale=0.5]
-    \draw[<->] (-4,0) -- (4,0);
-    \draw[<->] (0,-4) -- (0,4);
-    \draw[blue!50] (2,-4) -- (-2,4);
-    \draw[thick,blue,->] (0,0) -- (1,-2);
-  \end{tikzpicture}
-  \begin{tikzpicture}[x={(210:0.8cm)}, y={(0:1cm)}, z={(90:1cm)},scale=0.4]
-    \draw[->] (0,0,0) -- (6,0,0);
-    \draw[->] (0,0,0) -- (0,6,0);
-    \draw[->] (0,0,0) -- (0,0,6);
-    \draw[fill=purple!20,fill opacity=0.5]
-      (-2,-2,2) -- (6,-2,-2) -- (2,2,-2) -- (-6,2,2) -- (-2,-2,2);
-    \draw[thick,blue,->] (0,0,0) -- (1,-1,0);
-    \draw[thick,red,->] (0,0,0) -- (-2,0,1);
-  \end{tikzpicture}
-  \end{center}
-\end{fact}
-
-\begin{activity}{15}
-  Choose a vector \(\begin{bmatrix}\unknown\\\unknown\\\unknown\end{bmatrix}\)
-  in \(\IR^3\) that is not in
-  \(\vspan\left\{\begin{bmatrix}1\\-1\\0\end{bmatrix},
-  \begin{bmatrix}-2\\0\\1\end{bmatrix}\right\}\) by using CoCalc to verify that
-  \(
-    \RREF
-    \begin{bmatrix}[cc|c]1&-2&\unknown\\-1&0&\unknown\\0&1&\unknown\end{bmatrix}
-      =
-    \begin{bmatrix}[cc|c]1&0&0\\0&1&0\\0&0&1\end{bmatrix}
-  \).
-  (Why does this work?)
-\end{activity}
-
 \begin{fact}
   The set \(\{\vect v_1,\dots,\vect v_m\}\) fails to span all of \(\IR^n\)
   exactly when \(\RREF[\vect v_1\,\dots\,\vect v_m]\) has a row of zeros:
