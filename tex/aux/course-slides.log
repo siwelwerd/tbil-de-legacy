@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUN 2018 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUN 2018 12:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -771,30 +771,155 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/latex/pgf
+plots/pgfplots.sty
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplots.revision.tex)
+Package: pgfplots 2016/08/10 v1.14 Data Visualization (1.14)
+
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplots.code.tex
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks45
+\t@pgfplots@tokb=\toks46
+\t@pgfplots@tokc=\toks47
+\pgfplots@tmpa=\dimen199
+\c@pgfplots@coordindex=\count162
+\c@pgfplots@scanlineindex=\count163
+
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/sys/pgfplotssysgeneric.code.tex))
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/libs/pgfplotslibrary.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgflibraryfpu.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count164
+))
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/util/pgfplotsutil.code.tex
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/liststructure/pgfplotsliststructure.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/liststructure/pgfplotsliststructureext.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count165
+)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/liststructure/pgfplotsmatrix.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count166
+\t@pgfplotstable@a=\toks48
+)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/liststructure/pgfplotsdeque.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/util/pgfplotsbinary.code.tex
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/util/pgfplotsbinary.data.code.tex))
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/util/pgfplotsutil.verb.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count167
+
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def)))
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/util/pgfplotscolormap.code.tex
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/util/pgfplotscolor.code.tex))
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplotsstackedplots.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplotsplothandlers.code.tex
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplotsmeshplothandler.code.tex
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplotsmeshplotimage.code.tex)))
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplots.scaling.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplotscoordprocessing.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplots.errorbars.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplots.markers.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplotsticks.code.tex)
+(/home/USADIR.USA.USOUTHAL.EDU/drewlewis/texmf/tex/latex/pgfplots/tex/generic/p
+gfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen256
+\pgfdecoratedremainingdistance=\dimen257
+\pgfdecoratedinputsegmentcompleteddistance=\dimen258
+\pgfdecoratedinputsegmentremainingdistance=\dimen259
+\pgf@decorate@distancetomove=\dimen260
+\pgf@decorate@repeatstate=\count168
+\pgfdecorationsegmentamplitude=\dimen261
+\pgfdecorationsegmentlength=\dimen262
+)
+\tikz@lib@dec@box=\box58
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count169
+\pgfplots@xmin@reg=\dimen263
+\pgfplots@xmax@reg=\dimen264
+\pgfplots@ymin@reg=\dimen265
+\pgfplots@ymax@reg=\dimen266
+\pgfplots@zmin@reg=\dimen267
+\pgfplots@zmax@reg=\dimen268
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
-\c@tracingmulticols=\count162
-\mult@box=\box58
-\multicol@leftmargin=\dimen199
-\c@unbalance=\count163
-\c@collectmore=\count164
-\doublecol@number=\count165
-\multicoltolerance=\count166
-\multicolpretolerance=\count167
-\full@width=\dimen256
-\page@free=\dimen257
-\premulticols=\dimen258
-\postmulticols=\dimen259
+\c@tracingmulticols=\count170
+\mult@box=\box59
+\multicol@leftmargin=\dimen269
+\c@unbalance=\count171
+\c@collectmore=\count172
+\doublecol@number=\count173
+\multicoltolerance=\count174
+\multicolpretolerance=\count175
+\full@width=\dimen270
+\page@free=\dimen271
+\premulticols=\dimen272
+\postmulticols=\dimen273
 \multicolsep=\skip57
 \multicolbaselineskip=\skip58
-\partial@page=\box59
-\last@line=\box60
-\maxbalancingoverflow=\dimen260
-\mult@rightbox=\box61
-\mult@grightbox=\box62
-\mult@gfirstbox=\box63
-\mult@firstbox=\box64
-\@tempa=\box65
+\partial@page=\box60
+\last@line=\box61
+\maxbalancingoverflow=\dimen274
+\mult@rightbox=\box62
+\mult@grightbox=\box63
+\mult@gfirstbox=\box64
+\mult@firstbox=\box65
 \@tempa=\box66
 \@tempa=\box67
 \@tempa=\box68
@@ -811,14 +936,15 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \@tempa=\box79
 \@tempa=\box80
 \@tempa=\box81
-\c@columnbadness=\count168
-\c@finalcolumnbadness=\count169
-\last@try=\dimen261
-\multicolovershoot=\dimen262
-\multicolundershoot=\dimen263
-\mult@nat@firstbox=\box82
-\colbreak@box=\box83
-\mc@col@check@num=\count170
+\@tempa=\box82
+\c@columnbadness=\count176
+\c@finalcolumnbadness=\count177
+\last@try=\dimen275
+\multicolovershoot=\dimen276
+\multicolundershoot=\dimen277
+\mult@nat@firstbox=\box83
+\colbreak@box=\box84
+\mc@col@check@num=\count178
 )
 (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -828,19 +954,19 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count171
+\etb@tempcnta=\count179
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
 code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen264
-\pgfarrowlength=\dimen265
-\pgfarrowwidth=\dimen266
-\pgfarrowlinewidth=\dimen267
+\pgfarrowinset=\dimen278
+\pgfarrowlength=\dimen279
+\pgfarrowwidth=\dimen280
+\pgfarrowlinewidth=\dimen281
 )
-\c@SectionCounter=\count172
-\c@ActivityCounter=\count173
-\c@SubactivityCounter=\count174
+\c@SectionCounter=\count180
+\c@ActivityCounter=\count181
+\c@SubactivityCounter=\count182
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeHannove
 r.sty
@@ -849,8 +975,8 @@ Package: beamerthemeHannover 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemesi
 debar.sty
 Package: beamerouterthemesidebar 2010/06/17  (rcs-revision d02a7cf4d8ae)
-\beamer@sidebarwidth=\dimen268
-\beamer@headheight=\dimen269
+\beamer@sidebarwidth=\dimen282
+\beamer@headheight=\dimen283
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemese
 ahorse.sty
@@ -917,17 +1043,17 @@ LaTeX Font Info:    ... okay on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count175
-\scratchdimen=\dimen270
-\scratchbox=\box84
-\nofMPsegments=\count176
-\nofMParguments=\count177
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count178
-\MPscratchDim=\dimen271
-\MPnumerator=\count179
-\makeMPintoPDFobject=\count180
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count183
+\scratchdimen=\dimen284
+\scratchbox=\box85
+\nofMPsegments=\count184
+\nofMParguments=\count185
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count186
+\MPscratchDim=\dimen285
+\MPnumerator=\count187
+\makeMPintoPDFobject=\count188
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -944,7 +1070,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box85
+\AtBeginShipoutBox=\box86
 Package hyperref Info: Link coloring OFF on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -953,7 +1079,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count181
+\c@section@level=\count189
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -1042,6 +1168,12 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \includegraphics on input line 5.
 
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into 
+your preamble.
+ on input line 5.
+
 (aux/course-slides.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
@@ -1050,39 +1182,25 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./modules.tex
-(./modules/0-I/index.tex [2
+(./modules/1-C/index.tex [2
 
-] [3
+] (./modules/1-C/standards.tex [3
 
 ] [4
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 57.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 57.
+])
+(./modules/1-C/readiness/outcomes.tex
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 7.
+LaTeX Font Info:    No file OMScmss.fd. on input line 7.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 57.
+(Font)              for symbol `textbullet' on input line 7.
 
 [5
 
-] [6
-
-] [7
-
-]) (./modules/1-C/index.tex [8
-
-] (./modules/1-C/standards.tex [9
-
-]
-[10
-
-]) (./modules/1-C/readiness/outcomes.tex [11
-
-])
-(./modules/1-C/readiness/resources.tex
+]) (./modules/1-C/readiness/resources.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1100,14 +1218,26 @@ line 10.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[12
+[6
 
-]) (./modules/1-C/sections.tex (./modules/1-C/sections/0.tex [13
+]) (./modules/1-C/sections.tex (./modules/1-C/sections/0.tex [7
+
+] [8
+
+] [9
+
+]
+[10
+
+] [11
+
+] [12
+
+] [13
 
 ] [14
 
-]
-[15
+] [15
 
 ] [16
 
@@ -1117,7 +1247,8 @@ thkerncmss.
 
 ] [19
 
-] [20
+])
+(./modules/1-C/sections/1.tex [20
 
 ] [21
 
@@ -1129,14 +1260,43 @@ thkerncmss.
 
 ] [25
 
-])
-(./modules/1-C/sections/1.tex [26
+] [26
 
-] [27
+]
+Overfull \hbox (10.3922pt too wide) detected at line 286
+[] []
+ []
 
-] [28
 
-] [29
+Overfull \hbox (10.3922pt too wide) detected at line 286
+[] []
+ []
+
+[27
+
+]
+Overfull \hbox (10.3922pt too wide) detected at line 286
+[] []
+ []
+
+
+Overfull \hbox (10.3922pt too wide) detected at line 286
+[] []
+ []
+
+[28
+
+]
+Overfull \hbox (10.3922pt too wide) detected at line 286
+[] []
+ []
+
+
+Overfull \hbox (10.3922pt too wide) detected at line 286
+[] []
+ []
+
+[29
 
 ] [30
 
@@ -1144,92 +1304,63 @@ thkerncmss.
 
 ] [32
 
-]
-Overfull \hbox (10.3922pt too wide) detected at line 286
-[] []
- []
+]) (./modules/1-C/sections/2.tex [33
 
+] [34
 
-Overfull \hbox (10.3922pt too wide) detected at line 286
-[] []
- []
+])))
+(./modules/2-S/index.tex [35
 
-[33
-
-]
-Overfull \hbox (10.3922pt too wide) detected at line 286
-[] []
- []
-
-
-Overfull \hbox (10.3922pt too wide) detected at line 286
-[] []
- []
-
-[34
-
-]
-Overfull \hbox (10.3922pt too wide) detected at line 286
-[] []
- []
-
-
-Overfull \hbox (10.3922pt too wide) detected at line 286
-[] []
- []
-
-[35
-
-] [36
+] (./modules/2-S/standards.tex [36
 
 ] [37
 
-] [38
+])
+(./modules/2-S/readiness/outcomes.tex [38
 
-]) (./modules/1-C/sections/2.tex [39
+])
+(./modules/2-S/readiness/resources.tex [39
 
-] [40
+]) (./modules/2-S/sections.tex
+(./modules/2-S/sections/1.tex [40
 
-])))
-(./modules/2-S/index.tex [41
+] [41
 
-] (./modules/2-S/standards.tex [42
+] [42
 
 ] [43
 
-])
-(./modules/2-S/readiness/outcomes.tex [44
+] [44
 
-])
-(./modules/2-S/readiness/resources.tex [45
+] [45
 
-]) (./modules/2-S/sections.tex
-(./modules/2-S/sections/1.tex [46
+] [46
 
 ] [47
 
 ] [48
 
-] [49
+]
+[49
 
 ] [50
 
 ] [51
 
-] [52
+]) (./modules/2-S/sections/2.tex [52
 
 ] [53
 
 ] [54
 
-]
-[55
+] [55
 
 ] [56
 
 ] [57
 
-]) (./modules/2-S/sections/2.tex [58
+]
+[58
 
 ] [59
 
@@ -1242,9 +1373,13 @@ Overfull \hbox (10.3922pt too wide) detected at line 286
 ] [63
 
 ]
+Overfull \hbox (12.97282pt too wide) detected at line 223
+\OT1/mathkerncmss/m/sl/10.95 W \OT1/cmss/m/n/10.95 = [] []
+ []
+
 [64
 
-] [65
+]) (./modules/2-S/sections/3.tex [65
 
 ] [66
 
@@ -1254,18 +1389,14 @@ Overfull \hbox (10.3922pt too wide) detected at line 286
 
 ] [69
 
-]
-Overfull \hbox (12.97282pt too wide) detected at line 223
-\OT1/mathkerncmss/m/sl/10.95 W \OT1/cmss/m/n/10.95 = [] []
- []
+] [70
 
-[70
-
-]) (./modules/2-S/sections/3.tex [71
+] [71
 
 ] [72
 
-] [73
+]
+[73
 
 ] [74
 
@@ -1277,8 +1408,7 @@ Overfull \hbox (12.97282pt too wide) detected at line 223
 
 ] [78
 
-]
-[79
+] [79
 
 ] [80
 
@@ -1292,44 +1422,45 @@ Overfull \hbox (12.97282pt too wide) detected at line 223
 
 ] [85
 
-] [86
+])))
+(./modules/3-F/index.tex [86
 
-] [87
+] (./modules/3-F/standards.tex [87
 
 ] [88
 
-] [89
-
-] [90
-
-] [91
-
-])))
-(./modules/3-F/index.tex [92
-
-] (./modules/3-F/standards.tex [93
-
-] [94
+])
+(./modules/3-F/readiness/outcomes.tex [89
 
 ])
-(./modules/3-F/readiness/outcomes.tex [95
-
-])
-(./modules/3-F/readiness/resources.tex [96
+(./modules/3-F/readiness/resources.tex [90
 
 ]) (./modules/3-F/sections.tex
-(./modules/3-F/sections/0.tex [97
+(./modules/3-F/sections/0.tex [91
+
+] [92
+
+] [93
+
+]) (./modules/3-F/sections/1.tex
+[94
+
+] [95
+
+]) (./modules/3-F/sections/2.tex [96
+
+] [97
 
 ] [98
 
 ] [99
 
-]) (./modules/3-F/sections/1.tex
-[100
+] [100
 
 ] [101
 
-]) (./modules/3-F/sections/2.tex [102
+]
+[102
 
 ] [103
 
@@ -1339,16 +1470,21 @@ Overfull \hbox (12.97282pt too wide) detected at line 223
 
 ] [106
 
-]
-[107
+] [107
 
 ] [108
 
 ] [109
 
-] [110
+]) (./modules/3-F/sections/3.tex
+[110
 
-] [111
+]
+Overfull \hbox (11.33238pt too wide) detected at line 71
+[] \OMS/cmsy/m/n/10.95 ^^X [] ) [] ^^X [] [] []
+ []
+
+[111
 
 ] [112
 
@@ -1358,17 +1494,12 @@ Overfull \hbox (12.97282pt too wide) detected at line 223
 
 ] [115
 
-])
-(./modules/3-F/sections/3.tex [116
+]) (./modules/3-F/sections/4.tex [116
+
+] [117
 
 ]
-Overfull \hbox (11.33238pt too wide) detected at line 71
-[] \OMS/cmsy/m/n/10.95 ^^X [] ) [] ^^X [] [] []
- []
-
-[117
-
-] [118
+[118
 
 ] [119
 
@@ -1376,18 +1507,35 @@ Overfull \hbox (11.33238pt too wide) detected at line 71
 
 ] [121
 
-]) (./modules/3-F/sections/4.tex [122
+] [122
 
 ] [123
 
+] [124
+
 ]
-[124
+Overfull \hbox (12.20668pt too wide) detected at line 163
+\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
+/10.95 T \OT1/cmss/m/n/10.95 = []
+ []
 
-] [125
+[125
 
-] [126
+]
+Overfull \hbox (12.20668pt too wide) detected at line 163
+\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
+/10.95 T \OT1/cmss/m/n/10.95 = []
+ []
 
-] [127
+[126
+
+]
+Overfull \hbox (12.20668pt too wide) detected at line 163
+\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
+/10.95 T \OT1/cmss/m/n/10.95 = []
+ []
+
+[127
 
 ] [128
 
@@ -1395,94 +1543,64 @@ Overfull \hbox (11.33238pt too wide) detected at line 71
 
 ] [130
 
-]
-Overfull \hbox (12.20668pt too wide) detected at line 163
-\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
-/10.95 T \OT1/cmss/m/n/10.95 = []
- []
-
-[131
+]))) (./modules/4-N/index.tex [131
 
 ]
-Overfull \hbox (12.20668pt too wide) detected at line 163
-\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
-/10.95 T \OT1/cmss/m/n/10.95 = []
- []
+(./modules/4-N/standards.tex [132
 
-[132
+] [133
 
-]
-Overfull \hbox (12.20668pt too wide) detected at line 163
-\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
-/10.95 T \OT1/cmss/m/n/10.95 = []
- []
+]) (./modules/4-N/readiness/outcomes.tex [134
 
-[133
-
-] [134
-
-] [135
-
-] [136
-
-]))) (./modules/4-N/index.tex [137
+]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [135
 
 ]
-(./modules/4-N/standards.tex [138
+[136
 
-] [139
+]) (./modules/4-N/sections/2.tex [137
 
-]) (./modules/4-N/readiness/outcomes.tex [140
+] [138
 
-]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [141
+]) (./modules/4-N/sections/3.tex [139
 
-]
-[142
+] [140
 
-]) (./modules/4-N/sections/2.tex [143
+]) (./modules/4-N/sections/4.tex [141
 
-] [144
+] [142
 
-]) (./modules/4-N/sections/3.tex [145
+] [143
+
+])))
+(./modules/5-D/index.tex [144
+
+] (./modules/5-D/standards.tex [145
 
 ] [146
 
-]) (./modules/4-N/sections/4.tex [147
+])
+(./modules/5-D/readiness/outcomes.tex [147
 
-] [148
+]) (./modules/5-D/sections.tex
+(./modules/5-D/sections/1.tex [148
 
 ] [149
 
-])))
-(./modules/5-D/index.tex [150
+]) (./modules/5-D/sections/2.tex
+[150
 
-] (./modules/5-D/standards.tex [151
+] [151
 
-] [152
+]) (./modules/5-D/sections/3.tex [152
+
+] [153
 
 ])
-(./modules/5-D/readiness/outcomes.tex [153
-
-]) (./modules/5-D/sections.tex
-(./modules/5-D/sections/1.tex [154
+(./modules/5-D/sections/4.tex [154
 
 ] [155
 
-]) (./modules/5-D/sections/2.tex
-[156
-
-] [157
-
-]) (./modules/5-D/sections/3.tex [158
-
-] [159
-
-])
-(./modules/5-D/sections/4.tex [160
-
-] [161
-
-] [162
+] [156
 
 ]))))
 \tf@nav=\write6
@@ -1512,13 +1630,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
  ) 
 Here is how much of TeX's memory you used:
- 21445 strings out of 494910
- 420185 string characters out of 6179836
- 540118 words of memory out of 5000000
- 23793 multiletter control sequences out of 15000+600000
+ 31064 strings out of 494910
+ 748453 string characters out of 6179836
+ 965916 words of memory out of 5000000
+ 33292 multiletter control sequences out of 15000+600000
  16466 words of font info for 60 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 78i,20n,79p,924b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 82i,20n,106p,924b,1116s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -1531,10 +1649,10 @@ blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb>
-Output written on aux/course-slides.pdf (162 pages, 499529 bytes).
+Output written on aux/course-slides.pdf (156 pages, 483227 bytes).
 PDF statistics:
- 6118 PDF objects out of 6186 (max. 8388607)
- 5877 compressed objects within 59 object streams
- 351 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5750 PDF objects out of 6186 (max. 8388607)
+ 5518 compressed objects within 56 object streams
+ 337 named destinations out of 1000 (max. 500000)
+ 235 words of extra memory for PDF output out of 10000 (max. 10000000)
 

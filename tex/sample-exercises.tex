@@ -45,343 +45,87 @@ This document contains one exercise and solution for each standard.
 The goal is to give you an idea of what the exercises might look like,
 and what the expectations for a complete solution are.
 
-\begin{problem}{E1}
-Write a system of linear equations corresponding to the following
-augmented matrix.
-\[
-\begin{bmatrix}[cccc|c]
-3 & 2 & 0 & 1 & 1 \\
--1 & -4 & 1 & -7 & 0 \\
-0 & 1 & -1 & 0 & -2
-\end{bmatrix}
-\]
-\end{problem}
-\begin{solution}
-\begin{alignat*}{5}
-3x_1 &\,+\,& 2x_2 &\,\,& &\,+\,&x_4 &= 1 \\
--x_1 &\,-\,& 4x_2 &\,+\,&x_3&\,-\,&7x_4 &= 0 \\
-&\,\,& x_2 &\,-\,&x_3 &\,\,&  &= -2
-\end{alignat*}
-\end{solution}
+\begin{problem}{C1}
+Sketch a solution curve through each point marked in the slope field.
 
-\begin{problem}{E2}
-Put the following matrix in reduced row echelon form.
-\[
-  \begin{bmatrix}
-  0 & 3 & 1 & 2 \\
-  1 & 2 & -1 & -3 \\
-  2 & 4 & -1 & -1
-  \end{bmatrix}
-\]
+\begin{center}\begin{tikzpicture}
+    \begin{axis}[
+        title={\(y' = -y -x^2 \)},
+        domain=-3:3,
+        view={0}{90},
+        axis background/.style={fill=white},
+    ]
+        \addplot3[black,
+            quiver={
+             u={1/(sqrt(1 + (-y -x*x)^2))},
+             v={(-y - x*x)/(sqrt(1 + (-y - x*x)^2))},
+             scale arrows=0.2,
+            },
+            -stealth,samples=15]
+                {exp(-x) - 1/2*sin(x) - 1/2*cos(x)};
+        %KAWWWWWWW
+        % Here be some points added to the swoopy loop vector fieldamagigs
+        \addplot[mark=*] coordinates {(-1,2)}; % Obvious ordered pair for lococation
+        \addplot[mark=*] coordinates {(-1,-2)};
+    \end{axis}
+\end{tikzpicture}\end{center}
 \end{problem}
+
+
 \begin{solution}
-\begin{alignat*}{4}
-  \begin{bmatrix}
-  0 & 3 & 1 & 2 \\
-  1 & 2 & -1 & -3 \\
-  2 & 4 & -1 & -1
-  \end{bmatrix}
-  &\sim&
-  \begin{bmatrix}
-  \circledNumber{1} & 2 & -1 & -3 \\
-  0 & 3 & 1 & 2 \\
-  2 & 4 & -1 & -1
-  \end{bmatrix}
-  &\sim&
-  \begin{bmatrix}
-  \circledNumber{1} & 2 & -1 & -3 \\
-  0 & 3 & 1 & 2 \\
-  0 & 0 & 1 & 5
-  \end{bmatrix}
-  &\sim&
-  \begin{bmatrix}
-  \circledNumber{1} & 2 & -1 & -3 \\
-  0 & \circledNumber{1} & \frac{1}{3} & \frac{2}{3} \\
-  0 & 0 & 1 & 5
-  \end{bmatrix} \\
-  &\sim&
-  \begin{bmatrix}
-  \circledNumber{1} & 0 & -\frac{5}{3} & -\frac{13}{3} \\
-  0 & \circledNumber{1} & \frac{1}{3} & \frac{2}{3} \\
-  0 & 0 & \circledNumber{1} & 5
-  \end{bmatrix}
-  &\sim&
-  \begin{bmatrix}
-  \circledNumber{1} & 0 & -\frac{5}{3} & -\frac{13}{3} \\
-  0 & \circledNumber{1} & 0 & -1 \\
-  0 & 0 & \circledNumber{1} & 5
-  \end{bmatrix}
-  &\sim&
-  \begin{bmatrix}
-  \circledNumber{1} & 0 & 0 & 4 \\
-  0 & \circledNumber{1} & 0 & -1 \\
-  0 & 0 & \circledNumber{1} & 5
-  \end{bmatrix}
-\end{alignat*}
+
+\begin{center}\begin{tikzpicture}
+    \begin{axis}[
+        title={\(y' = -y - x^2\)},
+        domain=-3:3,
+        view={0}{90},
+        axis background/.style={fill=white},
+    ]
+        \addplot3[black,
+            quiver={
+             u={1/(sqrt(1 + (-y -x*x)^2))},
+             v={(-y - x*x)/(sqrt(1 + (-y - x*x)^2))},
+             scale arrows=0.2,
+            },
+            -stealth,samples=15]
+                {exp(-x) - 1/2*sin(x) - 1/2*cos(x)};
+        %KAWWWWWWW
+        % Here be some points added to the swoopy loop vector fieldamagigs
+        \addplot[mark=*] coordinates {(-1,2)}; % Obvious ordered pair for lococation
+		\addplot[red,domain=-1.25:2.5] {-x^2+2*x-2+7/exp(1)*exp(-x)};
+        \addplot[mark=*] coordinates {(-1,-2)};
+		\addplot[red,domain=-2.82:2.5] {-x^2+2*x-2+3/exp(1)*exp(-x)};
+    \end{axis}
+\end{tikzpicture}\end{center}
 \end{solution}
 
 
-\begin{problem}{V1}
-Let \(V\) be the set of all polynomials, together with the operations
-\(\oplus\) and \(\odot\) defined by the following for all polynomials
-\(f(x),g(x)\) and scalars \(c \in \IR\):
-\begin{align*}
-f(x) \oplus g(x) &= xf(x)+xg(x) \\
-c\odot f(x) &= cf(x)
-\end{align*}
-\begin{enumerate}[(a)]
-\item Show that scalar distribution
-\[c\odot \left(f(x)\oplus g(x) \right) = c \odot f(x) \oplus c \odot g(x)\]
-holds.
-\item Show that addition associativity
-\[
-  \left( f(x) \oplus g(x) \right) \oplus h(x)
-=
-  f(x) \oplus \left( g(x) \oplus h(x) \right)
-\]
-fails.
-\end{enumerate}
+\begin{problem}{C2}
+Find the general solution to \[y'+y=-t^2.\]
 \end{problem}
 \begin{solution}
-\begin{enumerate}[(a)]
-\item
-Compute
+First, we find a general solution to the homogeneous equation \[y'+y=0.\]  This has auxilliary equation \(r+1=0\), which has a single root at \(r=1\), so \(ce^{-t}\) is a solution.  We can find a particular solution \(y_p\) to the given equation by using undetermined coefficients; since \(-t^2\) is a polynomial, we let \(y_p = At^2+Bt+D\) and determine the coefficients \(A\), \(B\), and \(D\).  
 \begin{align*}
-  c \odot \left(f(x) \oplus g(x) \right)
-  &= c \odot \left(xf(x)+xg(x)\right) \\
-  &= c\left(xf(x)+xg(x) \right) \\
-  &= cxf(x)+cxg(x)
-\end{align*}
-and
-\begin{align*}
-  c\odot f(x) \oplus c \odot g(x)
-  &= (cf(x)) \oplus (cg(x))\\
-  &= xcf(x)+xcg(x)
-\end{align*}
-Since these are the same, we have shown that
-\(c\odot \left(f(x)\oplus g(x) \right) = c \odot f(x) \oplus c \odot g(x)\)
-holds.
-\item
-Suppose \(f(x)=1\), \(g(x)=2\), and \(h(x)=3\). Then
-\begin{align*}
-  \left( f(x) \oplus g(x) \right) \oplus h(x)
-  &=\left(x+2x \right) \oplus 3\\
-  &=3x \oplus 3\\
-  &= 3x^2+3x
-\end{align*}
-and
-\begin{align*}
-  f(x) \oplus \left( g(x) \oplus h(x) \right)
-  &=1 \oplus \left(2x+3x\right) \\
-  &=1 \oplus 5x \\
-  &=x + 5x^2
+y_p ^\prime +y_p= &= (2At+B)+(At^2+Bt+D) \\
+&= At^2+(2A+B)+(B+D)
 \end{align*}
 
-
-Since \(3x^2+3x\not=x+5x^2\), we have shown
-\(
-  \left( f(x) \oplus g(x) \right) \oplus h(x)
-=
-  f(x) \oplus \left( g(x) \oplus h(x) \right)
-\)
-fails.
-\end{enumerate}
+So if \(y_p\) is a solution, we must have \(y_p ^\prime+y_p = -t^2\), giving us the system of equations
+\begin{align*}
+A&=-1 \\ 2A+B &= 0 \\ B+D&=0
+\end{align*}
+Thus we easily deduce that \(A=-1\), \(B=2\), and \(D=-2\), giving \(y_p = -t^2+2t-2\).  Thus, the general solution is
+\[y = -t^2+2t-2+ce^{-t}.\]
 \end{solution}
 
-\begin{problem}{V2}
-  Let \(V\) be the set of all non-negative real numbers with the operations
-  \(\oplus\) and \(\odot\) given by, for all \(x,y \in V\) and \(c \in \IR\),
-  \begin{align*}
-  x \oplus y &= x+y \\
-  c \odot x &= |c|x
-  \end{align*}
-
-  List the 8 defining properties of a vector space, and label each as
-  ``TRUE'' or ``FALSE'' as they apply to \(V\). Based on these, conclude whether
-  \(V\) is a vector space or not.
-  \end{problem}
-\begin{solution}
-  \begin{enumerate}[1)]
-    \item Addition associativity:
-          \((x\oplus y)\oplus z = x\oplus (y \oplus z)\)
-          for all \(x,y,z \in V\).
-          \textbf{TRUE}
-    \item Addition commutivity:
-          \(x\oplus y = y \oplus x\)
-          for all \(x,y \in V\).
-          \textbf{TRUE}
-    \item Addition identity:
-           there exists an element \(z \in V\) such that for all \(x \in V\),
-          \(x\oplus z = x\).
-          \textbf{TRUE}
-    \item Addition inverses:
-          for every \(x \in V\) there is an element \(-x \in V\) such that
-          \(x \oplus (-x) = z \).
-          \textbf{FALSE}
-    \item Scalar multiplication associativity:
-          for each \(c,d \in \IR\) and \(x \in V\),
-          \(c\odot (d\odot x) = (cd) \odot x\).
-          \textbf{TRUE}
-    \item Scalar multiplication identity:
-          for all \(x \in V\), \(1 \odot x = x \).
-          \textbf{TRUE}
-    \item Scalar distribution:
-          for all \(x,y \in V\) and \(c \in \IR\),
-          \(c\odot(x\oplus y) = c\odot x \oplus c \odot y\).
-          \textbf{TRUE}
-    \item Vector distribution:
-          for all \(x \in V\) and \(c,d \in \IR\),
-          \( (c+d)\odot x = c\odot x \oplus d \odot x \)
-          \textbf{FALSE}
-  \end{enumerate}
-Since at least one property fails, \(V\) is not a vector space.
-\end{solution}
-
-\begin{problem}{V3}
-Determine if \(\begin{bmatrix} 3 \\ -1 \\ 2 \end{bmatrix} \) is a linear combination of the vectors
-\(\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix} \),
-\(\begin{bmatrix} 3 \\ 2 \\ -1 \end{bmatrix} \), and
-\(\begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix} \).
+\begin{problem}{C3}
+Find the general solution to \[y''+6y'+13y=0.\]
 \end{problem}
 \begin{solution}
-
-We compute
-\[ \RREF
-  \begin{bmatrix}[ccc|c]
-  1 & 3 & 1 & 3 \\
-  0 & 2 & 1 & -1 \\
-  1 & -1 & -1 & 2
-  \end{bmatrix}
-  =
-  \begin{bmatrix}[ccc|c]
-  1 & 0 & -\frac{1}{2} & 0 \\
-  0 & 1 & \frac{1}{2} & 0 \\
-  0 & 0 & 0 & 1
-  \end{bmatrix}
-\]
-Since this corresponds to an inconsistent system of equations, \(\begin{bmatrix} 3 \\ -1 \\ 2 \end{bmatrix} \) is \textbf{not} a linear combination of \(\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix} \),
-\(\begin{bmatrix} 3 \\ 2 \\ -1 \end{bmatrix} \), and
-\(\begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix} \).
-
-\end{solution}
-
-\begin{problem}{V4}
-Determine if  the vectors
-\(\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix} \),
-\(\begin{bmatrix} 3 \\ 2 \\ -1 \end{bmatrix} \), and
-\(\begin{bmatrix} 1 \\ 1 \\ -1 \end{bmatrix} \) span \(\IR^3\).
-\end{problem}
-\begin{solution}
-
-We compute
-\[ \RREF
-  \begin{bmatrix}[ccc]
-  1 & 3 & 1  \\
-  0 & 2 & 1  \\
-  1 & -1 & -1
-  \end{bmatrix}
-  =
-  \begin{bmatrix}[ccc]
-  1 & 0 & -\frac{1}{2} \\
-  0 & 1 & \frac{1}{2} \\
-  0 & 0 & 0
-  \end{bmatrix}
-\]
-Since the last row lacks a pivot, the vectors \textbf{do not span} \(\IR^3\).
-\end{solution}
-
-\begin{problem}{V5}
-Consider the following two sets of Euclidean vectors.
-\[
-  W = \setBuilder{\begin{bmatrix} x \\ y \\ z \end{bmatrix}}{x+y=3z}
-\hspace{3em}
-  U = \setBuilder{\begin{bmatrix} x \\ y \\ z \end{bmatrix}}{x+y=3z+2}
-\]
-Show that one of these sets is a subspace of \(\IR^3\), and
-that one of the sets is not.
-\end{problem}
-\begin{solution}
-Let
-\(
-  \begin{bmatrix} x_1 \\y_1 \\ z_1 \end{bmatrix},
-  \begin{bmatrix} x_2 \\y_2 \\ z_2 \end{bmatrix} \in W
-\),
-so we know \(x_1+y_1=3z_1\) and \(x_2+y_2=3z_2\).
-Consider
-\[
-\begin{bmatrix} x_1 \\y_1 \\ z_1 \end{bmatrix}
-+\begin{bmatrix} x_2 \\y_2 \\ z_2 \end{bmatrix}
-=\begin{bmatrix} x_1+x_2 \\y_1+y_2 \\ z_1+z_2 \end{bmatrix}
-.\]
-Since
-\[
-  (x_1+x_2)+(y_1+y_2) = (x_1+y_1)+(x_2+y_2) = 3z_1+3z_2=3(z_1+z_2)
-\]
-we see that \(W\) is closed under vector addition.
-Now consider
-\[
-c\begin{bmatrix} x_1 \\y_1 \\ z_1 \end{bmatrix}
-=\begin{bmatrix} cx_1 \\cy_1 \\ cz_1 \end{bmatrix}
-.\]
-Since
-\[cx_1+cx_2 = c(x_1+x_2)=c(3z_1)=3(cz_1)\]
-we see that \(W\) is closed under scalar multiplication. Therefore \(W\)
-is a subspace of \(\IR^3\).
-
-However, note that
-\(
-  \begin{bmatrix} 0 \\ 5 \\ 1 \end{bmatrix},
-  \begin{bmatrix} 1 \\ 4 \\ 1 \end{bmatrix}
-\)
-are vectors in \(U\) since \(0+5=3(1)+2\) and \(1+4=3(1)+2\).
-But
-\[
-  \begin{bmatrix} 0 \\ 5 \\ 1 \end{bmatrix}
-    +
-  \begin{bmatrix} 1 \\ 4 \\ 1 \end{bmatrix}
-    =
-  \begin{bmatrix} 1 \\ 9 \\ 2 \end{bmatrix}
-\]
-does not belong to \(U\) since \(1+9\not=3(2)+2\).
-Since \(U\) is not closed under vector addition, \(U\) is not a subspace
-of \(\IR^3\).
-\end{solution}
-
-
-\begin{problem}{S1}
-Determine if the vectors
-\( \begin{bmatrix} 3 \\ 2 \\ 1 \\ 0 \end{bmatrix} \) ,
-\( \begin{bmatrix} -1 \\ 1 \\ 2 \\ 3 \end{bmatrix} \) ,
-\( \begin{bmatrix} 0 \\ 1 \\ -1 \\ 1 \end{bmatrix} \) , and
-\( \begin{bmatrix} 2 \\ 5 \\ 1 \\ 5 \end{bmatrix} \)
-are linearly dependent or linearly independent.
-\end{problem}
-\begin{solution}
-Compute
-\[\RREF \begin{bmatrix} 3 & -1 & 0 & 2 \\ 2 & 1 & 1 & 5 \\ 1 & 2 & -1 & 1 \\ 0 & 3 & 1 & 5 \end{bmatrix} =
-\begin{bmatrix} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}.\] discuss those blurred linres and
-Since the fourth column is not a pivot column, the vectors are linearly dependent.
-\end{solution}
-
-\begin{problem}{S2}
-Determine if the set \[ \left\{
- \begin{bmatrix} 3 \\ 2 \\ 1 \\ 0 \end{bmatrix} ,
- \begin{bmatrix} -1 \\ 1 \\ 2 \\ 3 \end{bmatrix} ,
- \begin{bmatrix} 0 \\ 1 \\ -1 \\ 1 \end{bmatrix} ,
- \begin{bmatrix} 2 \\ 5 \\ 1 \\ 5 \end{bmatrix} \right\} \]
-is a basis of \(\IR^4\) or not.
-\end{problem}
-\begin{solution}
-Compute
-\[\RREF \begin{bmatrix} 3 & -1 & 0 & 2 \\ 2 & 1 & 1 & 5 \\ 1 & 2 & -1 & 1 \\ 0 & 3 & 1 & 5 \end{bmatrix} =
-\begin{bmatrix} 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}.\]
-Since the fourth column is not a pivot column, the vectors are linearly
-dependent and thus not a basis.
-
-(Alternate solutions:
-Since the fourth row not a pivot row, the vectors do not span
-\(\IR^4\) and thus are not a basis. Or since the resulting matrix is not
-the identity matrix, the vectors do not form a basis.)
+We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the roots.  There are many ways to do this; here, we complete  the square:
+\[0=r^2+6r+13=r^2+6r+9+4=(r+3)^2+4.\]
+Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution is
+\[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
 \end{solution}
 
 \end{document}
