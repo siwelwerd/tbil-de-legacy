@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  13 JUN 2018 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUN 2018 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,18 +1190,21 @@ Overfull \hbox (10.3922pt too wide) detected at line 286
 
 ] [40
 
-] [41
+])))
+(./modules/2-S/index.tex [41
 
-] [42
+] (./modules/2-S/standards.tex [42
 
 ] [43
 
-]
-[44
+])
+(./modules/2-S/readiness/outcomes.tex [44
 
-] [45
+])
+(./modules/2-S/readiness/resources.tex [45
 
-] [46
+]) (./modules/2-S/sections.tex
+(./modules/2-S/sections/1.tex [46
 
 ] [47
 
@@ -1219,21 +1222,18 @@ Overfull \hbox (10.3922pt too wide) detected at line 286
 
 ] [54
 
-])))
-(./modules/2-S/index.tex [55
+]
+[55
 
-] (./modules/2-S/standards.tex [56
+] [56
 
 ] [57
 
-])
-(./modules/2-S/readiness/outcomes.tex [58
+]) (./modules/2-S/sections/2.tex [58
 
-])
-(./modules/2-S/readiness/resources.tex [59
+] [59
 
-]) (./modules/2-S/sections.tex
-(./modules/2-S/sections/1.tex [60
+] [60
 
 ] [61
 
@@ -1241,7 +1241,8 @@ Overfull \hbox (10.3922pt too wide) detected at line 286
 
 ] [63
 
-] [64
+]
+[64
 
 ] [65
 
@@ -1251,14 +1252,18 @@ Overfull \hbox (10.3922pt too wide) detected at line 286
 
 ] [68
 
+] [69
+
 ]
-[69
+Overfull \hbox (12.97282pt too wide) detected at line 223
+\OT1/mathkerncmss/m/sl/10.95 W \OT1/cmss/m/n/10.95 = [] []
+ []
 
-] [70
+[70
 
-] [71
+]) (./modules/2-S/sections/3.tex [71
 
-]) (./modules/2-S/sections/2.tex [72
+] [72
 
 ] [73
 
@@ -1270,10 +1275,10 @@ Overfull \hbox (10.3922pt too wide) detected at line 286
 
 ] [77
 
-]
-[78
+] [78
 
-] [79
+]
+[79
 
 ] [80
 
@@ -1283,14 +1288,9 @@ Overfull \hbox (10.3922pt too wide) detected at line 286
 
 ] [83
 
-]
-Overfull \hbox (12.97282pt too wide) detected at line 223
-\OT1/mathkerncmss/m/sl/10.95 W \OT1/cmss/m/n/10.95 = [] []
- []
+] [84
 
-[84
-
-]) (./modules/2-S/sections/3.tex [85
+] [85
 
 ] [86
 
@@ -1304,28 +1304,32 @@ Overfull \hbox (12.97282pt too wide) detected at line 223
 
 ] [91
 
-] [92
+])))
+(./modules/3-F/index.tex [92
 
-]
-[93
+] (./modules/3-F/standards.tex [93
 
 ] [94
 
-] [95
+])
+(./modules/3-F/readiness/outcomes.tex [95
 
-] [96
+])
+(./modules/3-F/readiness/resources.tex [96
 
-] [97
+]) (./modules/3-F/sections.tex
+(./modules/3-F/sections/0.tex [97
 
 ] [98
 
 ] [99
 
-] [100
+]) (./modules/3-F/sections/1.tex
+[100
 
 ] [101
 
-] [102
+]) (./modules/3-F/sections/2.tex [102
 
 ] [103
 
@@ -1333,34 +1337,36 @@ Overfull \hbox (12.97282pt too wide) detected at line 223
 
 ] [105
 
-])))
-(./modules/3-F/index.tex [106
+] [106
 
-] (./modules/3-F/standards.tex [107
+]
+[107
 
 ] [108
 
-])
-(./modules/3-F/readiness/outcomes.tex [109
+] [109
 
-])
-(./modules/3-F/readiness/resources.tex [110
+] [110
 
-]) (./modules/3-F/sections.tex
-(./modules/3-F/sections/0.tex [111
+] [111
 
 ] [112
 
 ] [113
 
-]) (./modules/3-F/sections/1.tex
-[114
+] [114
 
 ] [115
 
-] [116
+])
+(./modules/3-F/sections/3.tex [116
 
-] [117
+]
+Overfull \hbox (11.33238pt too wide) detected at line 71
+[] \OMS/cmsy/m/n/10.95 ^^X [] ) [] ^^X [] [] []
+ []
+
+[117
 
 ] [118
 
@@ -1370,16 +1376,16 @@ Overfull \hbox (12.97282pt too wide) detected at line 223
 
 ] [121
 
-] [122
+]) (./modules/3-F/sections/4.tex [122
 
 ] [123
 
-] [124
+]
+[124
 
 ] [125
 
-]
-[126
+] [126
 
 ] [127
 
@@ -1389,489 +1395,94 @@ Overfull \hbox (12.97282pt too wide) detected at line 223
 
 ] [130
 
-] [131
+]
+Overfull \hbox (12.20668pt too wide) detected at line 163
+\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
+/10.95 T \OT1/cmss/m/n/10.95 = []
+ []
 
-] [132
+[131
 
-] [133
+]
+Overfull \hbox (12.20668pt too wide) detected at line 163
+\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
+/10.95 T \OT1/cmss/m/n/10.95 = []
+ []
 
-]) (./modules/3-F/sections/2.tex
-[134
+[132
+
+]
+Overfull \hbox (12.20668pt too wide) detected at line 163
+\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
+/10.95 T \OT1/cmss/m/n/10.95 = []
+ []
+
+[133
+
+] [134
 
 ] [135
 
 ] [136
 
-] [137
+]))) (./modules/4-N/index.tex [137
 
-] [138
+]
+(./modules/4-N/standards.tex [138
 
 ] [139
 
-] [140
+]) (./modules/4-N/readiness/outcomes.tex [140
 
-] [141
+]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [141
 
-] [142
+]
+[142
 
-] [143
+]) (./modules/4-N/sections/2.tex [143
 
 ] [144
 
-] [145
+]) (./modules/4-N/sections/3.tex [145
 
-]
-[146
+] [146
 
-] [147
+]) (./modules/4-N/sections/4.tex [147
 
-]) (./modules/3-F/sections/3.tex [148
+] [148
 
 ] [149
 
-] [150
+])))
+(./modules/5-D/index.tex [150
 
-] [151
+] (./modules/5-D/standards.tex [151
 
 ] [152
 
-]
-Overfull \hbox (11.33238pt too wide) detected at line 131
-[] \OMS/cmsy/m/n/10.95 ^^X [] ) [] ^^X [] [] []
- []
+])
+(./modules/5-D/readiness/outcomes.tex [153
 
-[153
-
-] [154
+]) (./modules/5-D/sections.tex
+(./modules/5-D/sections/1.tex [154
 
 ] [155
 
-] [156
+]) (./modules/5-D/sections/2.tex
+[156
 
 ] [157
 
-]) (./modules/3-F/sections/4.tex [158
+]) (./modules/5-D/sections/3.tex [158
 
 ] [159
 
-]
-[160
+])
+(./modules/5-D/sections/4.tex [160
 
 ] [161
 
 ] [162
-
-] [163
-
-] [164
-
-] [165
-
-] [166
-
-]
-Overfull \hbox (12.20668pt too wide) detected at line 163
-\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
-/10.95 T \OT1/cmss/m/n/10.95 = []
- []
-
-[167
-
-]
-Overfull \hbox (12.20668pt too wide) detected at line 163
-\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
-/10.95 T \OT1/cmss/m/n/10.95 = []
- []
-
-[168
-
-]
-Overfull \hbox (12.20668pt too wide) detected at line 163
-\OT1/mathkerncmss/m/sl/10.95 S \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl
-/10.95 T \OT1/cmss/m/n/10.95 = []
- []
-
-[169
-
-] [170
-
-] [171
-
-] [172
-
-]))) (./modules/4-N/index.tex [173
-
-]
-(./modules/4-N/standards.tex [174
-
-] [175
-
-]) (./modules/4-N/readiness/outcomes.tex [176
-
-]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [177
-
-]
-[178
-
-] [179
-
-]
-Overfull \hbox (9.078pt too wide) detected at line 245
-\OT1/mathkerncmss/m/sl/10.95 T [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
-10.95 T [] \OT1/cmss/m/n/10.95 = [] []\OT1/mathkerncmss/m/sl/10.95 cT [] \OT1/c
-mss/m/n/10.95 = \OT1/mathkerncmss/m/sl/10.95 c [] \OT1/cmss/m/n/10.95 = []
- []
-
-[180
-
-] [181
-
-] [182
-
-] [183
-
-] [184
-
-] [185
-
-] [186
-
-] [187
-
-] [188
-
-] [189
-
-] [190
-
-] [191
-
-]
-[192
-
-]) (./modules/4-N/sections/2.tex [193
-
-] [194
-
-] [195
-
-] [196
-
-] [197
-
-] [198
-
-]
-[199
-
-]
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 302.
-
-
-
-Overfull \hbox (10.67091pt too wide) detected at line 302
-\OT1/mathkerncmss/m/sl/10.95 T [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
-10.95 T [] \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl/10.95 T [] \OT1/cms
-s/m/n/10.95 = \OT1/mathkerncmss/m/sl/10.95 T [] \OT1/cmss/m/n/10.95 = []  \OT1/
-mathkerncmss/m/sl/10.95 T [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/10.95
- T [] \OT1/cmss/m/n/10.95 = []
- []
-
-[200
-
-] [201
-
-] [202
-
-] [203
-
-] [204
-
-] [205
-
-]
-Overfull \vbox (6.37233pt too high) detected at line 302
- []
-
-[206
-
-] [207
-
-]) (./modules/4-N/sections/3.tex [208
-
-] [209
-
-] [210
-
-] [211
-
-] [212
-
-]
-[213
-
-] [214
-
-] [215
-
-] [216
-
-] [217
-
-] [218
-
-] [219
-
-] [220
-
-] [221
-
-] [222
-
-] [223
-
-] [224
-
-]
-[225
-
-] [226
-
-] [227
-
-] [228
-
-]) (./modules/4-N/sections/4.tex [229
-
-] [230
-
-] [231
-
-]
-[232
-
-] [233
-
-] [234
-
-] [235
-
-] [236
-
-] [237
-
-] [238
-
-] [239
-
-] [240
-
-] [241
-
-] [242
-
-] [243
-
-]
-[244
-
-] [245
-
-] [246
-
-] [247
-
-] [248
-
-] [249
-
-]))) (./modules/5-D/index.tex [250
-
-]
-(./modules/5-D/standards.tex [251
-
-] [252
-
-]) (./modules/5-D/readiness/outcomes.tex [253
-
-]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [254
-
-]
-[255
-
-] [256
-
-]
-Overfull \hbox (9.078pt too wide) detected at line 245
-\OT1/mathkerncmss/m/sl/10.95 T [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
-10.95 T [] \OT1/cmss/m/n/10.95 = [] []\OT1/mathkerncmss/m/sl/10.95 cT [] \OT1/c
-mss/m/n/10.95 = \OT1/mathkerncmss/m/sl/10.95 c [] \OT1/cmss/m/n/10.95 = []
- []
-
-[257
-
-] [258
-
-] [259
-
-] [260
-
-] [261
-
-] [262
-
-] [263
-
-] [264
-
-] [265
-
-] [266
-
-] [267
-
-] [268
-
-]
-[269
-
-]) (./modules/5-D/sections/2.tex [270
-
-] [271
-
-] [272
-
-] [273
-
-] [274
-
-] [275
-
-]
-[276
-
-]
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 302.
-
-
-
-Overfull \hbox (10.67091pt too wide) detected at line 302
-\OT1/mathkerncmss/m/sl/10.95 T [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
-10.95 T [] \OT1/cmss/m/n/10.95 = []  \OT1/mathkerncmss/m/sl/10.95 T [] \OT1/cms
-s/m/n/10.95 = \OT1/mathkerncmss/m/sl/10.95 T [] \OT1/cmss/m/n/10.95 = []  \OT1/
-mathkerncmss/m/sl/10.95 T [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/10.95
- T [] \OT1/cmss/m/n/10.95 = []
- []
-
-[277
-
-] [278
-
-] [279
-
-] [280
-
-] [281
-
-] [282
-
-]
-Overfull \vbox (6.37233pt too high) detected at line 302
- []
-
-[283
-
-] [284
-
-]) (./modules/5-D/sections/3.tex [285
-
-] [286
-
-] [287
-
-] [288
-
-] [289
-
-]
-[290
-
-] [291
-
-] [292
-
-] [293
-
-] [294
-
-] [295
-
-] [296
-
-] [297
-
-] [298
-
-] [299
-
-] [300
-
-] [301
-
-]
-[302
-
-] [303
-
-] [304
-
-] [305
-
-]) (./modules/5-D/sections/4.tex [306
-
-] [307
-
-] [308
-
-]
-[309
-
-] [310
-
-] [311
-
-] [312
-
-] [313
-
-] [314
-
-] [315
-
-] [316
-
-] [317
-
-] [318
-
-] [319
-
-] [320
-
-]
-[321
-
-] [322
-
-] [323
-
-] [324
-
-] [325
-
-] [326
 
 ]))))
 \tf@nav=\write6
@@ -1901,13 +1512,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
  ) 
 Here is how much of TeX's memory you used:
- 22064 strings out of 494910
- 426576 string characters out of 6179836
- 570629 words of memory out of 5000000
- 24084 multiletter control sequences out of 15000+600000
+ 21445 strings out of 494910
+ 420185 string characters out of 6179836
+ 540118 words of memory out of 5000000
+ 23793 multiletter control sequences out of 15000+600000
  16466 words of font info for 60 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 78i,20n,79p,924b,1124s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 78i,20n,79p,924b,1105s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -1918,13 +1529,12 @@ t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
 e1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb>
-Output written on aux/course-slides.pdf (326 pages, 920332 bytes).
+s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb>
+Output written on aux/course-slides.pdf (162 pages, 499529 bytes).
 PDF statistics:
- 12194 PDF objects out of 12825 (max. 8388607)
- 11729 compressed objects within 118 object streams
- 679 named destinations out of 1000 (max. 500000)
+ 6118 PDF objects out of 6186 (max. 8388607)
+ 5877 compressed objects within 59 object streams
+ 351 named destinations out of 1000 (max. 500000)
  251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
