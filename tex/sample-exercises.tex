@@ -162,10 +162,31 @@ when \(y(0)=-3\) and \(y'(0)=2\).
 \begin{solution}
 The auxilliary equation is \(r^2+10r+24=0\), which has roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\).  
 \begin{align*}
--3 &= y(0) &= c_1+c_2 \\
-2 &= y'(0) & = -4c_1+6c_2 
+-3 &= y(0) = c_1+c_2 \\
+2 &= y'(0)  = -4c_1-6c_2 
 \end{align*}
-Solving this system yields \(c_1 =-2\) and \(c_2 = -1\), so the solution to the IVP is \[y=-2e^{-4t}-e^{6t}\]
+Solving this system yields \(c_1 =-8\) and \(c_2 = 5\), so the solution to the IVP is \[y=-8e^{-4t}+5e^{-6t}\]
 \end{solution}
+
+
+\begin{problem}{C6}
+Set up and solve a differential equation to answer the following question: \\
+A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\) and a terminal velocity of \(3\ {\rm \frac{cm}{s}}\).  Such a droplet is dropped from rest.  What is its velocity after \(0.01\ {\rm s}\)?
+\end{problem}
+\begin{solution}
+The forces acting on the water droplet are gravity (\(mg\) downwards) and air resistance; in a water droplet this size, this is proportional to its velocity.  Let \(b\) denote this drag coefficient; then by Newton's second law (if we let up be the positive direction and down be negative), we have
+\[ m \frac{dv}{dt} = -mg - bv .\]
+Note that we have \(-mg\) since gravity always acts downwards, and \(-bv\) because the drag acts in the opposite direction of \(v\).
+It is actually convenient to let \(a=\frac{b}{m}\), and divide this equation by the mass, yielding 
+\[ \frac{dv}{dt} = -g - av .\]
+This is a separable differential equation; we thus have
+\[ \int \frac{1}{g+av}\ dv = \int (-1)dt .\]
+Thus, \(\frac{1}{a}\ln|g+av| = -t+c_1\), or \(|g+av| = e^{-at+ac_1}=c_2e^{-at}\) (where \(c_2=e^{ac_1}\)).  To avoid the pesky absolute value sign, we can absorb a potential negative into the constant to write \(g+av=c_3 e^{-at}\), or (letting \(c_0=\frac{c_3}{a}\))
+\[ v=-\frac{g}{a} +c_0 e^{-at}.\]
+Note that \(\lim _{t \rightarrow \infty} v = -\frac{g}{a}\), so since we are given the terminal velocity, so after converting to meters per second we can solve \(-0.03 = -\frac{9.8}{a}\) to obtain \(a=\frac{9.8}{0.03}\).  We also know that it is dropped from rest, so we compute \(0=v(0)=-0.03+c_0\), so \(c_0=0.03\).  Thus our model for velocity is 
+\[ v=-0.03+0.03e^{-\frac{9.8}{0.03} t}.\]
+Then we simply compute \(v(0.01)=-0.03+0.03e^{-\frac{9.8}{0.03} (0.01)} \approx -0.029 \).  So after \(0.01\ {\rm s}\), the drop is falling approximately  \(2.9\ {\rm \frac{cm}{s}}\).
+\end{solution}
+
 
 \end{document}
