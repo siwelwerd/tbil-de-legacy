@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUN 2018 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  9 JUL 2018 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -883,12 +883,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (./modules/1-C/sections.tex (./modules/1-C/sections/0.tex [1{/var/lib/texmf/fon
 ts/map/pdftex/updmap/pdftex.map}
 
-] [2]) (./modules/1-C/sections/1.tex [3]
-[4] [5] [6]) (./modules/1-C/sections/2.tex [7]))) (./modules/2-S/index.tex
-[8] (./modules/2-S/standards.tex) (./modules/2-S/readiness/outcomes.tex)
-(./modules/2-S/readiness/resources.tex) (./modules/2-S/sections.tex
-(./modules/2-S/sections/1.tex [9] [10] [11]) (./modules/2-S/sections/2.tex
-[12] [13]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+
+ []
+
+) (./modules/1-C/sections/1.tex [2] [3] [4]) (./modules/1-C/sections/2.tex
+[5]))) (./modules/2-S/index.tex [6] (./modules/2-S/standards.tex)
+(./modules/2-S/readiness/outcomes.tex) (./modules/2-S/readiness/resources.tex)
+(./modules/2-S/sections.tex (./modules/2-S/sections/1.tex [7] [8] [9])
+(./modules/2-S/sections/2.tex [10] [11]
 Overfull \hbox (7.7943pt too wide) in paragraph at lines 223--223
 []\OT1/cmr/bx/n/10 Fact S.2.5 \OT1/cmr/m/n/10 The set $\OMS/cmsy/m/n/10 f\OT1/c
 mr/bx/n/10 v[]\OML/cmm/m/it/10 ; [] ; \OT1/cmr/bx/n/10 v[]\OMS/cmsy/m/n/10 g$ \
@@ -897,7 +901,7 @@ if $\OML/cmm/m/it/10 m \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 an
 d $[][\OT1/cmr/bx/n/10 v[]  []  v[]\OT1/cmr/m/n/10 ] = []$. 
  []
 
-[14]) (./modules/2-S/sections/3.tex [15]
+[12]) (./modules/2-S/sections/3.tex [13]
 Overfull \hbox (18.50209pt too wide) in paragraph at lines 359--359
 \OT1/cmr/bx/n/10 Observation S.3.1 \OT1/cmr/m/n/10 In the pre-vi-ous sec-tion, 
 we learned that com-put-ing a ba-sis for the sub-space $[]\OMS/cmsy/m/n/10 f\OT
@@ -905,20 +909,20 @@ we learned that com-put-ing a ba-sis for the sub-space $[]\OMS/cmsy/m/n/10 f\OT
 $\OT1/cmr/m/n/10 ,
  []
 
-[16] [17] [18] [19]))) (./modules/3-F/index.tex [20]
+[14] [15] [16] [17]))) (./modules/3-F/index.tex [18]
 (./modules/3-F/standards.tex) (./modules/3-F/readiness/outcomes.tex)
 (./modules/3-F/readiness/resources.tex) (./modules/3-F/sections.tex
-(./modules/3-F/sections/0.tex [21]) (./modules/3-F/sections/1.tex [22])
-(./modules/3-F/sections/2.tex [23] [24]) (./modules/3-F/sections/3.tex [25])
-(./modules/3-F/sections/4.tex [26] [27]))) (./modules/4-N/index.tex [28]
+(./modules/3-F/sections/0.tex [19]) (./modules/3-F/sections/1.tex [20])
+(./modules/3-F/sections/2.tex [21] [22]) (./modules/3-F/sections/3.tex [23])
+(./modules/3-F/sections/4.tex [24] [25]))) (./modules/4-N/index.tex [26]
 (./modules/4-N/standards.tex) (./modules/4-N/readiness/outcomes.tex)
-(./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [29])
-(./modules/4-N/sections/2.tex [30]) (./modules/4-N/sections/3.tex [31])
-(./modules/4-N/sections/4.tex [32]))) (./modules/5-D/index.tex [33]
+(./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [27])
+(./modules/4-N/sections/2.tex [28]) (./modules/4-N/sections/3.tex [29])
+(./modules/4-N/sections/4.tex [30]))) (./modules/5-D/index.tex [31]
 (./modules/5-D/standards.tex) (./modules/5-D/readiness/outcomes.tex)
-(./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [34])
-(./modules/5-D/sections/2.tex [35]) (./modules/5-D/sections/3.tex [36])
-(./modules/5-D/sections/4.tex [37])))) [38]
+(./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [32])
+(./modules/5-D/sections/2.tex [33]) (./modules/5-D/sections/3.tex [34])
+(./modules/5-D/sections/4.tex [35])))) [36]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 8.
  (aux/course-notes.aux)
@@ -929,8 +933,8 @@ Package rerunfilecheck Info: File `course-notes.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8.
  ) 
 Here is how much of TeX's memory you used:
- 27386 strings out of 494910
- 656803 string characters out of 6179836
+ 27387 strings out of 494910
+ 656813 string characters out of 6179836
  863994 words of memory out of 5000000
  29949 multiletter control sequences out of 15000+600000
  7990 words of font info for 31 fonts, out of 8000000 for 9000
@@ -944,13 +948,14 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb>
-Output written on aux/course-notes.pdf (38 pages, 214460 bytes).
+amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb>
+Output written on aux/course-notes.pdf (36 pages, 215901 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 438 compressed objects within 5 object streams
- 187 named destinations out of 1000 (max. 500000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 435 compressed objects within 5 object streams
+ 188 named destinations out of 1000 (max. 500000)
  205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
