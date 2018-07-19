@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUL 2018 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUL 2018 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -859,7 +859,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-(./modules/2-S/standards.tex) (./modules/3-F/standards.tex)
+(./modules/2-F/standards.tex) (./modules/3-S/standards.tex)
 (./modules/4-N/standards.tex) (./modules/5-D/standards.tex) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -884,7 +884,7 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on aux/standards.pdf (1 page, 57831 bytes).
+Output written on aux/standards.pdf (1 page, 57820 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
