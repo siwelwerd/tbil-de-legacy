@@ -1,0 +1,68 @@
+%!TEX root =../../../course-notes.tex
+% ^ leave for LaTeXTools build functionality
+
+\begin{applicationActivities}
+
+\begin{activity}{10}
+Solve the ODE \[ y''-4y'+4y=0.\]
+\end{activity}
+
+\begin{observation}
+To solve this, we need to find the kernel of \( (D-2I)(D-2I) \).
+\begin{itemize}
+\item The kernel of \(D-2I\) is \(\left\{ ce^{2t}\ \middle|\ c \in \IR \right\}\).
+\item However, if \( (D-2I)(y) = Ae^{2t} \), then applying \(D-2I\) twice will yield zero.
+\item So we must solve the ODE \[y'-2y=e^{2t}.\]
+\end{itemize}
+
+We thus turn our attention to \term{non-homogeneous} first order constant coefficent ODEs.
+\end{observation}
+
+
+\begin{observation}
+To solve \(y'-2y=e^{2t}\), we set \(\L=D-2I\), so that we are trying to solve \[\L(y)=e^{2t}.\]  
+Note that if \(y_p\) and \(y_q\) are two solutions, then \[\L(y_p-y_q)=\L(y_p)-\L(y_q)=e^{2t}-e^{2t}=0.\]
+That is, \(y_p-y_q\) is a solution of the \textbf{homogeneous} ODE \(\L(y)=0\).
+
+So if we know the general solution of \(\L(y)=0\), and a single solution of \(\L(y)=e^{2t}\), we have the general solution of \(\L(y)=e^{2t}\).
+\end{observation}
+
+\begin{activity}{15}
+Suppose we have found  \(y(t)\) is a solution of \(\L(y)=0\), we will use \term{variation of parameters} and suppose a solution of \(\L(y_p)=e^{2t}\) is of the form \[y_p =v(t) y(t)\].  If we can deduce what \(v(t)\) is, we will be done.
+\begin{subactivity}
+Compute \(\L(vy)\) (recall \(\L=D-2I\)).
+\end{subactivity}
+\begin{subactivity}
+Set \(\L(vy)=e^{2t}\); substituting in \(y=e^{2t}\), solve \(v'y=e^{2t}\) to find \(v\).  
+\end{subactivity}
+\begin{subactivity}
+Write the general solution of \(y'-2y=e^{2t}\).
+\end{subactivity}
+\end{activity}
+
+\begin{observation}
+Thus, we have shown that the general solution of \(y''-4y'+4y=e^{2t}\) is \(c_0e^{2t}+c_1te^{2t}\).
+\end{observation}
+
+\begin{activity}{15}
+Find the general solution to \(y'-y=e^{3t}\).
+\begin{subactivity}
+First, solve the homogeneous equation \(\L(y)=0\).
+\end{subactivity}
+\begin{subactivity}
+Set \(y_p=vy\), where  \(v\) is a TBD function; without substitutin \(y\) yet, compute \(\L(vy) \).
+\end{subactivity}
+\begin{subactivity}
+Find \(v\) from the equation \(\L(vy)=e^{3t}\).
+\end{subactivity}
+\begin{subactivity}
+Write the general solution of \(y'-y=e^{3t}\).
+\end{subactivity}
+\end{activity}
+
+\begin{activity}{10}
+Find the general solution to \(y'-2y=t\).
+\end{activity}
+
+
+\end{applicationActivities}

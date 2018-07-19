@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  9 JUL 2018 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUL 2018 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -753,8 +753,276 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \f@ncyO@erf=\skip58
 \f@ncyO@olf=\skip59
 \f@ncyO@orf=\skip60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/animate/animate.sty
+Package: animate 2016/03/15 PDF animations from files and inline graphics
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count153
+\calc@Bcount=\count154
+\calc@Adimen=\dimen199
+\calc@Bdimen=\dimen256
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count155
+\calc@Cskip=\skip63
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/atenddvi.sty
+Package: atenddvi 2007/04/17 v1.1 At end DVI hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count156
+Package zref Info: New property: abspage on input line 62.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
+Package: zref-lastpage 2012/04/04 v2.24 Module lastpage for zref (HO)
+Package zref Info: New property list: LastPage on input line 55.
 ))
-(aux/course-notes.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/animate/animfp.sty
+Package: animfp 2009/07/23 fixed point addition for animate.sty
+\afp@xs=\count157
+\afp@xia=\count158
+\afp@xib=\count159
+\afp@xfa=\count160
+\afp@xfb=\count161
+\afp@rega=\count162
+\afp@regb=\count163
+\afp@regs=\count164
+)
+(/usr/share/texlive/texmf-dist/tex/latex/media9/pdfbase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/01/19 v6377 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
+L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
+L3 Module: l3str 2016/01/03 v6357 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/01/05 v6366 L3 Integers
+\c_max_int=\count165
+\l_tmpa_int=\count166
+\l_tmpb_int=\count167
+\g_tmpa_int=\count168
+\g_tmpb_int=\count169
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count170
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2015/09/28 v6113 L3 Messages
+L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
+\l_iow_line_count_int=\count171
+\l__iow_target_count_int=\count172
+\l__iow_current_line_int=\count173
+\l__iow_current_word_int=\count174
+\l__iow_current_indentation_int=\count175
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen257
+\c_max_dim=\dimen258
+\l_tmpa_dim=\dimen259
+\l_tmpb_dim=\dimen260
+\g_tmpa_dim=\dimen261
+\g_tmpb_dim=\dimen262
+\c_zero_skip=\skip64
+\c_max_skip=\skip65
+\l_tmpa_skip=\skip66
+\l_tmpb_skip=\skip67
+\g_tmpa_skip=\skip68
+\g_tmpb_skip=\skip69
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count176
+\l_keys_choice_int=\count177
+L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
+\c__fp_leading_shift_int=\count178
+\c__fp_middle_shift_int=\count179
+\c__fp_trailing_shift_int=\count180
+\c__fp_big_leading_shift_int=\count181
+\c__fp_big_middle_shift_int=\count182
+\c__fp_big_trailing_shift_int=\count183
+\c__fp_Bigg_leading_shift_int=\count184
+\c__fp_Bigg_middle_shift_int=\count185
+\c__fp_Bigg_trailing_shift_int=\count186
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box66
+\l_tmpa_box=\box67
+\l_tmpb_box=\box68
+\g_tmpa_box=\box69
+\g_tmpb_box=\box70
+L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
+\l__coffin_internal_box=\box71
+\l__coffin_internal_dim=\dimen263
+\l__coffin_offset_x_dim=\dimen264
+\l__coffin_offset_y_dim=\dimen265
+\l__coffin_x_dim=\dimen266
+\l__coffin_y_dim=\dimen267
+\l__coffin_x_prime_dim=\dimen268
+\l__coffin_y_prime_dim=\dimen269
+\c_empty_coffin=\box72
+\l__coffin_aligned_coffin=\box73
+\l__coffin_aligned_internal_coffin=\box74
+\l_tmpa_coffin=\box75
+\l_tmpb_coffin=\box76
+\l__coffin_display_coffin=\box77
+\l__coffin_display_coord_coffin=\box78
+\l__coffin_display_pole_coffin=\box79
+\l__coffin_display_offset_dim=\dimen270
+\l__coffin_display_x_dim=\dimen271
+\l__coffin_display_y_dim=\dimen272
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen273
+\l__box_bottom_dim=\dimen274
+\l__box_left_dim=\dimen275
+\l__box_right_dim=\dimen276
+\l__box_top_new_dim=\dimen277
+\l__box_bottom_new_dim=\dimen278
+\l__box_left_new_dim=\dimen279
+\l__box_right_new_dim=\dimen280
+\l__box_internal_box=\box80
+\l__coffin_bounding_shift_dim=\dimen281
+\l__coffin_left_corner_dim=\dimen282
+\l__coffin_right_corner_dim=\dimen283
+\l__coffin_bottom_corner_dim=\dimen284
+\l__coffin_top_corner_dim=\dimen285
+\l__coffin_scaled_total_height_dim=\dimen286
+\l__coffin_scaled_width_dim=\dimen287
+L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count187
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
+Package: l3regex 2016/01/19 v6377 L3 Experimental regular expressions
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
+Package: l3tl-build 2016/01/19 v6377 L3 Experimental token list construction
+\l__tl_build_start_index_int=\count188
+\l__tl_build_index_int=\count189
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
+Package: l3tl-analysis 2015/11/09 v6244 L3 Experimental token lists analysis
+\l__tl_analysis_normal_int=\count190
+\l__tl_analysis_index_int=\count191
+\l__tl_analysis_nesting_int=\count192
+\l__tl_analysis_type_int=\count193
+) (/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
+Package: l3flag 2016/01/19 v6377 L3 Experimental flags
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
+Package: l3str-convert 2015/09/26 v6106 L3 Experimental string encoding convers
+ions
+\l__str_internal_int=\count194
+\c__str_replacement_char_int=\count195
+)
+\l__regex_internal_a_int=\count196
+\l__regex_internal_b_int=\count197
+\l__regex_internal_c_int=\count198
+\l__regex_balance_int=\count199
+\l__regex_group_level_int=\count266
+\l__regex_mode_int=\count267
+\l__regex_catcodes_int=\count268
+\l__regex_default_catcodes_int=\count269
+\c__regex_catcode_D_int=\count270
+\c__regex_catcode_S_int=\count271
+\c__regex_catcode_L_int=\count272
+\c__regex_catcode_O_int=\count273
+\c__regex_catcode_A_int=\count274
+\c__regex_all_catcodes_int=\count275
+\l__regex_show_lines_int=\count276
+\l__regex_min_state_int=\count277
+\l__regex_max_state_int=\count278
+\l__regex_left_state_int=\count279
+\l__regex_right_state_int=\count280
+\l__regex_capturing_group_int=\count281
+\l__regex_min_pos_int=\count282
+\l__regex_max_pos_int=\count283
+\l__regex_current_pos_int=\count284
+\l__regex_start_pos_int=\count285
+\l__regex_success_pos_int=\count286
+\l__regex_current_char_int=\count287
+\l__regex_current_catcode_int=\count288
+\l__regex_last_char_int=\count289
+\l__regex_case_changed_char_int=\count290
+\l__regex_current_state_int=\count291
+\l__regex_step_int=\count292
+\l__regex_min_active_int=\count293
+\l__regex_max_active_int=\count294
+\l__regex_replacement_csnames_int=\count295
+\l__regex_match_count_int=\count296
+\l__regex_submatch_int=\count297
+\l__regex_zeroth_submatch_int=\count298
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
+)
+Package: pdfbase 2016/03/11 v0.7 driver independent access to low-level PDF fea
+tures
+\g_pbs_oc_int=\count299
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2016/03/11 v0.6 support package for ocgx2.sty
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count300
+\scratchdimen=\dimen288
+\scratchbox=\box81
+\nofMPsegments=\count301
+\nofMParguments=\count302
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen289
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
+\everyMPtoPDFconversion=\toks46
+)
+\@anim@box=\box82
+\@anim@measbox=\box83
+\@anim@tmpdima=\dimen290
+\@anim@tmpdimb=\dimen291
+\@anim@num=\count306
+\@anim@curframe=\count307
+\@anim@curframe@zb=\count308
+\@anim@resizeflags=\count309
+\@anim@skipfram=\count310
+\@anim@mulframecnt=\count311
+\@anim@@tmlnfile=\read2
+\@anim@tmpcnt=\count312
+\c@@anim@ltxcnt=\count313
+\@anim@curlayer=\count314
+\@anim@lineno=\count315
+\@anim@curfield=\count316
+\@anim@@resizeflags=\count317
+)) (aux/course-notes.aux)
 \openout1 = `course-notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -772,20 +1040,7 @@ LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
  ABD: EveryShipout initializing macros
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count153
-\scratchdimen=\dimen199
-\scratchbox=\box66
-\nofMPsegments=\count154
-\nofMParguments=\count155
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count156
-\MPscratchDim=\dimen256
-\MPnumerator=\count157
-\makeMPintoPDFobject=\count158
-\everyMPtoPDFconversion=\toks46
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -806,7 +1061,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into
 your preamble.
  on input line 5.
 
-\AtBeginShipoutBox=\box67
+\AtBeginShipoutBox=\box84
 Package hyperref Info: Link coloring OFF on input line 5.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -814,7 +1069,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count159
+\c@section@level=\count318
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -861,71 +1116,106 @@ LaTeX Info: Redefining \nameref on input line 5.
 
 (./modules.tex (./modules/1-C/index.tex (./modules/1-C/standards.tex)
 (./modules/1-C/readiness/outcomes.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
-)
-(./modules/1-C/readiness/resources.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-(./modules/1-C/sections.tex (./modules/1-C/sections/0.tex [1{/var/lib/texmf/fon
-ts/map/pdftex/updmap/pdftex.map}
+(./modules/1-C/readiness/resources.tex) (./modules/1-C/sections.tex
+(./modules/1-C/sections/1.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.
+map}
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+] <media/cloud.jpg, id=99, 903.375pt x 602.25pt>
+File: media/cloud.jpg Graphic file (type jpg)
+ <use media/cloud.jpg>
+Package pdftex.def Info: media/cloud.jpg used on input line 126.
+(pdftex.def)             Requested size: 180.6718pt x 120.44786pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 
  []
 
-) (./modules/1-C/sections/1.tex [2] [3] [4]) (./modules/1-C/sections/2.tex
-[5]))) (./modules/2-S/index.tex [6] (./modules/2-S/standards.tex)
+[2 <./media/cloud.jpg>] [3]) (./modules/1-C/sections/2.tex [4]
+File: media/cloud.jpg Graphic file (type jpg)
+
+<use media/cloud.jpg>
+Package pdftex.def Info: media/cloud.jpg used on input line 44.
+(pdftex.def)             Requested size: 180.6718pt x 120.44786pt.
+) (./modules/1-C/sections/3.tex [5] <./media/shocks/goodbadshocks-0.png> <./med
+ia/shocks/goodbadshocks-1.png> <./media/shocks/goodbadshocks-2.png> <./media/sh
+ocks/goodbadshocks-3.png> <./media/shocks/goodbadshocks-4.png> <./media/shocks/
+goodbadshocks-5.png> <./media/shocks/goodbadshocks-6.png> <./media/shocks/goodb
+adshocks-7.png> <./media/shocks/goodbadshocks-8.png> <./media/shocks/goodbadsho
+cks-9.png> <./media/shocks/goodbadshocks-10.png> <./media/shocks/goodbadshocks-
+11.png> <./media/shocks/goodbadshocks-12.png> <./media/shocks/goodbadshocks-13.
+png> <./media/shocks/goodbadshocks-14.png> <./media/shocks/goodbadshocks-15.png
+> <./media/shocks/goodbadshocks-16.png> <./media/shocks/goodbadshocks-17.png> <
+./media/shocks/goodbadshocks-18.png> <./media/shocks/goodbadshocks-19.png> <./m
+edia/shocks/goodbadshocks-20.png> <./media/shocks/goodbadshocks-21.png> <./medi
+a/shocks/goodbadshocks-22.png> <./media/shocks/goodbadshocks-23.png> <./media/s
+hocks/goodbadshocks-24.png> <./media/shocks/goodbadshocks-25.png> <./media/shoc
+ks/goodbadshocks-26.png> <./media/shocks/goodbadshocks-27.png> <./media/shocks/
+goodbadshocks-28.png> <./media/shocks/goodbadshocks-29.png> <./media/shocks/goo
+dbadshocks-30.png> <./media/shocks/goodbadshocks-31.png> <./media/shocks/goodba
+dshocks-32.png> <./media/shocks/goodbadshocks-33.png> <./media/shocks/goodbadsh
+ocks-34.png> <./media/shocks/goodbadshocks-35.png> <./media/shocks/goodbadshock
+s-36.png> <./media/shocks/goodbadshocks-37.png> <./media/shocks/goodbadshocks-3
+8.png> <./media/shocks/goodbadshocks-39.png> <./media/shocks/goodbadshocks-40.p
+ng> <./media/shocks/goodbadshocks-41.png> <./media/shocks/goodbadshocks-42.png>
+ <./media/shocks/goodbadshocks-43.png> <./media/shocks/goodbadshocks-44.png> <.
+/media/shocks/goodbadshocks-45.png> <./media/shocks/goodbadshocks-46.png> <./me
+dia/shocks/goodbadshocks-47.png> <./media/shocks/goodbadshocks-48.png> <./media
+/shocks/goodbadshocks-49.png> <./media/shocks/goodbadshocks-50.png> <./media/sh
+ocks/goodbadshocks-51.png> <./media/shocks/goodbadshocks-52.png> <./media/shock
+s/goodbadshocks-53.png> <./media/shocks/goodbadshocks-54.png> <./media/shocks/g
+oodbadshocks-55.png> <./media/shocks/goodbadshocks-56.png> <./media/shocks/good
+badshocks-57.png> <./media/shocks/goodbadshocks-58.png> <./media/shocks/goodbad
+shocks-59.png> <./media/shocks/goodbadshocks-60.png> <./media/shocks/goodbadsho
+cks-61.png> <./media/shocks/goodbadshocks-62.png> <./media/shocks/goodbadshocks
+-63.png> <./media/shocks/goodbadshocks-64.png> <./media/shocks/goodbadshocks-65
+.png> <./media/shocks/goodbadshocks-66.png> <./media/shocks/goodbadshocks-67.pn
+g> <./media/shocks/goodbadshocks-68.png> <./media/shocks/goodbadshocks-69.png> 
+<./media/shocks/goodbadshocks-70.png> <./media/shocks/goodbadshocks-71.png> <./
+media/shocks/goodbadshocks-72.png> <./media/shocks/goodbadshocks-73.png> <./med
+ia/shocks/goodbadshocks-74.png> <./media/shocks/goodbadshocks-75.png> <./media/
+shocks/goodbadshocks-76.png> <./media/shocks/goodbadshocks-77.png> <./media/sho
+cks/goodbadshocks-78.png> <./media/shocks/goodbadshocks-79.png> <./media/shocks
+/goodbadshocks-80.png> <./media/shocks/goodbadshocks-81.png> <./media/shocks/go
+odbadshocks-82.png> <./media/shocks/goodbadshocks-83.png> <./media/shocks/goodb
+adshocks-84.png> <./media/shocks/goodbadshocks-85.png> <./media/shocks/goodbads
+hocks-86.png> <./media/shocks/goodbadshocks-87.png> <./media/shocks/goodbadshoc
+ks-88.png> [6]) (./modules/1-C/sections/4.tex [7])
+(./modules/1-C/sections/5.tex [8]) (./modules/1-C/sections/6.tex [9])
+(./modules/1-C/sections/7.tex [10]) (./modules/1-C/sections/8.tex [11])))
+(./modules/2-S/index.tex [12] (./modules/2-S/standards.tex)
 (./modules/2-S/readiness/outcomes.tex) (./modules/2-S/readiness/resources.tex)
-(./modules/2-S/sections.tex (./modules/2-S/sections/1.tex [7] [8] [9])
-(./modules/2-S/sections/2.tex [10] [11]
-Overfull \hbox (7.7943pt too wide) in paragraph at lines 223--223
-[]\OT1/cmr/bx/n/10 Fact S.2.5 \OT1/cmr/m/n/10 The set $\OMS/cmsy/m/n/10 f\OT1/c
-mr/bx/n/10 v[]\OML/cmm/m/it/10 ; [] ; \OT1/cmr/bx/n/10 v[]\OMS/cmsy/m/n/10 g$ \
-OT1/cmr/m/n/10 is a ba-sis for $\U/msb/m/n/10 R[]$ \OT1/cmr/m/n/10 if and only 
-if $\OML/cmm/m/it/10 m \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 an
-d $[][\OT1/cmr/bx/n/10 v[]  []  v[]\OT1/cmr/m/n/10 ] = []$. 
- []
-
-[12]) (./modules/2-S/sections/3.tex [13]
-Overfull \hbox (18.50209pt too wide) in paragraph at lines 359--359
-\OT1/cmr/bx/n/10 Observation S.3.1 \OT1/cmr/m/n/10 In the pre-vi-ous sec-tion, 
-we learned that com-put-ing a ba-sis for the sub-space $[]\OMS/cmsy/m/n/10 f\OT
-1/cmr/bx/n/10 v[]\OML/cmm/m/it/10 ; [] ; \OT1/cmr/bx/n/10 v[]\OMS/cmsy/m/n/10 g
-$\OT1/cmr/m/n/10 ,
- []
-
-[14] [15] [16] [17]))) (./modules/3-F/index.tex [18]
-(./modules/3-F/standards.tex) (./modules/3-F/readiness/outcomes.tex)
-(./modules/3-F/readiness/resources.tex) (./modules/3-F/sections.tex
-(./modules/3-F/sections/0.tex [19]) (./modules/3-F/sections/1.tex [20])
-(./modules/3-F/sections/2.tex [21] [22]) (./modules/3-F/sections/3.tex [23])
-(./modules/3-F/sections/4.tex [24] [25]))) (./modules/4-N/index.tex [26]
-(./modules/4-N/standards.tex) (./modules/4-N/readiness/outcomes.tex)
-(./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [27])
-(./modules/4-N/sections/2.tex [28]) (./modules/4-N/sections/3.tex [29])
-(./modules/4-N/sections/4.tex [30]))) (./modules/5-D/index.tex [31]
+(./modules/2-S/sections.tex (./modules/2-S/sections/1.tex [13] [14] [15])))
+(./modules/3-F/index.tex [16] (./modules/3-F/standards.tex)
+(./modules/3-F/readiness/outcomes.tex) (./modules/3-F/readiness/resources.tex)
+(./modules/3-F/sections.tex (./modules/3-F/sections/1.tex [17])))
+(./modules/4-N/index.tex [18] (./modules/4-N/standards.tex)
+(./modules/4-N/readiness/outcomes.tex) (./modules/4-N/sections.tex
+(./modules/4-N/sections/1.tex [19]))) (./modules/5-D/index.tex [20]
 (./modules/5-D/standards.tex) (./modules/5-D/readiness/outcomes.tex)
-(./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [32])
-(./modules/5-D/sections/2.tex [33]) (./modules/5-D/sections/3.tex [34])
-(./modules/5-D/sections/4.tex [35])))) [36]
+(./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [21]))))
+Package atenddvi Info: Last page = 22.
+ [22]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8.
- (aux/course-notes.aux)
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 8.
+
+(aux/course-notes.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8.
 Package rerunfilecheck Info: File `course-notes.out' has not changed.
@@ -933,13 +1223,13 @@ Package rerunfilecheck Info: File `course-notes.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8.
  ) 
 Here is how much of TeX's memory you used:
- 27387 strings out of 494910
- 656813 string characters out of 6179836
- 863994 words of memory out of 5000000
- 29949 multiletter control sequences out of 15000+600000
+ 36743 strings out of 494910
+ 847960 string characters out of 6179836
+ 1194895 words of memory out of 5000000
+ 39225 multiletter control sequences out of 15000+600000
  7990 words of font info for 31 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 76i,20n,100p,923b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 78i,16n,106p,10395b,4368s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -952,10 +1242,10 @@ amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on aux/course-notes.pdf (36 pages, 215901 bytes).
+Output written on aux/course-notes.pdf (22 pages, 7894285 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 188 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 895 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 1733 words of extra memory for PDF output out of 10000 (max. 10000000)
 
