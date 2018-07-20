@@ -15,20 +15,26 @@ To solve this, we need to find the kernel of \( (D-2I)(D-2I) \).
 \item So we must solve the ODE \[y'-2y=e^{2t}.\]
 \end{itemize}
 
+\vfill
 We thus turn our attention to \term{non-homogeneous} first order constant coefficent ODEs.
 \end{observation}
 
 
 \begin{observation}
 To solve \(y'-2y=e^{2t}\), we set \(\L=D-2I\), so that we are trying to solve \[\L(y)=e^{2t}.\]  
+\vfill
 Note that if \(y_p\) and \(y_q\) are two solutions, then \[\L(y_p-y_q)=\L(y_p)-\L(y_q)=e^{2t}-e^{2t}=0.\]
+\vfill
 That is, \(y_p-y_q\) is a solution of the \textbf{homogeneous} ODE \(\L(y)=0\).
-
+\vfill
 So if we know the general solution of \(\L(y)=0\), and a single solution of \(\L(y)=e^{2t}\), we have the general solution of \(\L(y)=e^{2t}\).
 \end{observation}
 
 \begin{activity}{15}
-Suppose we have found  \(y(t)\) is a solution of \(\L(y)=0\), we will use \term{variation of parameters} and suppose a solution of \(\L(y_p)=e^{2t}\) is of the form \[y_p =v(t) y(t)\].  If we can deduce what \(v(t)\) is, we will be done.
+Suppose we have found  \(y(t)\) is a solution of \(\L(y)=0\), we will use \term{variation of parameters} and suppose a solution of \(\L(y_p)=e^{2t}\) is of the form \[y_p =v(t) y(t).\]  
+\vfill
+If we can deduce what \(v(t)\) is, we will be done.
+\vfill
 \begin{subactivity}
 Compute \(\L(vy)\) (recall \(\L=D-2I\)).
 \end{subactivity}
@@ -41,11 +47,12 @@ Write the general solution of \(y'-2y=e^{2t}\).
 \end{activity}
 
 \begin{observation}
-Thus, we have shown that the general solution of \(y''-4y'+4y=e^{2t}\) is \(c_0e^{2t}+c_1te^{2t}\).
+Thus, we have shown that the general solution of \(y''-4y'+4y=0\) is \(c_0e^{2t}+c_1te^{2t}\).
 \end{observation}
 
 \begin{activity}{15}
 Find the general solution to \(y'-y=e^{3t}\).
+\vfill
 \begin{subactivity}
 First, solve the homogeneous equation \(\L(y)=0\).
 \end{subactivity}

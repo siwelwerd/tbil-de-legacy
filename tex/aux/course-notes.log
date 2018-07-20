@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUL 2018 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  20 JUL 2018 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,10 +725,27 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowwidth=\dimen189
 \pgfarrowlinewidth=\dimen190
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
+e.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.markings.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.markings.code.tex))
 \c@SectionCounter=\count147
 \c@ActivityCounter=\count148
 \c@SubactivityCounter=\count149
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count150
 \Gm@cntv=\count151
@@ -1196,22 +1213,22 @@ cks/goodbadshocks-78.png> <./media/shocks/goodbadshocks-79.png> <./media/shocks
 odbadshocks-82.png> <./media/shocks/goodbadshocks-83.png> <./media/shocks/goodb
 adshocks-84.png> <./media/shocks/goodbadshocks-85.png> <./media/shocks/goodbads
 hocks-86.png> <./media/shocks/goodbadshocks-87.png> <./media/shocks/goodbadshoc
-ks-88.png> [6]) (./modules/1-C/sections/4.tex [7])
-(./modules/1-C/sections/5.tex [8]) (./modules/1-C/sections/6.tex [9])
-(./modules/1-C/sections/7.tex [10]) (./modules/1-C/sections/8.tex [11])))
-(./modules/2-S/index.tex [12] (./modules/2-S/standards.tex)
-(./modules/2-S/readiness/outcomes.tex) (./modules/2-S/readiness/resources.tex)
-(./modules/2-S/sections.tex (./modules/2-S/sections/1.tex [13] [14] [15])))
-(./modules/3-F/index.tex [16] (./modules/3-F/standards.tex)
-(./modules/3-F/readiness/outcomes.tex) (./modules/3-F/readiness/resources.tex)
-(./modules/3-F/sections.tex (./modules/3-F/sections/1.tex [17])))
-(./modules/4-N/index.tex [18] (./modules/4-N/standards.tex)
+ks-88.png> [6]) (./modules/1-C/sections/4.tex [7] [8])
+(./modules/1-C/sections/5.tex [9]) (./modules/1-C/sections/6.tex [10])
+(./modules/1-C/sections/7.tex [11]) (./modules/1-C/sections/8.tex [12])))
+(./modules/2-F/index.tex [13] (./modules/2-F/standards.tex)
+(./modules/2-F/readiness/outcomes.tex) (./modules/2-F/readiness/resources.tex)
+(./modules/2-F/sections.tex (./modules/2-F/sections/1.tex [14])))
+(./modules/3-S/index.tex [15] (./modules/3-S/standards.tex)
+(./modules/3-S/readiness/outcomes.tex) (./modules/3-S/readiness/resources.tex)
+(./modules/3-S/sections.tex (./modules/3-S/sections/1.tex [16] [17] [18])))
+(./modules/4-N/index.tex [19] (./modules/4-N/standards.tex)
 (./modules/4-N/readiness/outcomes.tex) (./modules/4-N/sections.tex
-(./modules/4-N/sections/1.tex [19]))) (./modules/5-D/index.tex [20]
+(./modules/4-N/sections/1.tex [20]))) (./modules/5-D/index.tex [21]
 (./modules/5-D/standards.tex) (./modules/5-D/readiness/outcomes.tex)
-(./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [21]))))
-Package atenddvi Info: Last page = 22.
- [22]
+(./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [22]))))
+Package atenddvi Info: Last page = 23.
+ [23]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 8.
 
@@ -1223,10 +1240,10 @@ Package rerunfilecheck Info: File `course-notes.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8.
  ) 
 Here is how much of TeX's memory you used:
- 36743 strings out of 494910
- 847960 string characters out of 6179836
- 1194895 words of memory out of 5000000
- 39225 multiletter control sequences out of 15000+600000
+ 36977 strings out of 494910
+ 855448 string characters out of 6179836
+ 1203904 words of memory out of 5000000
+ 39443 multiletter control sequences out of 15000+600000
  7990 words of font info for 31 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  78i,16n,106p,10395b,4368s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1242,10 +1259,10 @@ amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on aux/course-notes.pdf (22 pages, 7894285 bytes).
+Output written on aux/course-notes.pdf (23 pages, 7896964 bytes).
 PDF statistics:
- 895 PDF objects out of 1000 (max. 8388607)
- 483 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 1733 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 486 compressed objects within 5 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 1737 words of extra memory for PDF output out of 10000 (max. 10000000)
 

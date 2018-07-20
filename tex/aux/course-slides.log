@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  19 JUL 2018 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  20 JUL 2018 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,10 +964,27 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowwidth=\dimen280
 \pgfarrowlinewidth=\dimen281
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
+e.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.markings.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.markings.code.tex))
 \c@SectionCounter=\count180
 \c@ActivityCounter=\count181
 \c@SubactivityCounter=\count182
-) (/usr/share/texlive/texmf-dist/tex/latex/animate/animate.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/animate/animate.sty
 Package: animate 2016/03/15 PDF animations from files and inline graphics
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -1695,26 +1712,24 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [31
 ])
 (./modules/1-C/sections/8.tex [86
 
-]))) (./modules/2-S/index.tex [87
+] [87
 
-]
-(./modules/2-S/standards.tex [88
+] [88
 
 ] [89
 
-]) (./modules/2-S/readiness/outcomes.tex
-[90
+] [90
 
-]) (./modules/2-S/readiness/resources.tex [91
+] [91
 
-]) (./modules/2-S/sections.tex
-(./modules/2-S/sections/1.tex [92
+] [92
 
 ] [93
 
 ] [94
 
-] [95
+]
+[95
 
 ] [96
 
@@ -1726,59 +1741,89 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [31
 
 ] [100
 
-]
-[101
+]))) (./modules/2-F/index.tex [101
 
-] [102
+]
+(./modules/2-F/standards.tex [102
 
 ] [103
 
-]))) (./modules/3-F/index.tex [104
+]) (./modules/2-F/readiness/outcomes.tex [104
 
-]
-(./modules/3-F/standards.tex [105
-
-] [106
-
-]) (./modules/3-F/readiness/outcomes.tex [107
-
-]) (./modules/3-F/readiness/resources.tex [108
+]) (./modules/2-F/readiness/resources.tex [105
 
 ])
-(./modules/3-F/sections.tex (./modules/3-F/sections/1.tex [109
+(./modules/2-F/sections.tex (./modules/2-F/sections/1.tex [106
+
+] [107
+
+])))
+(./modules/3-S/index.tex [108
+
+] (./modules/3-S/standards.tex [109
 
 ] [110
 
-])))
-(./modules/4-N/index.tex [111
-
-] (./modules/4-N/standards.tex [112
-
-] [113
+])
+(./modules/3-S/readiness/outcomes.tex [111
 
 ])
-(./modules/4-N/readiness/outcomes.tex [114
+(./modules/3-S/readiness/resources.tex [112
 
-]) (./modules/4-N/sections.tex
-(./modules/4-N/sections/1.tex [115
+]) (./modules/3-S/sections.tex
+(./modules/3-S/sections/1.tex [113
+
+] [114
+
+] [115
 
 ] [116
 
-]))) (./modules/5-D/index.tex [117
+] [117
 
-]
-(./modules/5-D/standards.tex [118
+] [118
 
 ] [119
 
-]) (./modules/5-D/readiness/outcomes.tex [120
+]
+[120
 
-]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [121
+] [121
+
+] [122
+
+] [123
+
+] [124
+
+]))) (./modules/4-N/index.tex [125
 
 ]
-Package atenddvi Info: Last page = 122.
+(./modules/4-N/standards.tex [126
 
-[122
+] [127
+
+]) (./modules/4-N/readiness/outcomes.tex [128
+
+]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [129
+
+]
+[130
+
+]))) (./modules/5-D/index.tex [131
+
+] (./modules/5-D/standards.tex [132
+
+]
+[133
+
+]) (./modules/5-D/readiness/outcomes.tex [134
+
+]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [135
+
+]
+Package atenddvi Info: Last page = 136.
+ [136
 
 ]))))
 \tf@nav=\write6
@@ -1808,10 +1853,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
  ) 
 Here is how much of TeX's memory you used:
- 40321 strings out of 494910
- 938658 string characters out of 6179836
- 1293200 words of memory out of 5000000
- 42468 multiletter control sequences out of 15000+600000
+ 40594 strings out of 494910
+ 946543 string characters out of 6179836
+ 1303575 words of memory out of 5000000
+ 42698 multiletter control sequences out of 15000+600000
  12995 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,16n,120p,10396b,4605s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1829,10 +1874,10 @@ m/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-slides.pdf (122 pages, 8142022 bytes).
+Output written on aux/course-slides.pdf (136 pages, 8177174 bytes).
 PDF statistics:
- 5349 PDF objects out of 6186 (max. 8388607)
- 4785 compressed objects within 48 object streams
- 262 named destinations out of 1000 (max. 500000)
- 1763 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5910 PDF objects out of 6186 (max. 8388607)
+ 5325 compressed objects within 54 object streams
+ 290 named destinations out of 1000 (max. 500000)
+ 1767 words of extra memory for PDF output out of 10000 (max. 10000000)
 

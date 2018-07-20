@@ -1,5 +1,6 @@
 \usepackage{enumerate,amssymb,tikz,pgfplots,amsmath,amsthm,multicol,hyperref,environ,etoolbox,graphicx}
 \usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc,patterns,decorations.pathmorphing,decorations.markings}
 
 \renewcommand{\L}{\mathcal{L}}
 
@@ -78,74 +79,21 @@
 \end{tikzpicture}
 }
 
-\newcommand{\vectorSpaceProperties}{
-\begin{multicols}{2}
-\begin{itemize}
-  \item \textbf{Addition is associative.}
 
-        \(\vect u+(\vect v+\vect w)=
-        (\vect u+\vect v)+\vect w\).
-  \item \textbf{Addition is commutative.}
 
-        \(\vect u+\vect v=
-        \vect v+\vect u\).
-  \item \textbf{Additive identity exists.}
+\newcommand{\springmass}[1][1]{
+\begin{tikzpicture}[every node/.style={draw,outer sep=0pt,thick},scale=#1]
+\tikzstyle{spring}=[thick,decorate,decoration={zigzag,pre length=0.3cm,post length=0.3cm,segment length=6}]
+\tikzstyle{ground}=[fill,pattern=north east lines,draw=none,minimum width=0.75cm,minimum height=0.3cm]
 
-        There exists some \(\vect z\)
-        where \(\vect v+\vect z=\vect v\).
-  \item \textbf{Additive inverses exist.}
 
-        There exists some \(-\vect v\)
-        where \(\vect v+(-\vect v)=\vect z\).
-  \columnbreak
-  \item \textbf{Scalar multiplication is associative.}
+\node (M) [minimum width=1cm,minimum height=1cm] {$m$};
 
-        \(a(b\vect v)=(ab)\vect v\).
-  \item \textbf{$1$ is a scalar multiplicative identity.}
+\node (ground1) at (M.north) [ground,yshift=1.5cm,anchor=south] {};
+\draw (ground1.south west) -- (ground1.south east);
+\draw [spring] (ground1.south) -- ($(M.north east)!(ground1.south)!(M.north west)$);
 
-        \(1\vect v=\vect v\).
-  \item \textbf{Scalar multiplication distributes over vector addition.}
 
-        \(a(\vect u+\vect v)=a\vect u+a\vect v\).
-  \item \textbf{Scalar multiplication distributes over scalar addition.}
+\end{tikzpicture}
 
-        \((a+b)\vect v=a\vect v+b\vect v\).
-\end{itemize}
-\end{multicols}
-}
-
-\newcommand{\vectorSpacePropertiesO}{
-\begin{multicols}{2}
-\begin{itemize}
-  \item \textbf{Addition associativity.}
-
-        \(\vect u\oplus(\vect v\oplus\vect w)=
-        (\vect u\oplus\vect v)\oplus\vect w\).
-  \item \textbf{Addition commutivity.}
-
-        \(\vect u\oplus\vect v=
-        \vect v\oplus\vect u\).
-  \item \textbf{Addition identity.}
-
-        There exists some \(\vect z\)
-        where \(\vect v\oplus\vect z=\vect v\).
-  \item \textbf{Addition inverse.}
-
-        There exists some \(-\vect v\)
-        where \(\vect v\oplus(-\vect v)=\vect z\).
-  \item \textbf{Scalar multiplication associativity.}
-
-        \(a\odot(b\odot\vect v)=(ab)\odot\vect v\).
-  \item \textbf{Scalar multiplication identity.}
-
-        \(1\odot\vect v=\vect v\).
-  \item \textbf{Scalar distribution.}
-
-        \(a\odot(\vect u\oplus\vect v)=
-        (a\odot\vect u)\oplus (a\odot\vect v)\).
-  \item \textbf{Vector distribution.}
-
-        \((a+b)\odot\vect v=(a\odot\vect v)\oplus (b\odot\vect v)\).
-\end{itemize}
-\end{multicols}
 }

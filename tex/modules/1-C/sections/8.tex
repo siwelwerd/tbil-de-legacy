@@ -4,6 +4,80 @@
 \begin{applicationActivities}
 
 %Forced oscillation; resonance
+%Non-homogeneous second order
 
+\begin{activity}{10}
+A \(1\ {\rm kg}\) mass is suspended from a spring with spring constant \(k= 9\ {\rm kg/s^2}\).  An external force is applied by an electromagnet and is modeled by the function \(F(t)=\sin(t)\).  Write an ODE modeling the displacement of the spring.
+\end{activity}
+
+\begin{observation}
+In the previous activity, we encountered a \term{nonhomogeneous} second order constant coefficient ODE, i.e. of the form
+\[ay''+by'+cy=f\]
+where \(a,b,c\) are constants, and \(f(t)\) is a function.
+\vfill
+We will again use \term{variation of parameters} to find a particular solution.
+\vfill
+\end{observation}
+
+\begin{activity}{15}
+Suppose \(y_1\) and \(y_2\) are two independent solutions of \(\L(y)=0\).  
+\vfill
+Our goal is to find a particular solution of the form \(y_p = v_1 y_1 + v_2 y_2\) for some TBD functions \(v_1,v_2\).
+\vfill
+\begin{subactivity}
+Compute \(y_p'\).
+\end{subactivity}
+
+\begin{subactivity} To simplify calculations, we will \textbf{assume} \(v_1'y_1+v_2'y_2=0\).  Assuming this, compute \(y_p''\).
+\end{subactivity}
+
+\begin{subactivity}
+Compute \(\L(y_p)\); simplify the ODE \(\L(y_p)=f\).
+\end{subactivity}
+\vfill
+\end{activity}
+
+\begin{observation}
+If we can find \(v_1\) and \(v_2\) that satisfy
+\begin{alignat*}{2}
+y_1 v_1' + y_2 v_2'&=0 \\
+y_1' v_1' + y_2' v_2'&=\frac{f}{a} 
+\end{alignat*}
+then we have a solution.  So we just need to solve this system of equations for \(v_1'\) and \(v_2'\).
+
+\end{observation}
+
+\begin{activity}{15}
+Consider the nonhomogeneous ODE \(y''+9y=\sin(t)\).
+\vfill
+\begin{subactivity}
+Find \(y_1\) and \(y_2\), two independent solutions of \(y''+9y=0\).
+\end{subactivity}
+\begin{subactivity}
+Find \(v_1\) and \(v_2\) by solving
+\begin{alignat*}{2}
+\cos(3t) v_1' + \sin(3t) v_2'&=0 \\
+-3\sin(3t) v_1' + 3\cos(3t) v_2'&=\sin(t)
+\end{alignat*}
+\end{subactivity}
+\begin{subactivity}
+Write the general solution of the original nonhomogeneous ODE.
+\end{subactivity}
+\end{activity}
+
+\begin{activity}{10}
+Consider the nonhomogeneous ODE \(y''+9y=\sin(3t)\).
+\vfill
+\begin{subactivity}
+Find \(v_1\) and \(v_2\) by solving
+\begin{alignat*}{2}
+\cos(3t) v_1' + \sin(3t) v_2'&=0 \\
+-3\sin(3t) v_1' + 3\cos(3t) v_2'&=\sin(3t)
+\end{alignat*}
+\end{subactivity}
+\begin{subactivity}
+Write the general solution of the original nonhomogeneous ODE.
+\end{subactivity}
+\end{activity}
 
 \end{applicationActivities}
