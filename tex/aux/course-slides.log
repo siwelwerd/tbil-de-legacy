@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  20 JUL 2018 09:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  26 JUL 2018 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,25 +1462,25 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ])
 (./modules/1-C/readiness/outcomes.tex
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 8.
-LaTeX Font Info:    No file OMScmss.fd. on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 9.
+LaTeX Font Info:    No file OMScmss.fd. on input line 9.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 8.
+(Font)              for symbol `textbullet' on input line 9.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 8.
+line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1757,21 +1757,22 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [31
 
 ] [107
 
-])))
-(./modules/3-S/index.tex [108
+] [108
 
-] (./modules/3-S/standards.tex [109
+]
+[109
 
 ] [110
 
-])
-(./modules/3-S/readiness/outcomes.tex [111
+]
+Overfull \vbox (5.46593pt too high) detected at line 150
+ []
 
-])
-(./modules/3-S/readiness/resources.tex [112
+[111
 
-]) (./modules/3-S/sections.tex
-(./modules/3-S/sections/1.tex [113
+] [112
+
+] [113
 
 ] [114
 
@@ -1785,45 +1786,77 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [31
 
 ] [119
 
-]
-[120
+] [120
 
 ] [121
 
-] [122
+])))
+(./modules/3-S/index.tex [122
 
-] [123
+] (./modules/3-S/standards.tex [123
 
 ] [124
 
-]))) (./modules/4-N/index.tex [125
+])
+(./modules/3-S/readiness/outcomes.tex [125
+
+])
+(./modules/3-S/readiness/resources.tex [126
+
+]) (./modules/3-S/sections.tex
+(./modules/3-S/sections/1.tex [127
+
+] [128
+
+] [129
+
+] [130
+
+] [131
+
+] [132
+
+] [133
 
 ]
-(./modules/4-N/standards.tex [126
+[134
 
-] [127
+] [135
 
-]) (./modules/4-N/readiness/outcomes.tex [128
+] [136
 
-]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [129
+] [137
 
-]
-[130
+] [138
 
-]))) (./modules/5-D/index.tex [131
-
-] (./modules/5-D/standards.tex [132
+]))) (./modules/4-N/index.tex [139
 
 ]
-[133
+(./modules/4-N/standards.tex [140
 
-]) (./modules/5-D/readiness/outcomes.tex [134
+] [141
 
-]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [135
+]) (./modules/4-N/readiness/outcomes.tex [142
+
+]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [143
 
 ]
-Package atenddvi Info: Last page = 136.
- [136
+[144
+
+]))) (./modules/5-D/index.tex [145
+
+] (./modules/5-D/standards.tex [146
+
+]
+[147
+
+]) (./modules/5-D/readiness/outcomes.tex [148
+
+]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [149
+
+]
+Package atenddvi Info: Last page = 150.
+ [150
 
 ]))))
 \tf@nav=\write6
@@ -1853,13 +1886,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
  ) 
 Here is how much of TeX's memory you used:
- 40594 strings out of 494910
- 946543 string characters out of 6179836
- 1303575 words of memory out of 5000000
- 42698 multiletter control sequences out of 15000+600000
+ 40787 strings out of 494910
+ 950087 string characters out of 6179836
+ 1320372 words of memory out of 5000000
+ 42863 multiletter control sequences out of 15000+600000
  12995 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,16n,120p,10396b,4605s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 94i,16n,120p,10396b,4631s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -1874,10 +1907,10 @@ m/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-slides.pdf (136 pages, 8177174 bytes).
+Output written on aux/course-slides.pdf (150 pages, 8226756 bytes).
 PDF statistics:
- 5910 PDF objects out of 6186 (max. 8388607)
- 5325 compressed objects within 54 object streams
- 290 named destinations out of 1000 (max. 500000)
+ 6369 PDF objects out of 7423 (max. 8388607)
+ 5766 compressed objects within 58 object streams
+ 318 named destinations out of 1000 (max. 500000)
  1767 words of extra memory for PDF output out of 10000 (max. 10000000)
 
