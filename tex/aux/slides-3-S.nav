@@ -12,8 +12,33 @@
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{0}{5}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@partpages {1}{5}}
-\headcommand {\beamer@subsectionpages {1}{5}}
-\headcommand {\beamer@sectionpages {1}{5}}
-\headcommand {\beamer@documentpages {5}}
-\headcommand {\def \inserttotalframenumber {5}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{6}{Section S{}.1}}\headcommand {\beamer@subsectionpages {1}{5}}
+\headcommand {\slideentry {1}{1}{1}{6/6}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {1}{1}{2}{7/7}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {1}{1}{3}{8/8}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {1}{1}{4}{9/9}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {1}{1}{5}{10/10}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {1}{1}{6}{11/11}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {1}{1}{7}{12/12}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {1}{1}{8}{13/13}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {1}{1}{9}{14/14}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {1}{1}{10}{15/15}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {1}{1}{11}{16/16}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {1}{1}{12}{17/17}{Section S{}.1}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@partpages {1}{17}}
+\headcommand {\beamer@subsectionpages {1}{17}}
+\headcommand {\beamer@sectionpages {1}{17}}
+\headcommand {\beamer@documentpages {17}}
+\headcommand {\def \inserttotalframenumber {17}}

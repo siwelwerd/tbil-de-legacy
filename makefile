@@ -65,19 +65,19 @@ pdf/slides/slides-1-C.pdf: tex/tbil-de.sty tex/course-slides.sty  \
 	pdflatex --output-directory=aux slides/slides-1-C.tex; \
 	mv aux/slides-1-C.pdf ../pdf/slides
 
-pdf/slides/slides-2-S.pdf: tex/tbil-de.sty tex/course-slides.sty  \
-							tex/modules/2-S/sections/*.tex
+pdf/slides/slides-2-F.pdf: tex/tbil-de.sty tex/course-slides.sty  \
+							tex/modules/2-F/sections/*.tex
 	cd tex; \
-	pdflatex --output-directory=aux slides/slides-2-S.tex; \
-	pdflatex --output-directory=aux slides/slides-2-S.tex; \
-	mv aux/slides-2-S.pdf ../pdf/slides
+	pdflatex --output-directory=aux slides/slides-2-F.tex; \
+	pdflatex --output-directory=aux slides/slides-2-F.tex; \
+	mv aux/slides-2-F.pdf ../pdf/slides
 
-pdf/slides/slides-3-F.pdf: tex/tbil-de.sty tex/course-slides.sty  \
-							tex/modules/3-F/sections/*.tex
+pdf/slides/slides-3-S.pdf: tex/tbil-de.sty tex/course-slides.sty  \
+							tex/modules/3-S/sections/*.tex
 	cd tex; \
-	pdflatex --output-directory=aux slides/slides-3-F.tex; \
-	pdflatex --output-directory=aux slides/slides-3-F.tex; \
-	mv aux/slides-3-F.pdf ../pdf/slides
+	pdflatex --output-directory=aux slides/slides-3-S.tex; \
+	pdflatex --output-directory=aux slides/slides-3-S.tex; \
+	mv aux/slides-3-S.pdf ../pdf/slides
 
 pdf/slides/slides-4-N.pdf: tex/tbil-de.sty tex/course-slides.sty  \
 							tex/modules/4-N/sections/*.tex
