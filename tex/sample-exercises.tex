@@ -46,6 +46,97 @@ The goal is to give you an idea of what the exercises might look like,
 and what the expectations for a complete solution are.
 
 \begin{problem}{C1}
+Set up and solve a differential equation to answer the following question: \\
+A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\) and a terminal velocity of \(3\ {\rm \frac{cm}{s}}\).  Such a droplet is dropped from rest.  What is its velocity after \(0.01\ {\rm s}\)?
+\end{problem}
+\begin{solution}
+The forces acting on the water droplet are gravity (\(mg\) downwards) and air resistance; in a water droplet this size, this is proportional to its velocity.  Let \(b\) denote this drag coefficient; then by Newton's second law (if we let up be the positive direction and down be negative), we have
+\[ m \frac{dv}{dt} = -mg - bv .\]
+Note that we have \(-mg\) since gravity always acts downwards, and \(-bv\) because the drag acts in the opposite direction of \(v\).
+It is actually convenient to let \(a=\frac{b}{m}\), and divide this equation by the mass, yielding 
+\[ \frac{dv}{dt} = -g - av .\]
+This is a separable differential equation; we thus have
+\[ \int \frac{1}{g+av}\ dv = \int (-1)dt .\]
+Thus, \(\frac{1}{a}\ln|g+av| = -t+c_1\), or \(|g+av| = e^{-at+ac_1}=c_2e^{-at}\) (where \(c_2=e^{ac_1}\)).  To avoid the pesky absolute value sign, we can absorb a potential negative into the constant to write \(g+av=c_3 e^{-at}\), or (letting \(c_0=\frac{c_3}{a}\))
+\[ v=-\frac{g}{a} +c_0 e^{-at}.\]
+Note that \(\lim _{t \rightarrow \infty} v = -\frac{g}{a}\), so since we are given the terminal velocity, so after converting to meters per second we can solve \(-0.03 = -\frac{9.8}{a}\) to obtain \(a=\frac{9.8}{0.03}\).  We also know that it is dropped from rest, so we compute \(0=v(0)=-0.03+c_0\), so \(c_0=0.03\).  Thus our model for velocity is 
+\[ v=-0.03+0.03e^{-\frac{9.8}{0.03} t}.\]
+Then we simply compute \(v(0.01)=-0.03+0.03e^{-\frac{9.8}{0.03} (0.01)} \approx -0.029 \).  So after \(0.01\ {\rm s}\), the drop is falling approximately  \(2.9\ {\rm \frac{cm}{s}}\).
+\end{solution}
+
+
+\begin{problem}{C2}
+Find the general solution to \[y'+y=-t^2.\]
+\end{problem}
+\begin{solution}
+First, we find a general solution to the homogeneous equation \[y'+y=0.\]  This has auxilliary equation \(r+1=0\), which has a single root at \(r=1\), so \(ce^{-t}\) is a solution.  We can find a particular solution \(y_p\) to the given equation by using undetermined coefficients; since \(-t^2\) is a polynomial, we let \(y_p = At^2+Bt+D\) and determine the coefficients \(A\), \(B\), and \(D\).  
+\begin{align*}
+y_p ^\prime +y_p= &= (2At+B)+(At^2+Bt+D) \\
+&= At^2+(2A+B)+(B+D)
+\end{align*}
+
+So if \(y_p\) is a solution, we must have \(y_p ^\prime+y_p = -t^2\), giving us the system of equations
+\begin{align*}
+A&=-1 \\ 2A+B &= 0 \\ B+D&=0
+\end{align*}
+Thus we easily deduce that \(A=-1\), \(B=2\), and \(D=-2\), giving \(y_p = -t^2+2t-2\).  Thus, the general solution is
+\[y = -t^2+2t-2+ce^{-t}.\]
+\end{solution}
+
+\begin{problem}{C4}
+Find the general solution to \[y''+6y'+13y=0.\]
+\end{problem}
+\begin{solution}
+We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the roots.  There are many ways to do this; here, we complete  the square:
+\[0=r^2+6r+13=r^2+6r+9+4=(r+3)^2+4.\]
+Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution is
+\[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
+\end{solution}
+
+\begin{problem}{C5}
+Find the general solution to \[y''+6y'+13y=13t^2-t-4.\]
+\end{problem}
+\begin{solution}
+First, we find a general solution to the homogenous equation \(y''+6y'+13y=0\).  We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the roots.  There are many ways to do this; here, we complete  the square:
+\[0=r^2+6r+13=r^2+6r+9+4=(r+3)^2+4.\]
+Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution to the homogeneous equation is
+\[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
+To find a particular solution to  \(y''+6y'+13y=13t^2-t-4\), we set \(y_p=At^2+Bt+D\) and determine the coefficients \(A,B,D\).  
+\begin{align*}
+y_p ^{\prime\ \prime}+6y_p ^\prime +13y_p &= (2A)+6(2At+B)+13(At^2+Bt+D) \\
+&= (13A)t^2 + (12A+13B)t+(2A+6B+13D)
+\end{align*}
+This gives us the system of equations
+\begin{align*}
+13A &= 13 \\
+12A+13B &= -1 \\
+2A+6B+13D &= -4
+\end{align*}
+Then we easily deduce \(A=1\), \(B=-1\), and \(D=0\), so that \(y_p = t^2-t\).  Thus, the general solution to the nonhomogeneous equation is \[y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) +t^2-t .\]
+
+\end{solution}
+
+
+\begin{problem}{C6}
+Find the solution to
+\[
+y'' + 10y' + 24y = 0
+\]
+when \(y(0)=-3\) and \(y'(0)=2\).
+\end{problem}
+\begin{solution}
+The auxilliary equation is \(r^2+10r+24=0\), which has roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\).  
+\begin{align*}
+-3 &= y(0) = c_1+c_2 \\
+2 &= y'(0)  = -4c_1-6c_2 
+\end{align*}
+Solving this system yields \(c_1 =-8\) and \(c_2 = 5\), so the solution to the IVP is \[y=-8e^{-4t}+5e^{-6t}\]
+\end{solution}
+
+
+
+
+\begin{problem}{F1}
 Sketch a solution curve through each point marked in the slope field.
 
 \begin{center}\begin{tikzpicture}
@@ -98,95 +189,4 @@ Sketch a solution curve through each point marked in the slope field.
     \end{axis}
 \end{tikzpicture}\end{center}
 \end{solution}
-
-
-\begin{problem}{C2}
-Find the general solution to \[y'+y=-t^2.\]
-\end{problem}
-\begin{solution}
-First, we find a general solution to the homogeneous equation \[y'+y=0.\]  This has auxilliary equation \(r+1=0\), which has a single root at \(r=1\), so \(ce^{-t}\) is a solution.  We can find a particular solution \(y_p\) to the given equation by using undetermined coefficients; since \(-t^2\) is a polynomial, we let \(y_p = At^2+Bt+D\) and determine the coefficients \(A\), \(B\), and \(D\).  
-\begin{align*}
-y_p ^\prime +y_p= &= (2At+B)+(At^2+Bt+D) \\
-&= At^2+(2A+B)+(B+D)
-\end{align*}
-
-So if \(y_p\) is a solution, we must have \(y_p ^\prime+y_p = -t^2\), giving us the system of equations
-\begin{align*}
-A&=-1 \\ 2A+B &= 0 \\ B+D&=0
-\end{align*}
-Thus we easily deduce that \(A=-1\), \(B=2\), and \(D=-2\), giving \(y_p = -t^2+2t-2\).  Thus, the general solution is
-\[y = -t^2+2t-2+ce^{-t}.\]
-\end{solution}
-
-\begin{problem}{C3}
-Find the general solution to \[y''+6y'+13y=0.\]
-\end{problem}
-\begin{solution}
-We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the roots.  There are many ways to do this; here, we complete  the square:
-\[0=r^2+6r+13=r^2+6r+9+4=(r+3)^2+4.\]
-Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution is
-\[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
-\end{solution}
-
-\begin{problem}{C4}
-Find the general solution to \[y''+6y'+13y=13t^2-t-4.\]
-\end{problem}
-\begin{solution}
-First, we find a general solution to the homogenous equation \(y''+6y'+13y=0\).  We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the roots.  There are many ways to do this; here, we complete  the square:
-\[0=r^2+6r+13=r^2+6r+9+4=(r+3)^2+4.\]
-Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution to the homogeneous equation is
-\[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
-To find a particular solution to  \(y''+6y'+13y=13t^2-t-4\), we set \(y_p=At^2+Bt+D\) and determine the coefficients \(A,B,D\).  
-\begin{align*}
-y_p ^{\prime\ \prime}+6y_p ^\prime +13y_p &= (2A)+6(2At+B)+13(At^2+Bt+D) \\
-&= (13A)t^2 + (12A+13B)t+(2A+6B+13D)
-\end{align*}
-This gives us the system of equations
-\begin{align*}
-13A &= 13 \\
-12A+13B &= -1 \\
-2A+6B+13D &= -4
-\end{align*}
-Then we easily deduce \(A=1\), \(B=-1\), and \(D=0\), so that \(y_p = t^2-t\).  Thus, the general solution to the nonhomogeneous equation is \[y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) +t^2-t .\]
-
-\end{solution}
-
-
-\begin{problem}{C5}
-Find the solution to
-\[
-y'' + 10y' + 24y = 0
-\]
-when \(y(0)=-3\) and \(y'(0)=2\).
-\end{problem}
-\begin{solution}
-The auxilliary equation is \(r^2+10r+24=0\), which has roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\).  
-\begin{align*}
--3 &= y(0) = c_1+c_2 \\
-2 &= y'(0)  = -4c_1-6c_2 
-\end{align*}
-Solving this system yields \(c_1 =-8\) and \(c_2 = 5\), so the solution to the IVP is \[y=-8e^{-4t}+5e^{-6t}\]
-\end{solution}
-
-
-\begin{problem}{C6}
-Set up and solve a differential equation to answer the following question: \\
-A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\) and a terminal velocity of \(3\ {\rm \frac{cm}{s}}\).  Such a droplet is dropped from rest.  What is its velocity after \(0.01\ {\rm s}\)?
-\end{problem}
-\begin{solution}
-The forces acting on the water droplet are gravity (\(mg\) downwards) and air resistance; in a water droplet this size, this is proportional to its velocity.  Let \(b\) denote this drag coefficient; then by Newton's second law (if we let up be the positive direction and down be negative), we have
-\[ m \frac{dv}{dt} = -mg - bv .\]
-Note that we have \(-mg\) since gravity always acts downwards, and \(-bv\) because the drag acts in the opposite direction of \(v\).
-It is actually convenient to let \(a=\frac{b}{m}\), and divide this equation by the mass, yielding 
-\[ \frac{dv}{dt} = -g - av .\]
-This is a separable differential equation; we thus have
-\[ \int \frac{1}{g+av}\ dv = \int (-1)dt .\]
-Thus, \(\frac{1}{a}\ln|g+av| = -t+c_1\), or \(|g+av| = e^{-at+ac_1}=c_2e^{-at}\) (where \(c_2=e^{ac_1}\)).  To avoid the pesky absolute value sign, we can absorb a potential negative into the constant to write \(g+av=c_3 e^{-at}\), or (letting \(c_0=\frac{c_3}{a}\))
-\[ v=-\frac{g}{a} +c_0 e^{-at}.\]
-Note that \(\lim _{t \rightarrow \infty} v = -\frac{g}{a}\), so since we are given the terminal velocity, so after converting to meters per second we can solve \(-0.03 = -\frac{9.8}{a}\) to obtain \(a=\frac{9.8}{0.03}\).  We also know that it is dropped from rest, so we compute \(0=v(0)=-0.03+c_0\), so \(c_0=0.03\).  Thus our model for velocity is 
-\[ v=-0.03+0.03e^{-\frac{9.8}{0.03} t}.\]
-Then we simply compute \(v(0.01)=-0.03+0.03e^{-\frac{9.8}{0.03} (0.01)} \approx -0.029 \).  So after \(0.01\ {\rm s}\), the drop is falling approximately  \(2.9\ {\rm \frac{cm}{s}}\).
-\end{solution}
-
-
 \end{document}

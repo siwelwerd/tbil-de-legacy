@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  22 JUN 2018 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  27 JUL 2018 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -744,6 +744,22 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowwidth=\dimen197
 \pgfarrowlinewidth=\dimen198
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
+e.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.markings.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.markings.code.tex))
 \c@SectionCounter=\count150
 \c@ActivityCounter=\count151
 \c@SubactivityCounter=\count152
@@ -854,40 +870,41 @@ your preamble.
  on input line 37.
 
 (./modules/1-C/exercises/C1.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]) [5]
-(./modules/1-C/exercises/C2.tex [6]) [7] (./modules/1-C/exercises/C3.tex
-[8]) [9] (./modules/1-C/exercises/C4.tex) [10] [11]
-(./modules/1-C/exercises/C5.tex [12]) [13] (./modules/2-S/exercises/S1.tex
-[14]) [15] (./modules/3-F/exercises/F1.tex) [16]
-(./modules/3-F/exercises/F2.tex [17]) [18] (./modules/3-F/exercises/F3.tex)
-[19] (./modules/3-F/exercises/F4.tex) [20] (./modules/4-N/exercises/N1.tex)
-[21] (./modules/4-N/exercises/N2.tex) [22] (./modules/4-N/exercises/N3.tex
-[23]) [24] (./modules/5-D/exercises/D1.tex) [25]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./modules/1-C/exercises/C
+2.tex [2])
+[3] (./modules/1-C/exercises/C4.tex [4]) [5] (./modules/1-C/exercises/C5.tex)
+[6] [7] (./modules/1-C/exercises/C6.tex [8]) [9]
+(./modules/2-F/exercises/F1.tex [10] [11] [12] [13]) [14]
+(./modules/2-F/exercises/F2.tex) [15] (./modules/2-F/exercises/F3.tex [16])
+[17] (./modules/2-F/exercises/F4.tex) [18] (./modules/3-S/exercises/S1.tex
+[19]) [20] (./modules/4-N/exercises/N1.tex) [21]
+(./modules/4-N/exercises/N2.tex) [22] (./modules/4-N/exercises/N3.tex [23])
+[24] (./modules/5-D/exercises/D1.tex) [25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (aux/exercise-library.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `exercise-library.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 27708 strings out of 494910
- 669102 string characters out of 6179836
- 1098048 words of memory out of 5000000
- 30470 multiletter control sequences out of 15000+600000
+ 27899 strings out of 494910
+ 675477 string characters out of 6179836
+ 1107048 words of memory out of 5000000
+ 30646 multiletter control sequences out of 15000+600000
  6857 words of font info for 27 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  62i,12n,100p,926b,4336s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -900,10 +917,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy7.pfb>
-Output written on aux/exercise-library.pdf (25 pages, 163704 bytes).
+Output written on aux/exercise-library.pdf (25 pages, 165089 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
+ 207 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
  60 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
