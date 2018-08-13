@@ -4,41 +4,68 @@
 \begin{applicationActivities}
 
 \begin{observation}
-Recall from last class that we can model the velocity of a water droplet in a cloud by
-\[mv'=-mg-bv\]
-where here, negative denotes downward velocity.  \(m\) is the mass, \(g\) is Newton's gravitational constant, and \(b\) is a physical constant (like a coefficient of friction).
-\begin{center}
-\includegraphics[scale=0.2]{media/cloud.jpg}
-\end{center}
+Recall the last activity from yesterday:
+\vfill
+Solve \(y'=y+2\)
+\vfill
+This is very similar to the equation \(y'=y\), which we know how to solve.
 \end{observation}
 
-\begin{activity}{25}
-A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\).  It is determined in a laboratory that for a droplet this size, the constant \(b\) has a value of \(0.003 {\rm kg/s}\).
+\begin{activity}{15}
+Solve \(y'=y+2\)
+\vfill
+\textbf{Simple idea:} Since \(e^t\) is a solution of \(y'=y\), we suppose a solution is of the form \(y_p = \mu e^t\) for some function \(\mu\). 
 \begin{subactivity}
-What is the terminal velocity of the droplet?
+Subsitute \(y_p\) into the equation \(y'=y+2\) and simplify.
 \end{subactivity}
-\begin{subactivity}If the droplet starts from rest (\(v=0\)), what is its velocity after \(0.01\ {\rm s}\)?
+\begin{subactivity}
+Find \(\mu\).
+\end{subactivity}
+\begin{subactivity}
+Find \(y_p\).
 \end{subactivity}
 \end{activity}
 
-\begin{definition}
-The second part of the previous activity is an example of an \term{Initial Value Problem (IVP)}; we were given the initial value of the velocity in addition to our differential equation.
-\end{definition}
+\begin{observation}
+This technique is called \term{variation of parameters}.  If \(y_0\) is a solution of the \term{homogeneous} equation, we suppose a solution of the \term{non-homogeneous} equation has the form \(y_p = \mu y_0\), and then determine what \(\mu\) must be. 
 
-\begin{activity}{10}
-Solve the IVP
-\[y'+3y=4, y(0)=2.\]
+\vfill
+
+\textbf{Example: }
+\begin{align*}
+y'+3y = 0 & & \text{homogeneous} \\
+y'+3y = x & & \text{non-homogeneous}
+\end{align*}
+\end{observation}
+
+\begin{activity}{20}
+Solve \(y'=x-3y\).
+\begin{subactivity}
+Solve the homogeneous equation \(y'+3y=0\).
+\end{subactivity}
+\begin{subactivity}
+If \(y_0\) is a solution of the homogeneous equation, let \(y_p = \mu y_0 \) for some \textbf{function} \(\mu\).
+Substitute \(y_p\) in to original equation and simplify.
+\end{subactivity}
+\begin{subactivity}
+Determine \(\mu\), and then determine \(y_p\).
+\end{subactivity}
 \end{activity}
 
-\begin{activity}{5}
-Solve the IVP
-\[y'+3y=4, y(2)=1.\]
+\begin{observation}
+Since \(y_0=c_0 e^{-3x}\) was the general solution of the homogeneous equation, and \(y_p = \frac{x}{3}-\frac{1}{9}\) is a particular solution of the non-homogeneous equation, a general solution to the non-homegenous equation  
+\[y'+3y=x\]
+is
+\[y_0+y_p = c_0e^{-3x}+\frac{x}{3}-\frac{1}{9}.\]
+
+\end{observation}
+
+\begin{activity}{15}
+Find the general solution to \(y'=2y+x+1\).
 \end{activity}
 
-\begin{activity}{10}
-Solve the IVP
-\[y'-2y=2, y(0)=1.\]
-\end{activity}
+
+
 
 
 \end{applicationActivities}

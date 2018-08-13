@@ -3,82 +3,49 @@
 
 \begin{applicationActivities}
 
-\begin{observation}
-What happens when your tire hits a pothole?
 
-\animategraphics[loop,width=\linewidth,controls=true]{15}{media/shocks/goodbadshocks-}{0}{88}
-
-
-\end{observation}
-
-\begin{activity}{5}
-More abstractly, let's attach a mass (weighing \(m {\rm kg}\)) to a spring.
-
-\begin{center}
-\springmass
-\end{center}
-\vfill
-List all forces acting on the mass.
-\end{activity}
-
-\begin{activity}{5}
-\term{Hooke's law} says that the force exerted by the spring is proportional to the distance the spring is stretched.
-
-\begin{center}
-\springmass
-\end{center}
-\vfill
-Write a differential equation modeling the displacement of the mass.
-\end{activity}
 
 \begin{observation}
-There is an equillibrium point where the force of gravity balances the spring force.  If we measure displacement from this point, we can model the mass-spring system by
-\[my''=ky.\]
-\vfill
+Recall that we can model the velocity of a water droplet in a cloud by
+\[mv'=-mg-bv\]
+where here, negative denotes downward velocity.  \(m\) is the mass, \(g\) is Newton's gravitational constant, and \(b\) is a physical constant (like a coefficient of friction).
 \begin{center}
-\springmass
+\includegraphics[scale=0.2]{media/cloud.jpg}
 \end{center}
 \end{observation}
 
-\begin{activity}{15}
-Consider the (numerically simplified) mass-spring equation \[y''=-y.\]
+\begin{activity}{25}
+A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\).  It is determined in a laboratory that for a droplet this size, the constant \(b\) has a value of \(0.003 {\rm kg/s}\).
 \begin{subactivity}
-Find a solution.
+Write down the differential equation modelling this scenario.
 \end{subactivity}
 \begin{subactivity}
-Find the general solution.
+Find the general solution of this ODE.
 \end{subactivity}
 \begin{subactivity}
-Describe the long term behavior of the mass-spring system.
+What is the terminal velocity of the droplet?
 \end{subactivity}
-\end{activity}
-
-\begin{activity}{5}
-In applications, this infinitely oscillating behavior is often inappropriate.
-\vfill
-Thus, a damper (dashpot) is often incorporated.  This provides a force proportional to the velocity.
-\vfill
-Write a differential equation modeling the displacement of a mass in a \textbf{damped} mass-spring system.
-\vfill
+\begin{subactivity}If the droplet starts from rest (\(v=0\)), what is its velocity after \(0.01\ {\rm s}\)?
+\end{subactivity}
 \end{activity}
 
 \begin{definition}
-A \term{homogeneous second order constant coefficient} differential equation can be written in the form
-\[ay''+by'+cy=0.\]
-Here, \term{homogeneous} refers to the \(0\) on the right hand side of the equation.
+The second part of the previous activity is an example of an \term{Initial Value Problem (IVP)}; we were given the initial value of the velocity in addition to our differential equation.
 \end{definition}
 
-\begin{activity}{15}
-Consider the second order constant coefficient equation \[y''=y.\]
-\begin{subactivity}
-Find a solution.
-\end{subactivity}
-\begin{subactivity}
-Find the general solution.
-\end{subactivity}
-\begin{subactivity}
-Describe the long term behavior of the solutions.
-\end{subactivity}
+\begin{activity}{10}
+Solve the IVP
+\[y'+3y=0, y(0)=2.\]
+\end{activity}
+
+\begin{activity}{10}
+Solve the IVP
+\[y'-2y=2, y(0)=1.\]
+\end{activity}
+
+\begin{activity}{5}
+Solve the IVP
+\[y'-2y=2, y(2)=1.\]
 \end{activity}
 
 
