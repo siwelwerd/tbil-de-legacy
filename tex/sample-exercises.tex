@@ -83,6 +83,16 @@ Thus we easily deduce that \(A=-1\), \(B=2\), and \(D=-2\), giving \(y_p = -t^2+
 \[y = -t^2+2t-2+ce^{-t}.\]
 \end{solution}
 
+
+\begin{problem}{C3}
+A \(2 {\rm kg}\) mass is suspended by a spring (with spring constant \(8 {\rm kg /s^2}\)).  The mass is pulled down \(1 {\rm m}\) from its equillibrium position and released from rest.  How long does it take to return to its equillibrium point?
+\end{problem}
+\begin{solution}
+Let \(y\) denote the vertical distance from equillibrium; then the forces acting are gravity and the spring force, giving the ODE
+\[ 2y''+8y=0 .\]
+Simplifying, we have \(y''+4y=0\), so the general solution is \(y=c_1 \cos(2t)+c_2\sin(2t)\).  The initial conditions are \(y(0)=-1\) and \(y'(0)=0\), which imply \(c_1=-1\) and \(c_2=0\), so the system is modelled by \(y=-\cos(2t)\).  This is first zero when \(2t=\frac{\pi}{2}\), i.e. when \(t=\frac{\pi}{4}\).  Thus the mass takes \(\frac{\pi}{4}\) {\rm s} to return to its equillibrium point.
+\end{solution}
+
 \begin{problem}{C4}
 Find the general solution to \[y''+6y'+13y=0.\]
 \end{problem}
@@ -189,4 +199,167 @@ Sketch a solution curve through each point marked in the slope field.
     \end{axis}
 \end{tikzpicture}\end{center}
 \end{solution}
+
+
+\begin{problem}{F2}
+Solve \(y'+xy=x\).
+\end{problem}
+\begin{solution}
+Rearranging, we have \(y'=x-xy=x(1-y)\), so we see the equation is separable, and write
+\[ \frac{y'}{1-y} = x .\]
+
+Thus we compute \(\int \frac{y'}{1-y}\ dx = \int \frac{1}{1-y}\ dy = -\ln|1-y|+c_1\), and \(\int x\ dx = \frac{1}{2}x^2+c_2\).  
+Thus, we have (letting \(c_3=c_2-c_1\)) \[-\ln|1-y|=\frac{1}{2}x^2+c_3.\]
+Then exponentiating, we have (letting \(c_4=\pm e^{-c_3}\) ) \(1-y=c_4e^{-\frac{1}{2}x^2}\), so (with \(c=-c_4\) ) the general solution is   \[y=1+c e^{-\frac{1}{2}x^2}.\]
+\end{solution}
+
+
+\begin{problem}{F3}
+Consider the autonomous equation 
+\[\frac{dx}{dt} = x^2-1.\]  
+\begin{enumerate}[(a)]
+\item Find and classify the critical points.
+\item Describe the long term behavior of the solution passing through the point \( x(4)=0 \).
+\end{enumerate}
+\end{problem}
+\begin{solution}
+
+Note that \(x^2-1=(x-1)(x+1)\), so there are equillibria solutions at \(x=1\) and \(x=-1\).  We can thus compute a number line for \(x'\):
+
+\begin{center}
+\begin{tikzpicture}
+\node at (-3.5,0) {\(x'\)};
+\draw[<->] (-3,0) -- (3,0);
+\node at (-2,0.3) {\(+\)};
+\node at (0,0.3) {\(-\)};
+\node at (2,0.3) {\(+\)};
+\draw[thick,blue] (-1,-0.2) -- (-1,0.2);
+\node at (-1,-0.4) {\(-1\)};
+\draw[thick,blue] (1,-0.2) -- (1,0.2);
+\node at (1,-0.4) {\(1\)};
+\node[red] at (-1.5,0) {\(>>>\)};
+\node[red] at (-0.5,0) {\(<<<\)};
+\node[red] at (0.5,0) {\(<<<\)};
+\node[red] at (1.5,0) {\(>>>\)};
+\node[fill,circle,green,scale=0.5] at (0,0) {};
+\end{tikzpicture}
+\end{center}
+
+We see that \(-1\) is a sink (stable), while \(1\) is a source (unstable).  A trajectory passing through \(x(4)=0\) will approach \(x=-1\) in the limit.
+\end{solution}
+
+\begin{problem}{F4}
+Solve \(y'+xy=x^3\).
+\end{problem}
+\begin{solution}
+Solve homog; then variation of parameters.
+\end{solution}
+
+\begin{problem}{F5}
+One of the two ODEs below is exact.  Identify which one, and solve it.
+\begin{align*}
+ (x + 3y)y'+y &=3x \\ %Exact
+ (x + 3y)y'-y &=-3x  
+\end{align*}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{F6}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+\begin{problem}{S1}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{S2}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{S3}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+\begin{problem}{N1}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{N2}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{N3}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{N4}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{N5}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+\begin{problem}{D1}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{D2}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{D3}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}{D4}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+
 \end{document}
