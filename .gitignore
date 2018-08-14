@@ -1,0 +1,18 @@
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.log
+*.out
+*.swp
+*.nav
+*.snm
+*.toc
+*.xtr
+tex/aux
+*.pdf
+!pdf/**/*.pdf
+
+# MacOS
+*.DS_Store
