@@ -46,26 +46,6 @@ The goal is to give you an idea of what the exercises might look like,
 and what the expectations for a complete solution are.
 
 \begin{problem}{C1}
-Set up and solve a differential equation to answer the following question: \\
-A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\) and a terminal velocity of \(3\ {\rm \frac{cm}{s}}\).  Such a droplet is dropped from rest.  What is its velocity after \(0.01\ {\rm s}\)?
-\end{problem}
-\begin{solution}
-The forces acting on the water droplet are gravity (\(mg\) downwards) and air resistance; in a water droplet this size, this is proportional to its velocity.  Let \(b\) denote this drag coefficient; then by Newton's second law (if we let up be the positive direction and down be negative), we have
-\[ m \frac{dv}{dt} = -mg - bv .\]
-Note that we have \(-mg\) since gravity always acts downwards, and \(-bv\) because the drag acts in the opposite direction of \(v\).
-It is actually convenient to let \(a=\frac{b}{m}\), and divide this equation by the mass, yielding 
-\[ \frac{dv}{dt} = -g - av .\]
-This is a separable differential equation; we thus have
-\[ \int \frac{1}{g+av}\ dv = \int (-1)dt .\]
-Thus, \(\frac{1}{a}\ln|g+av| = -t+c_1\), or \(|g+av| = e^{-at+ac_1}=c_2e^{-at}\) (where \(c_2=e^{ac_1}\)).  To avoid the pesky absolute value sign, we can absorb a potential negative into the constant to write \(g+av=c_3 e^{-at}\), or (letting \(c_0=\frac{c_3}{a}\))
-\[ v=-\frac{g}{a} +c_0 e^{-at}.\]
-Note that \(\lim _{t \rightarrow \infty} v = -\frac{g}{a}\), so since we are given the terminal velocity, so after converting to meters per second we can solve \(-0.03 = -\frac{9.8}{a}\) to obtain \(a=\frac{9.8}{0.03}\).  We also know that it is dropped from rest, so we compute \(0=v(0)=-0.03+c_0\), so \(c_0=0.03\).  Thus our model for velocity is 
-\[ v=-0.03+0.03e^{-\frac{9.8}{0.03} t}.\]
-Then we simply compute \(v(0.01)=-0.03+0.03e^{-\frac{9.8}{0.03} (0.01)} \approx -0.029 \).  So after \(0.01\ {\rm s}\), the drop is falling approximately  \(2.9\ {\rm \frac{cm}{s}}\).
-\end{solution}
-
-
-\begin{problem}{C2}
 Find the general solution to \[y'+y=-t^2.\]
 \end{problem}
 \begin{solution}
@@ -84,16 +64,31 @@ Thus we easily deduce that \(A=-1\), \(B=2\), and \(D=-2\), giving \(y_p = -t^2+
 \end{solution}
 
 
-\begin{problem}{C3}
-A \(2 {\rm kg}\) mass is suspended by a spring (with spring constant \(8 {\rm kg /s^2}\)).  The mass is pulled down \(1 {\rm m}\) from its equillibrium position and released from rest.  How long does it take to return to its equillibrium point?
+\begin{problem}{C2}
+Consider the following scenario: 
+A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\) and a terminal velocity of \(3\ {\rm \frac{cm}{s}}\).  The droplet is dropped from rest.  
+\begin{enumerate}[(a)]
+\item Write down an IVP modelling the velocity of the water droplet.
+\item What is its velocity after \(0.01\ {\rm s}\)?
+\end{enumerate}
 \end{problem}
 \begin{solution}
-Let \(y\) denote the vertical distance from equillibrium; then the forces acting are gravity and the spring force, giving the ODE
-\[ 2y''+8y=0 .\]
-Simplifying, we have \(y''+4y=0\), so the general solution is \(y=c_1 \cos(2t)+c_2\sin(2t)\).  The initial conditions are \(y(0)=-1\) and \(y'(0)=0\), which imply \(c_1=-1\) and \(c_2=0\), so the system is modelled by \(y=-\cos(2t)\).  This is first zero when \(2t=\frac{\pi}{2}\), i.e. when \(t=\frac{\pi}{4}\).  Thus the mass takes \(\frac{\pi}{4}\) {\rm s} to return to its equillibrium point.
+The forces acting on the water droplet are gravity (\(mg\) downwards) and air resistance; in a water droplet this size, this is proportional to its velocity.  Let \(b\) denote this drag coefficient; then by Newton's second law (if we let up be the positive direction and down be negative), we have
+\[ m \frac{dv}{dt} = -mg - bv .\]
+Note that we have \(-mg\) since gravity always acts downwards, and \(-bv\) because the drag acts in the opposite direction of \(v\).
+It is actually convenient to let \(a=\frac{b}{m}\), and divide this equation by the mass, yielding 
+\[ \frac{dv}{dt} = -g - av .\]
+This is a separable differential equation; we thus have
+\[ \int \frac{1}{g+av}\ dv = \int (-1)dt .\]
+Thus, \(\frac{1}{a}\ln|g+av| = -t+c_1\), or \(|g+av| = e^{-at+ac_1}=c_2e^{-at}\) (where \(c_2=e^{ac_1}\)).  To avoid the pesky absolute value sign, we can absorb a potential negative into the constant to write \(g+av=c_3 e^{-at}\), or (letting \(c_0=\frac{c_3}{a}\))
+\[ v=-\frac{g}{a} +c_0 e^{-at}.\]
+Note that \(\lim _{t \rightarrow \infty} v = -\frac{g}{a}\), so since we are given the terminal velocity, so after converting to meters per second we can solve \(-0.03 = -\frac{9.8}{a}\) to obtain \(a=\frac{9.8}{0.03}\).  We also know that it is dropped from rest, so we compute \(0=v(0)=-0.03+c_0\), so \(c_0=0.03\).  Thus our model for velocity is 
+\[ v=-0.03+0.03e^{-\frac{9.8}{0.03} t}.\]
+Then we simply compute \(v(0.01)=-0.03+0.03e^{-\frac{9.8}{0.03} (0.01)} \approx -0.029 \).  So after \(0.01\ {\rm s}\), the drop is falling approximately  \(2.9\ {\rm \frac{cm}{s}}\).
 \end{solution}
 
-\begin{problem}{C4}
+
+\begin{problem}{C3}
 Find the general solution to \[y''+6y'+13y=0.\]
 \end{problem}
 \begin{solution}
@@ -102,6 +97,24 @@ We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the root
 Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution is
 \[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
 \end{solution}
+
+\begin{problem}{C4}
+Find the solution to
+\[
+y'' + 10y' + 24y = 0
+\]
+when \(y(0)=-3\) and \(y'(0)=2\).
+\end{problem}
+\begin{solution}
+The auxilliary equation is \(r^2+10r+24=0\), which has roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\).  
+\begin{align*}
+-3 &= y(0) = c_1+c_2 \\
+2 &= y'(0)  = -4c_1-6c_2 
+\end{align*}
+Solving this system yields \(c_1 =-8\) and \(c_2 = 5\), so the solution to the IVP is \[y=-8e^{-4t}+5e^{-6t}\]
+\end{solution}
+
+
 
 \begin{problem}{C5}
 Find the general solution to \[y''+6y'+13y=13t^2-t-4.\]
@@ -128,19 +141,16 @@ Then we easily deduce \(A=1\), \(B=-1\), and \(D=0\), so that \(y_p = t^2-t\).  
 
 
 \begin{problem}{C6}
-Find the solution to
-\[
-y'' + 10y' + 24y = 0
-\]
-when \(y(0)=-3\) and \(y'(0)=2\).
+Consider the following scenario:
+A \(2 {\rm kg}\) mass is suspended by a spring (with spring constant \(8 {\rm kg /s^2}\)).  The mass is pulled down \(1 {\rm m}\) from its equillibrium position and released from rest.  
+\begin{enumerate}[(a)]
+\item Write down an IVP modelling the position of the mass.
+\item How long does it take for the mass to return to its equillibrium point?
 \end{problem}
 \begin{solution}
-The auxilliary equation is \(r^2+10r+24=0\), which has roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\).  
-\begin{align*}
--3 &= y(0) = c_1+c_2 \\
-2 &= y'(0)  = -4c_1-6c_2 
-\end{align*}
-Solving this system yields \(c_1 =-8\) and \(c_2 = 5\), so the solution to the IVP is \[y=-8e^{-4t}+5e^{-6t}\]
+Let \(y\) denote the vertical distance from equillibrium; then the forces acting are gravity and the spring force, giving the ODE
+\[ 2y''+8y=0 .\]
+Simplifying, we have \(y''+4y=0\), so the general solution is \(y=c_1 \cos(2t)+c_2\sin(2t)\).  The initial conditions are \(y(0)=-1\) and \(y'(0)=0\), which imply \(c_1=-1\) and \(c_2=0\), so the system is modelled by \(y=-\cos(2t)\).  This is first zero when \(2t=\frac{\pi}{2}\), i.e. when \(t=\frac{\pi}{4}\).  Thus the mass takes \(\frac{\pi}{4}\) {\rm s} to return to its equillibrium point.
 \end{solution}
 
 
