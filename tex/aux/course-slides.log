@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  13 AUG 2018 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  14 AUG 2018 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,7 +1494,7 @@ thkerncmss.
 (./modules/1-C/sections/1.tex [7
 
 ]
-<media/cloud.jpg, id=386, 903.375pt x 602.25pt>
+<media/cloud.jpg, id=402, 903.375pt x 602.25pt>
 File: media/cloud.jpg Graphic file (type jpg)
  <use media/cloud.jpg>
 Package pdftex.def Info: media/cloud.jpg used on input line 126.
@@ -1809,25 +1809,23 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [130
 
-])))
-(./modules/3-S/index.tex [131
+])
+(./modules/2-F/sections/2.tex [131
 
-] (./modules/3-S/standards.tex [132
+] [132
 
 ] [133
 
-])
-(./modules/3-S/readiness/outcomes.tex [134
+] [134
 
-])
-(./modules/3-S/readiness/resources.tex [135
+] [135
 
-]) (./modules/3-S/sections.tex
-(./modules/3-S/sections/1.tex [136
+] [136
 
 ] [137
 
-] [138
+]
+[138
 
 ] [139
 
@@ -1837,8 +1835,7 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [142
 
-]
-[143
+] [143
 
 ] [144
 
@@ -1846,36 +1843,81 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [146
 
-] [147
+])
+(./modules/2-F/sections/3.tex [147
 
-]))) (./modules/4-N/index.tex [148
+]) (./modules/2-F/sections/4.tex [148
 
-]
-(./modules/4-N/standards.tex [149
+])
+(./modules/2-F/sections/6.tex [149
 
-] [150
-
-]) (./modules/4-N/readiness/outcomes.tex [151
-
-]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [152
+]))) (./modules/3-S/index.tex [150
 
 ]
-[153
+(./modules/3-S/standards.tex [151
 
-]))) (./modules/5-D/index.tex [154
+] [152
 
-] (./modules/5-D/standards.tex [155
+]) (./modules/3-S/readiness/outcomes.tex [153
+
+]) (./modules/3-S/readiness/resources.tex [154
+
+])
+(./modules/3-S/sections.tex (./modules/3-S/sections/1.tex [155
+
+] [156
+
+] [157
 
 ]
-[156
+[158
 
-]) (./modules/5-D/readiness/outcomes.tex [157
+] [159
 
-]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [158
+] [160
+
+] [161
+
+] [162
+
+] [163
+
+] [164
+
+] [165
+
+] [166
+
+])))
+(./modules/4-N/index.tex [167
+
+] (./modules/4-N/standards.tex [168
+
+] [169
+
+])
+(./modules/4-N/readiness/outcomes.tex [170
+
+]) (./modules/4-N/sections.tex
+(./modules/4-N/sections/1.tex [171
+
+] [172
+
+]))) (./modules/5-D/index.tex [173
 
 ]
-Package atenddvi Info: Last page = 159.
- [159
+(./modules/5-D/standards.tex [174
+
+] [175
+
+]) (./modules/5-D/readiness/outcomes.tex [176
+
+]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [177
+
+]
+Package atenddvi Info: Last page = 178.
+
+[178
 
 ]))))
 \tf@nav=\write6
@@ -1905,10 +1947,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
  ) 
 Here is how much of TeX's memory you used:
- 40828 strings out of 494910
- 950529 string characters out of 6179836
- 1320908 words of memory out of 5000000
- 42882 multiletter control sequences out of 15000+600000
+ 40917 strings out of 494910
+ 951641 string characters out of 6179836
+ 1321597 words of memory out of 5000000
+ 42921 multiletter control sequences out of 15000+600000
  12995 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,16n,120p,10396b,4631s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1926,10 +1968,10 @@ m/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-slides.pdf (159 pages, 8249673 bytes).
+Output written on aux/course-slides.pdf (178 pages, 8295860 bytes).
 PDF statistics:
- 6844 PDF objects out of 7423 (max. 8388607)
- 6227 compressed objects within 63 object streams
- 337 named destinations out of 1000 (max. 500000)
- 1775 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 7647 PDF objects out of 8907 (max. 8388607)
+ 7003 compressed objects within 71 object streams
+ 379 named destinations out of 1000 (max. 500000)
+ 1807 words of extra memory for PDF output out of 10000 (max. 10000000)
 
