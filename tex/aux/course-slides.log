@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  14 AUG 2018 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  14 AUG 2018 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1839,44 +1839,41 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [144
 
-] [145
+]) (./modules/2-F/sections/3.tex [145
 
 ] [146
 
-] [147
+]
+[147
 
 ] [148
 
-])
-(./modules/2-F/sections/3.tex [149
+] [149
 
 ] [150
 
-]) (./modules/2-F/sections/4.tex
-[151
+] [151
 
-]) (./modules/2-F/sections/6.tex [152
+] [152
 
-]))) (./modules/3-S/index.tex [153
+] [153
 
-]
-(./modules/3-S/standards.tex [154
+] [154
 
 ] [155
 
-]) (./modules/3-S/readiness/outcomes.tex [156
+] [156
 
-]) (./modules/3-S/readiness/resources.tex [157
+] [157
 
-])
-(./modules/3-S/sections.tex (./modules/3-S/sections/1.tex [158
+] [158
 
-] [159
+]
+[159
 
 ] [160
 
-]
-[161
+]) (./modules/2-F/sections/4.tex [161
 
 ] [162
 
@@ -1886,44 +1883,80 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [165
 
-] [166
+]
+[166
 
 ] [167
 
-] [168
+]) (./modules/2-F/sections/5.tex [168
 
-] [169
+]))) (./modules/3-S/index.tex
+[169
 
-])))
-(./modules/4-N/index.tex [170
+] (./modules/3-S/standards.tex [170
 
-] (./modules/4-N/standards.tex [171
-
-] [172
+] [171
 
 ])
-(./modules/4-N/readiness/outcomes.tex [173
+(./modules/3-S/readiness/outcomes.tex [172
 
-]) (./modules/4-N/sections.tex
-(./modules/4-N/sections/1.tex [174
+])
+(./modules/3-S/readiness/resources.tex [173
+
+]) (./modules/3-S/sections.tex
+(./modules/3-S/sections/1.tex [174
 
 ] [175
 
-]))) (./modules/5-D/index.tex [176
+] [176
 
-]
-(./modules/5-D/standards.tex [177
+] [177
 
 ] [178
 
-]) (./modules/5-D/readiness/outcomes.tex [179
+] [179
 
-]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [180
+] [180
 
 ]
-Package atenddvi Info: Last page = 181.
-
 [181
+
+] [182
+
+] [183
+
+] [184
+
+] [185
+
+]))) (./modules/4-N/index.tex [186
+
+]
+(./modules/4-N/standards.tex [187
+
+] [188
+
+]) (./modules/4-N/readiness/outcomes.tex [189
+
+]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [190
+
+]
+[191
+
+]))) (./modules/5-D/index.tex [192
+
+] (./modules/5-D/standards.tex [193
+
+]
+[194
+
+]) (./modules/5-D/readiness/outcomes.tex [195
+
+]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [196
+
+]
+Package atenddvi Info: Last page = 197.
+ [197
 
 ]))))
 \tf@nav=\write6
@@ -1953,10 +1986,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
  ) 
 Here is how much of TeX's memory you used:
- 40921 strings out of 494910
- 951686 string characters out of 6179836
- 1322534 words of memory out of 5000000
- 42919 multiletter control sequences out of 15000+600000
+ 40971 strings out of 494910
+ 952184 string characters out of 6179836
+ 1323002 words of memory out of 5000000
+ 42937 multiletter control sequences out of 15000+600000
  12995 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,16n,120p,10396b,4631s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1974,10 +2007,10 @@ m/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-slides.pdf (181 pages, 8304418 bytes).
+Output written on aux/course-slides.pdf (197 pages, 8342836 bytes).
 PDF statistics:
- 7767 PDF objects out of 8907 (max. 8388607)
- 7119 compressed objects within 72 object streams
- 385 named destinations out of 1000 (max. 500000)
+ 8356 PDF objects out of 8907 (max. 8388607)
+ 7687 compressed objects within 77 object streams
+ 417 named destinations out of 1000 (max. 500000)
  1807 words of extra memory for PDF output out of 10000 (max. 10000000)
 
