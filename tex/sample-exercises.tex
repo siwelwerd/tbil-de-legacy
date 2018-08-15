@@ -302,9 +302,21 @@ Note that  \(\langle -(3x-y), x+3y\rangle\) is conservative, as \(\frac{\partial
 \end{solution}
 
 \begin{problem}{S2}
-
+Consider the following scenario:
+Two competing fish species (red fish and blue fish) live in a lake.  In the absence of one species, the lake will support \(30,000\) of the other fish (as the species competes among itself for resources).  It is calculated that the competition coefficients are \(\alpha _{1,2}=\alpha _{2,1} = 0.5\).
+\begin{enumerate}[(a)]
+\item Write down a system of ODEs modelling the interaction of the two species.
+\item If the lake is stocked with \(12,000\) blue fish and \(40,000\) red fish, what will happen to the populations in the long run?
+\end{enumerate}
 \end{problem}
 \begin{solution}
+
+\begin{align*}
+x' &= \frac{r_1}{30000}x\left(30000-x-0.5y\right) \\
+y' &= \frac{r_2}{30000}y\left(30000-y-0.5x\right) 
+\end{align*}
+
+Then the nontrivial isoclines are \(x+0.5y=30000\) and \(0.5x+y=30000\) which intersect at the (equillibrium) point \(20000,20000\).  Plotting the isoclines (TODO) shows that this a stable equillibrium (sink), so regardless of the intial populations, they will approach \(20,000\) of each species in the long run.
 
 \end{solution}
 
