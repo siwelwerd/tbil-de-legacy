@@ -224,8 +224,16 @@ Thus, we have (letting \(c_3=c_2-c_1\)) \[-\ln|1-y|=\frac{1}{2}x^2+c_3.\]
 Then exponentiating, we have (letting \(c_4=\pm e^{-c_3}\) ) \(1-y=c_4e^{-\frac{1}{2}x^2}\), so (with \(c=-c_4\) ) the general solution is   \[y=1+c e^{-\frac{1}{2}x^2}.\]
 \end{solution}
 
-
 \begin{problem}{F3}
+
+\end{problem}
+\begin{solution}
+
+\end{solution}
+
+
+
+\begin{problem}{F4}
 Consider the autonomous equation 
 \[\frac{dx}{dt} = x^2-1.\]  
 \begin{enumerate}[(a)]
@@ -259,14 +267,14 @@ Note that \(x^2-1=(x-1)(x+1)\), so there are equillibria solutions at \(x=1\) an
 We see that \(-1\) is a sink (stable), while \(1\) is a source (unstable).  A trajectory passing through \(x(4)=0\) will approach \(x=-1\) in the limit.
 \end{solution}
 
-\begin{problem}{F4}
+\begin{problem}{F5}
 Solve \(y'+xy=x^3\).
 \end{problem}
 \begin{solution}
 Solve homog; then variation of parameters.
 \end{solution}
 
-\begin{problem}{F5}
+\begin{problem}{F6}
 One of the two ODEs below is exact.  Identify which one, and solve it.
 \begin{align*}
  (x + 3y)y'+y &=3x \\ %Exact
@@ -274,14 +282,15 @@ One of the two ODEs below is exact.  Identify which one, and solve it.
 \end{align*}
 \end{problem}
 \begin{solution}
+Rewrite the first equation as \(y'=\frac{3x-y}{x+3y}\); this corresponds to the autonomous system 
+\begin{align*}
+\frac{dy}{dt} &= 3x - y \\
+\frac{dx}{dt} &= x + 3y 
+\end{align*}
+If there is a function with \(\nabla F = \langle -(3x-y), x+3y\rangle\), then \[\frac{d}{dt}F(x,y)=\frac{\partial F}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial F}{\partial y} \frac{\partial y}{\partial t} = -(3x-y)(x+3y)+(x+3y)(3x-y)=0\], so \(F(x,y)=c\) is a solution of the autonomous system.
 
-\end{solution}
-
-\begin{problem}{F6}
-
-\end{problem}
-\begin{solution}
-
+Note that  \(\langle -(3x-y), x+3y\rangle\) is conservative, as \(\frac{\partial}{\partial x}(x+3y)=1=\frac{\partial}{\partial y}(-3x+y)\); so a potential function \(F\) is found by integrating: \(F = \int x+3y\ dy = xy+\frac{3}{2}y^2+f(x) \), and differentiating with respect to \(x\), we have \(-3x+y=y+f'(x)\), so \(f'(x)=-3x\), in which case \(f(x)=\int -3x\ dx = \frac{-3}{2}x^2\), so a potential function is \(F(x,y)=xy+\frac{3}{2}y^2-\frac{3}{2}x^2\).  So the general solution to the ODE is
+\[ xy+\frac{3}{2}y^2-\frac{3}{2}x^2 = c.\]
 \end{solution}
 
 
