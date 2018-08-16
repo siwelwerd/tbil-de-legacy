@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  16 AUG 2018 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  16 AUG 2018 12:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -717,13 +717,6 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count146
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
-yexternal.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zexternalshared.code.tex))
-\openout3 = `course-notes.auxlock'.
-
-
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
 code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
@@ -752,6 +745,13 @@ decorations.markings.code.tex))
 \c@ActivityCounter=\count148
 \c@SubactivityCounter=\count149
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
+yexternal.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zexternalshared.code.tex))
+\openout3 = `course-notes.auxlock'.
+
+
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count150
@@ -1269,7 +1269,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8.
 Here is how much of TeX's memory you used:
  36829 strings out of 494910
  852115 string characters out of 6179836
- 1007556 words of memory out of 5000000
+ 1007552 words of memory out of 5000000
  39222 multiletter control sequences out of 15000+600000
  7990 words of font info for 31 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1287,7 +1287,7 @@ cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-notes.pdf (32 pages, 7960740 bytes).
+Output written on aux/course-notes.pdf (32 pages, 7960734 bytes).
 PDF statistics:
  1106 PDF objects out of 1200 (max. 8388607)
  667 compressed objects within 7 object streams

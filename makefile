@@ -41,7 +41,8 @@ pdf/standards.pdf: tex/tbil-de.sty tex/standards.tex tex/modules/*/standards.tex
 	mv aux/standards.pdf ../pdf
 
 pdf/exercise-library.pdf: tex/exercise-library.tex tex/modules/*/exercises/*.tex
-	cd tex; pdflatex -shell-escape --output-directory=aux exercise-library.tex; \
+	cd tex; \
+	pdflatex -shell-escape --output-directory=aux exercise-library.tex; \
 	mv aux/exercise-library.pdf ../pdf
 
 pdf/facilitator-notes.pdf: tex/facilitator-notes.tex
@@ -96,14 +97,40 @@ pdf/sample-exercises.pdf: tex/sample-exercises.tex
 
 
 #RATS
-pdf/rats/rat-*.pdf: tex/modules/*/readiness/test.tex tex/rats/rat-*.tex
+#pdf/rat-*.pdf: tex/modules/*/readiness/test.tex tex/rats/rat-*.tex
+#	cd tex; \
+#	for file in rat-*.tex; do \
+#		pdflatex -shell-escape --output-directory=aux $$file; \
+#	done;\
+#	cd aux; \
+#	for file in rat*.pdf; do \
+#		mv $$file ../../pdf/rats/$$file; \
+#	done;
+
+pdf/rats/rat-1-C.pdf: tex/modules/1-C/readiness/test.tex tex/rat-1-C.tex tex/course-notes-rats.sty
 	cd tex; \
-	for file in rats/*.tex; do \
-		pdflatex -shell-escape --output-directory=aux $$file; \
-	done;\
-	cd aux; \
-	for file in rat*.pdf; do \
-		mv $$file ../../pdf/rats/$$file; \
-	done;
+	pdflatex -shell-escape --output-directory=aux rat-1-C.tex; \
+	mv aux/rat-1-C.pdf ../pdf/rats
+
+pdf/rats/rat-2-F.pdf: tex/modules/2-F/readiness/test.tex tex/rat-2-F.tex tex/course-notes-rats.sty
+	cd tex; \
+	pdflatex -shell-escape --output-directory=aux rat-2-F.tex; \
+	mv aux/rat-2-F.pdf ../pdf/rats
+
+pdf/rats/rat-3-S.pdf: tex/modules/3-S/readiness/test.tex tex/rat-3-S.tex tex/course-notes-rats.sty
+	cd tex; \
+	pdflatex -shell-escape --output-directory=aux rat-3-S.tex; \
+	mv aux/rat-3-S.pdf ../pdf/rats
+
+pdf/rats/rat-4-N.pdf: tex/modules/4-N/readiness/test.tex tex/rat-4-N.tex tex/course-notes-rats.sty
+	cd tex; \
+	pdflatex -shell-escape --output-directory=aux rat-4-N.tex; \
+	mv aux/rat-4-N.pdf ../pdf/rats
+
+pdf/rats/rat-5-D.pdf: tex/modules/5-D/readiness/test.tex tex/rat-5-D.tex tex/course-notes-rats.sty
+	cd tex; \
+	pdflatex -shell-escape --output-directory=aux rat-5-D.tex; \
+	mv aux/rat-5-D.pdf ../pdf/rats
+
 
 

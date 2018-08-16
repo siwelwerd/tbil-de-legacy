@@ -1,0 +1,59 @@
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{fancyhdr}
+
+
+%%%Page layout setup%%%
+\newcommand{\header}{Differential Equations}
+\newcommand{\setHeader}[1]{\renewcommand{\header}{#1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\header}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\setlength{\parindent}{0pt}
+
+\NewEnviron{module}[2]{
+  \renewcommand{\moduleLetter}{#1}
+  \setcounter{SectionCounter}{0}
+  \setHeader{Module \moduleLetter{}: #2}
+  \BODY
+}
+
+\NewEnviron{readinessAssuranceOutcomes}{
+  \subsection*{Readiness Assurance Outcomes}
+
+  Before beginning this module, each student should be able to...
+  \begin{itemize}
+    \BODY
+  \end{itemize}
+}
+
+
+\NewEnviron{readinessAssuranceResources}{
+  \subsection*{Readiness Assurance Resources}
+  The following resources will help you prepare for this module.
+  \begin{itemize}
+    \BODY
+  \end{itemize}
+}
+
+
+\NewEnviron{readinessAssuranceTest}{
+  \newpage
+  \subsection*{Readiness Assurance Test}
+  Choose the most appropriate response for each question.
+  \begin{enumerate}[1)]
+    \BODY
+  \end{enumerate}
+}
+
+
+\NewEnviron{readinessAssuranceTestChoices}{
+  \begin{enumerate}[(a)]
+    \BODY
+  \end{enumerate}
+}
+
