@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  16 AUG 2018 12:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  16 AUG 2018 15:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1495,13 +1495,20 @@ thkerncmss.
 )
 [5
 
-]) (./modules/1-C/readiness/resources.tex [6
+]) (./modules/1-C/readiness/resources.tex
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+ [6
 
 ]) (./modules/1-C/sections.tex
 (./modules/1-C/sections/1.tex [7
 
 ]
-<media/cloud.jpg, id=402, 903.375pt x 602.25pt>
+<media/cloud.jpg, id=407, 903.375pt x 602.25pt>
 File: media/cloud.jpg Graphic file (type jpg)
  <use media/cloud.jpg>
 Package pdftex.def Info: media/cloud.jpg used on input line 142.
@@ -2057,10 +2064,10 @@ m/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-slides.pdf (206 pages, 8376141 bytes).
+Output written on aux/course-slides.pdf (206 pages, 8379659 bytes).
 PDF statistics:
- 8814 PDF objects out of 8907 (max. 8388607)
- 8117 compressed objects within 82 object streams
+ 8819 PDF objects out of 8907 (max. 8388607)
+ 8122 compressed objects within 82 object streams
  435 named destinations out of 1000 (max. 500000)
  1863 words of extra memory for PDF output out of 10000 (max. 10000000)
 
