@@ -23,7 +23,7 @@ build: pre-build pdf/rats/rat-*.pdf pdf/slides/slides*pdf pdf/course-notes.pdf \
 
 
 pdf/course-notes.pdf: tex/course-notes.sty tex/tbil-de.sty tex/course-notes.tex \
-						tex/modules/*/sections/*.tex
+						tex/modules/*/sections/*.tex tex/modules/*/readiness/*.tex
 	cd tex; \
 	pdflatex -shell-escape --output-directory=aux course-notes.tex; \
 	pdflatex -shell-escape --output-directory=aux course-notes.tex; \
