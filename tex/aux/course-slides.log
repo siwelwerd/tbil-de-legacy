@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  14 AUG 2018 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  16 AUG 2018 12:07
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **course-slides.tex
 (./course-slides.tex
@@ -956,6 +956,13 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count179
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
+yexternal.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zexternalshared.code.tex))
+\openout3 = `course-slides.auxlock'.
+
+
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
 code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
@@ -1497,7 +1504,7 @@ thkerncmss.
 <media/cloud.jpg, id=402, 903.375pt x 602.25pt>
 File: media/cloud.jpg Graphic file (type jpg)
  <use media/cloud.jpg>
-Package pdftex.def Info: media/cloud.jpg used on input line 135.
+Package pdftex.def Info: media/cloud.jpg used on input line 142.
 (pdftex.def)             Requested size: 180.6718pt x 120.44786pt.
  [8
 
@@ -1507,15 +1514,23 @@ Package pdftex.def Info: media/cloud.jpg used on input line 135.
 
 ] [11
 
-] [12
+]
+===== Image 'aux/course-slides-figure0' is up-to-date. ======
+[12
 
-] [13
+ <./aux/course-slides-figure0.pdf>]
+===== Image 'aux/course-slides-figure1' is up-to-date. ======
+[13
 
-] [14
+ <./aux/course-slides-figure1.pdf>]
+===== Image 'aux/course-slides-figure2' is up-to-date. ======
+[14
 
-] [15
+ <./aux/course-slides-figure2.pdf>]
+===== Image 'aux/course-slides-figure3' is up-to-date. ======
+[15
 
-] [16
+ <./aux/course-slides-figure3.pdf>] [16
 
 ] [17
 
@@ -1525,12 +1540,12 @@ Package pdftex.def Info: media/cloud.jpg used on input line 135.
 
 ] [20
 
-]
-[21
+] [21
 
 ] [22
 
-]) (./modules/1-C/sections/2.tex [23
+])
+(./modules/1-C/sections/2.tex [23
 
 ] [24
 
@@ -1544,12 +1559,12 @@ Package pdftex.def Info: media/cloud.jpg used on input line 135.
 
 ] [29
 
-]
-[30
+] [30
 
 ] [31
 
-] [32
+]
+[32
 
 ] [33
 
@@ -1561,11 +1576,11 @@ Package pdftex.def Info: media/cloud.jpg used on input line 135.
 
 ]
 File: media/cloud.jpg Graphic file (type jpg)
-
-<use media/cloud.jpg>
-Package pdftex.def Info: media/cloud.jpg used on input line 54.
+ <use media/cloud.jpg>
+Package pdftex.def Info: media/cloud.jpg used on input line 55.
 (pdftex.def)             Requested size: 180.6718pt x 120.44786pt.
- [37
+
+[37
 
 ] [38
 
@@ -1632,13 +1647,19 @@ s/goodbadshocks-83.png> <./media/shocks/goodbadshocks-84.png> <./media/shocks/g
 oodbadshocks-85.png> <./media/shocks/goodbadshocks-86.png> <./media/shocks/good
 badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
 
-] [49
+]
+===== Image 'aux/course-slides-figure4' is up-to-date. ======
+[49
 
-] [50
+ <./aux/course-slides-figure4.pdf>]
+===== Image 'aux/course-slides-figure5' is up-to-date. ======
+[50
 
-] [51
+ <./aux/course-slides-figure5.pdf>]
+===== Image 'aux/course-slides-figure6' is up-to-date. ======
+[51
 
-] [52
+ <./aux/course-slides-figure6.pdf>] [52
 
 ] [53
 
@@ -1652,12 +1673,12 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
 
 ] [58
 
-] [59
+]
+[59
 
 ] [60
 
-]
-[61
+] [61
 
 ]) (./modules/1-C/sections/5.tex [62
 
@@ -1671,12 +1692,12 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
 
 ] [67
 
-] [68
+]
+[68
 
 ] [69
 
-]
-[70
+] [70
 
 ] [71
 
@@ -1690,12 +1711,12 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
 
 ] [76
 
-] [77
+]
+[77
 
 ] [78
 
-]
-[79
+] [79
 
 ] [80
 
@@ -1709,12 +1730,12 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
 
 ] [85
 
-] [86
+]
+[86
 
 ] [87
 
-]
-[88
+] [88
 
 ] [89
 
@@ -1728,12 +1749,12 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
 
 ] [94
 
-] [95
+]
+[95
 
 ] [96
 
-])
-(./modules/1-C/sections/9.tex [97
+]) (./modules/1-C/sections/9.tex [97
 
 ] [98
 
@@ -1745,12 +1766,12 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
 
 ] [102
 
-] [103
+]
+[103
 
 ] [104
 
-]
-[105
+] [105
 
 ] [106
 
@@ -1764,38 +1785,43 @@ badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
 
 ] [111
 
-]))) (./modules/2-F/index.tex [112
+])))
+(./modules/2-F/index.tex [112
 
-]
-(./modules/2-F/standards.tex [113
+] (./modules/2-F/standards.tex [113
 
 ] [114
 
-]) (./modules/2-F/readiness/outcomes.tex [115
-
-]) (./modules/2-F/readiness/resources.tex [116
+])
+(./modules/2-F/readiness/outcomes.tex [115
 
 ])
-(./modules/2-F/sections.tex (./modules/2-F/sections/1.tex [117
+(./modules/2-F/readiness/resources.tex [116
+
+]) (./modules/2-F/sections.tex
+(./modules/2-F/sections/1.tex [117
 
 ] [118
 
 ] [119
 
-]
-[120
+] [120
 
 ] [121
 
 ]
-Overfull \vbox (5.46593pt too high) detected at line 150
+===== Image 'aux/course-slides-figure7' is up-to-date. ======
+
+Overfull \vbox (5.46555pt too high) detected at line 150
  []
 
 [122
 
-] [123
+ <./aux/course-slides-figure7.pdf>]
+===== Image 'aux/course-slides-figure8' is up-to-date. ======
+[123
 
-] [124
+ <./aux/course-slides-figure8.pdf>] [124
 
 ] [125
 
@@ -1803,9 +1829,11 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [127
 
-] [128
+]
+===== Image 'aux/course-slides-figure9' is up-to-date. ======
+[128
 
-] [129
+ <./aux/course-slides-figure9.pdf>] [129
 
 ] [130
 
@@ -1856,11 +1884,13 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [152
 
-] [153
+]) (./modules/2-F/sections/4.tex [153
 
-] [154
+]
+===== Image 'aux/course-slides-figure10' is up-to-date. ======
+[154
 
-] [155
+ <./aux/course-slides-figure10.pdf>] [155
 
 ] [156
 
@@ -1868,12 +1898,12 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [158
 
-]
-[159
+] [159
 
 ] [160
 
-]) (./modules/2-F/sections/4.tex [161
+]
+[161
 
 ] [162
 
@@ -1883,80 +1913,100 @@ Overfull \vbox (5.46593pt too high) detected at line 150
 
 ] [165
 
-]
-[166
+] [166
 
 ] [167
 
-]) (./modules/2-F/sections/5.tex [168
+] [168
 
-]))) (./modules/3-S/index.tex
-[169
+] [169
 
-] (./modules/3-S/standards.tex [170
+])
+(./modules/2-F/sections/5.tex [170
 
 ] [171
 
-])
-(./modules/3-S/readiness/outcomes.tex [172
+] [172
 
-])
-(./modules/3-S/readiness/resources.tex [173
+] [173
 
-]) (./modules/3-S/sections.tex
-(./modules/3-S/sections/1.tex [174
+] [174
 
 ] [175
 
 ] [176
 
-] [177
+]
+[177
 
-] [178
+]))) (./modules/3-S/index.tex [178
 
-] [179
-
-] [180
+] (./modules/3-S/standards.tex [179
 
 ]
-[181
+[180
 
-] [182
+]) (./modules/3-S/readiness/outcomes.tex [181
 
-] [183
+])
+(./modules/3-S/readiness/resources.tex [182
+
+]) (./modules/3-S/sections.tex
+(./modules/3-S/sections/1.tex [183
 
 ] [184
 
-] [185
-
-]))) (./modules/4-N/index.tex [186
-
 ]
-(./modules/4-N/standards.tex [187
+===== Image 'aux/course-slides-figure11' is up-to-date. ======
+[185
+
+ <./aux/course-slides-figure11.pdf>] [186
+
+] [187
 
 ] [188
 
-]) (./modules/4-N/readiness/outcomes.tex [189
+] [189
 
-]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [190
+] [190
 
-]
-[191
-
-]))) (./modules/5-D/index.tex [192
-
-] (./modules/5-D/standards.tex [193
+] [191
 
 ]
-[194
+[192
 
-]) (./modules/5-D/readiness/outcomes.tex [195
+] [193
 
-]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [196
+] [194
+
+]))) (./modules/4-N/index.tex [195
 
 ]
-Package atenddvi Info: Last page = 197.
- [197
+(./modules/4-N/standards.tex [196
+
+] [197
+
+]) (./modules/4-N/readiness/outcomes.tex [198
+
+]) (./modules/4-N/sections.tex (./modules/4-N/sections/1.tex [199
+
+]
+[200
+
+]))) (./modules/5-D/index.tex [201
+
+] (./modules/5-D/standards.tex [202
+
+]
+[203
+
+]) (./modules/5-D/readiness/outcomes.tex [204
+
+]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [205
+
+]
+Package atenddvi Info: Last page = 206.
+ [206
 
 ]))))
 \tf@nav=\write6
@@ -1986,13 +2036,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
  ) 
 Here is how much of TeX's memory you used:
- 40971 strings out of 494910
- 952184 string characters out of 6179836
- 1323002 words of memory out of 5000000
- 42937 multiletter control sequences out of 15000+600000
+ 40644 strings out of 494910
+ 945699 string characters out of 6179836
+ 1099822 words of memory out of 5000000
+ 42570 multiletter control sequences out of 15000+600000
  12995 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,16n,120p,10396b,4631s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 82i,16n,106p,10396b,917s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -2007,10 +2057,10 @@ m/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-slides.pdf (197 pages, 8342836 bytes).
+Output written on aux/course-slides.pdf (206 pages, 8376151 bytes).
 PDF statistics:
- 8356 PDF objects out of 8907 (max. 8388607)
- 7687 compressed objects within 77 object streams
- 417 named destinations out of 1000 (max. 500000)
- 1807 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 8814 PDF objects out of 8907 (max. 8388607)
+ 8117 compressed objects within 82 object streams
+ 435 named destinations out of 1000 (max. 500000)
+ 1863 words of extra memory for PDF output out of 10000 (max. 10000000)
 
