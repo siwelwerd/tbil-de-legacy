@@ -1,0 +1,73 @@
+%!TEX root =../../../course-notes.tex
+% ^ leave for LaTeXTools build functionality
+\begin{applicationActivities}
+
+\begin{observation}
+Consider a (massless) particle in a fluid flow.
+
+
+What path does the particle take?
+\end{observation}
+
+\begin{observation}
+A vector field \(\langle P,Q\rangle\) corresponds to the slope field of the differential equation \[\frac{dy}{dx}=\frac{Q}{P}.\]
+\vfill
+Thus, a solution to this ODE describes the path taken by the particle in this fluid flow.
+\end{observation}
+
+\begin{activity}{10}
+Consider the simpler ODE \[\frac{dy}{dx} = \frac{-2xy^2-1}{2x^2}.\]
+
+This can be rewritten as \[ (2xy^2+1) + 2x^2 \frac{dy}{dx} = 0 .\]
+\vfill
+Now, consider \(\phi(x,y)=x^2y^2+y \).  
+\begin{subactivity}
+Compute \(\nabla \phi \).
+\end{subactivity}
+\begin{subactivity}
+Differentiate the equation \(\phi(x,y)=c\) with respect to \(x\).
+\end{subactivity}
+\begin{subactivity}
+Solve the ODE \( (2xy^2+1) + 2x^2 \frac{dy}{dx} = 0 \).
+\end{subactivity}
+\end{activity}
+
+\begin{definition}
+If \(\langle M,N\rangle\) is a conservative vector field, the ODE
+\[M + N \frac{dy}{dx} = 0 \]
+is called \term{exact}.  This ODE can also be written
+\[\frac{dy}{dx} = \frac{ -M}{N} .\]
+If \(\phi(x,y)\) is a potential function of \(\langle M,N\rangle\), the general solution to the
+ODE is \(\phi(x,y)=c.\)
+\end{definition}
+
+\begin{activity}{10}
+Determine which of the following ODEs are exact.
+\begin{enumerate}[(a)]
+\item \(2xy+(x^2-2y)\frac{dy}{dx}=0\) 
+\item \(\frac{dy}{dx} = \frac{2xy}{x^2+2y} \)
+\item \(\frac{dy}{dx} = -\frac{2xy}{x^2+2y} \)
+\end{enumerate}
+\end{activity}
+
+\begin{activity}{10}
+Solve the exact ODE \(2xy+(x^2-2y) \frac{dy}{dx}=0\).
+\end{activity}
+
+\begin{activity}{10}
+Determine which of the following ODEs are exact.
+\begin{enumerate}[(a)]
+\item \(\frac{dy}{dx}= \frac{x}{x^2+y^2-y}\)
+\item \( -\frac{x}{x^2+y^2} +(1-\frac{y}{x^2+y^2}\frac{dy}{dx} = 0\)
+\end{enumerate}
+\end{activity}
+
+\begin{activity}{10}
+Solve the exact ODE 
+\[ -\frac{x}{x^2+y^2} +(1-\frac{y}{x^2+y^2}\frac{dy}{dx} = 0.\]
+These solutions describe the trajectories taken by particles in the fluid flow in the first slide.
+\end{activity}
+
+
+
+\end{applicationActivities}
