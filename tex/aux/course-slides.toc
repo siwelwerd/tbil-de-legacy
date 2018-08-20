@@ -16,9 +16,10 @@
 \beamer@subsectionintoc {2}{4}{Section F{}.4}{156}{0}{2}
 \beamer@subsectionintoc {2}{5}{Section F{}.5}{173}{0}{2}
 \beamer@subsectionintoc {2}{6}{Section F{}.6}{181}{0}{2}
-\beamer@sectionintoc {3}{Module S{}}{193}{0}{3}
-\beamer@subsectionintoc {3}{1}{Section S{}.1}{198}{0}{3}
-\beamer@sectionintoc {4}{Module N{}}{210}{0}{4}
-\beamer@subsectionintoc {4}{1}{Section N{}.1}{214}{0}{4}
-\beamer@sectionintoc {5}{Module D{}}{216}{0}{5}
-\beamer@subsectionintoc {5}{1}{Section D{}.1}{220}{0}{5}
+\beamer@subsectionintoc {2}{7}{Section F{}.7}{191}{0}{2}
+\beamer@sectionintoc {3}{Module S{}}{194}{0}{3}
+\beamer@subsectionintoc {3}{1}{Section S{}.1}{199}{0}{3}
+\beamer@sectionintoc {4}{Module N{}}{211}{0}{4}
+\beamer@subsectionintoc {4}{1}{Section N{}.1}{215}{0}{4}
+\beamer@sectionintoc {5}{Module D{}}{217}{0}{5}
+\beamer@subsectionintoc {5}{1}{Section D{}.1}{221}{0}{5}
