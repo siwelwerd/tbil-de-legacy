@@ -26,23 +26,45 @@ List all of the forces acting on a tiny droplet of water falling from the sky.
 
 \begin{activity}{5}
 Tiny droplets of water obey \term{Stoke's law}, which says that air resistance is proportional to (the magnitude of) velocity.
+Let \(v\) be the velocity of a droplet of water (positive for upward, negative for downward).
+Let \(g>0\) be the magnitude of acceleration due to gravity and \(b>0\) be another positive constant.
+Assume that the only forces acting on a falling droplet of water are gravity and air resistance.
 \\~\\
-Based on Newton's second law, which of the following differential equations that model the speed of a falling droplet of water?  
+Apply Newton's second law (force \(=\) mass \(\times\) acceleration) 
+to determine which of the following
+\term{ordinary differential equations (ODEs)} models the velocity of a falling droplet of water. 
 \vfill
 \begin{enumerate}[(a)]
 \item \(v'=g-v\)
 \item \(v'=g+v\)
-\item \(mv'=mg-bv\)
-\item \(mv'=mg+bv\)
+\item \(mv'=-mg-bv\)
+\item \(mv'=-mg+bv\)
 \end{enumerate}
 \end{activity}
 
+\begin{observation}
+The modeling equation
+\[mv'=-mg-bv\]
+may be obtained by splitting the total force into gravity and air resistance:
+\[F=F_g+F_r\]
+
+Then \(F=ma=mv'\) and \(F_g=m(-g)=-mg\) are the result of Newton's second law,
+and \(F_r=-bv\) holds because it should be (a) in the opposite direction of velocity 
+and (b) a constant multiple of velocity.
+
+\vfill
+
+Note that this equation may be rearranged as follows to group \(v\)
+and its derivative \(v'\) together on the left-hand side:
+
+\[v'+\left(\frac{b}{m}\right)v=-g\]
+\end{observation}
 
 \begin{definition}
 A \term{first order constant coefficient} differential equation can be written in the form
-\[y^\prime+by=c,\]
+\[y^\prime+by=f(x),\]
 or equivalently,
-\[\frac{dy}{dx} +by=c.\]
+\[\frac{dy}{dx} +by=f(x).\]
 We will use both notations interchangeably.
 
 Here, \term{first order} refers to the fact that the highest derivative we see is the first derivative of \(y\).
@@ -111,25 +133,27 @@ Consider the differential equation \(y^\prime=y\).
 Find a solution to \(y^{\prime}=y\).
 \end{subactivity}
 \begin{subactivity}
-Find {\bf all} solutions to \(y^{\prime}=y\).
+Modify this solution to write an expression describing \textbf{all} solutions to \(y^{\prime}=y\).
 \end{subactivity}
 \end{activity}
 
 \begin{definition}
-A differential equation will have many solutions.  The \term{general solution} encompasses all of these by using 
+A differential equation will have many solutions.
+Each individual solution is said to be a \term{particular solution},
+while the \term{general solution} encompasses all of these by using 
 parameters such as \(C,k,c_0,c_1\) and so on. For example:
 
 \begin{itemize}
 \item The general solution to the differential equation \(y'=2x-3\) is \(y=x^2-3x+C\) (as done in
 Calculus courses).
-\item The general solution for \(y'=y\) is \(y=c_0 e^x\) (as done in the previous activity). 
+\item The general solution for \(y'=y\) is \(y=ke^x\) (as done in the previous activity). 
 \end{itemize}
 
 \end{definition}
 
 
 \begin{activity}{15}
-Adapt the solution \(y=c_0e^x\) for \(y^\prime=y\) to find a general solutions for
+Adapt the general solution \(y=ke^x\) for \(y^\prime=y\) to find general solutions for
 the following differential equations.
 \begin{subactivity}
 Solve \(y^{\prime}=2y\).
