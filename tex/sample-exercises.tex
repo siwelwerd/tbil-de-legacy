@@ -52,18 +52,33 @@ and what the expectations for a complete solution are.
 Find the general solution to \[y'+y=-t^2.\]
 \end{problem}
 \begin{solution}
-First, we find a general solution to the homogeneous equation \[y'+y=0.\]  This has auxilliary equation \(r+1=0\), which has a single root at \(r=1\), so \(ce^{-t}\) is a solution.  We can find a particular solution \(y_p\) to the given equation by using undetermined coefficients; since \(-t^2\) is a polynomial, we let \(y_p = At^2+Bt+D\) and determine the coefficients \(A\), \(B\), and \(D\).  
-\begin{align*}
-y_p ^\prime +y_p= &= (2At+B)+(At^2+Bt+D) \\
-&= At^2+(2A+B)+(B+D)
-\end{align*}
+First, we find a general solution to the homogeneous equation \[y'+y=0.\]  This has auxilliary equation \(r+1=0\), which has a single root at \(r=1\), so \(ce^{-t}\) is a solution.  
+%We can find a particular solution \(y_p\) to the given equation by using undetermined coefficients; since \(-t^2\) is a polynomial, we let \(y_p = At^2+Bt+D\) and determine the coefficients \(A\), \(B\), and \(D\).  
 
-So if \(y_p\) is a solution, we must have \(y_p ^\prime+y_p = -t^2\), giving us the system of equations
-\begin{align*}
-A&=-1 \\ 2A+B &= 0 \\ B+D&=0
-\end{align*}
-Thus we easily deduce that \(A=-1\), \(B=2\), and \(D=-2\), giving \(y_p = -t^2+2t-2\).  Thus, the general solution is
-\[y = -t^2+2t-2+ce^{-t}.\]
+%\begin{align*}
+
+%y_p ^\prime +y_p= &= (2At+B)+(At^2+Bt+D) \\
+
+%&= At^2+(2A+B)+(B+D)
+
+%\end{align*}
+
+%
+
+%So if \(y_p\) is a solution, we must have \(y_p ^\prime+y_p = -t^2\), giving us the system of equations
+
+%\begin{align*}
+
+%A&=-1 \\ 2A+B &= 0 \\ B+D&=0
+
+%\end{align*}
+
+%Thus we easily deduce that \(A=-1\), \(B=2\), and \(D=-2\), giving \(y_p = -t^2+2t-2\).  Thus, the general solution is
+
+%\[y = -t^2+2t-2+ce^{-t}.\]
+We can use variation of parameters to find a particular solution \(y_p\); suppose \(y_p=ve^{-t}\) for some function \(v\).  Then \(y_p ' = v'e^{-t}-ve^{-t}\), so we have
+\[-t^2=y_p ' + y_p = v'e^{-t}-ve^{-t} + ve^{-t} = v'e^{-t}.\]
+Thus \(v'=-t^2e^t\), so (integrating by parts twice), we conclude \(v=\int -t^2 e^t\ dt  = -t^2 e^t +2te^t-2e^t\).  Thus \(y_p = ve^{-t} = -t^2+2t-2\), so the general solution is \[y=-t^2+2t-2+ce^{-t}.\]
 \end{solution}
 
 
@@ -81,6 +96,8 @@ The forces acting on the water droplet are gravity (\(mg\) downwards) and air re
 Note that we have \(-mg\) since gravity always acts downwards, and \(-bv\) because the drag acts in the opposite direction of \(v\).
 It is actually convenient to let \(a=\frac{b}{m}\), and divide this equation by the mass, yielding 
 \[ \frac{dv}{dt} = -g - av .\]
+The intial condition is that it is dropped from rest, i.e. \(v(0)=0\), so an IVP modelling velocity is 
+\[  \frac{dv}{dt} = -g - av \hspace{6em} v(0)=0 .\]
 This is a separable differential equation; we thus have
 \[ \int \frac{1}{g+av}\ dv = \int (-1)dt .\]
 Thus, \(\frac{1}{a}\ln|g+av| = -t+c_1\), or \(|g+av| = e^{-at+ac_1}=c_2e^{-at}\) (where \(c_2=e^{ac_1}\)).  To avoid the pesky absolute value sign, we can absorb a potential negative into the constant to write \(g+av=c_3 e^{-at}\), or (letting \(c_0=\frac{c_3}{a}\))
@@ -120,25 +137,27 @@ Solving this system yields \(c_1 =-8\) and \(c_2 = 5\), so the solution to the I
 
 
 \begin{problem}{C5}
-Find the general solution to \[y''+6y'+13y=13t^2-t-4.\]
+Find the general solution to \[y'' + 10y' + 24y = e^{-4t} 
+\]
 \end{problem}
 \begin{solution}
-First, we find a general solution to the homogenous equation \(y''+6y'+13y=0\).  We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the roots.  There are many ways to do this; here, we complete  the square:
-\[0=r^2+6r+13=r^2+6r+9+4=(r+3)^2+4.\]
-Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution to the homogeneous equation is
-\[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
-To find a particular solution to  \(y''+6y'+13y=13t^2-t-4\), we set \(y_p=At^2+Bt+D\) and determine the coefficients \(A,B,D\).  
+First, we find a general solution to the homogenous equation \(y''+10y'+24y=0\).  We begin by writing the auxilliary equation \(r^2+10r+24=0\), which has roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\). 
+
+We use variation of parameters to find a particular solution, \(y_p=v_1e^{-4t}+v_2e^{-6t}\) for some functions \(v_1, v_2\).  We assume for convenience \(v_1'e^{-4t}+v_2'e^{-6t}=0\), so that \(y_p ' = -4v_1e^{-4t} - 6v_2 e^{-6t}\), and \(y_p '' = -4v_1' e^{-4t}+16v_1e^[-4t] -6v_2'e^{-6t}+36v_2e^{-6t}\).  Substituting into the original ODE and simplifying yields
+\[e^{-4t}=y_p''+10y_p'+14y_p = -4v_1'e^{-4t}-6v_2'e^{-6t}.\]
+Combining with our earlier assumption we have the system
 \begin{align*}
-y_p ^{\prime\ \prime}+6y_p ^\prime +13y_p &= (2A)+6(2At+B)+13(At^2+Bt+D) \\
-&= (13A)t^2 + (12A+13B)t+(2A+6B+13D)
+v_1'e^{-4t}+v_2'e^{-6t}&=0 \\
+-4v_1'e^{-4t}-6v_2'e^{-6t} &= e^{-4t}
 \end{align*}
-This gives us the system of equations
+Multipy both equations by \(e^{4t}\) for convenience:
 \begin{align*}
-13A &= 13 \\
-12A+13B &= -1 \\
-2A+6B+13D &= -4
+v_1'+v_2'e^{-2t}&=0 \\
+-4v_1'-6v_2'e^{-2t} &= 1
 \end{align*}
-Then we easily deduce \(A=1\), \(B=-1\), and \(D=0\), so that \(y_p = t^2-t\).  Thus, the general solution to the nonhomogeneous equation is \[y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) +t^2-t .\]
+Then six times the first equation plus the second yields \(2v_1'=1\), so \(v_1=\int \frac{1}{2}\ dt = \frac{1}{2} t\).  Substituting back into the first yields \(v_2'=-\frac{1}{2}e^{2t}\), so \(v_2 = \int -\frac{1}{2}e^{2t}\ dt = -\frac{1}{4} e^{2t}\ dt\), and thus \[y_p = \frac{1}{2}t e^{-4t} -\frac{1}{4}e^{-4t},\]
+and thus the general solution is 
+\[ y = \frac{1}{2}te^{-4t} + c_1 e^{-4t} + c_2 e^{-6t}.\]
 
 \end{solution}
 
@@ -153,7 +172,11 @@ A \(2 {\rm kg}\) mass is suspended by a spring (with spring constant \(8 {\rm kg
 \end{problem}
 \begin{solution}
 Let \(y\) denote the vertical distance from equillibrium; then the forces acting are gravity and the spring force, giving the ODE
+\[my''=-ky.\]
+Substituting in the values of the constants \(m=2\) and \(k=8\), we have
 \[ 2y''+8y=0 .\]
+Note that the initial conditions are \(y(0)=-1\) and \(y'(0)=0\), so an IVP model is 
+\[ 2y''+8y=0 \hspace{5em} y(0)=1,\ y'(0)=0.\]
 Simplifying, we have \(y''+4y=0\), so the general solution is \(y=c_1 \cos(2t)+c_2\sin(2t)\).  The initial conditions are \(y(0)=-1\) and \(y'(0)=0\), which imply \(c_1=-1\) and \(c_2=0\), so the system is modelled by \(y=-\cos(2t)\).  This is first zero when \(2t=\frac{\pi}{2}\), i.e. when \(t=\frac{\pi}{4}\).  Thus the mass takes \(\frac{\pi}{4}\) {\rm s} to return to its equillibrium point.
 \end{solution}
 
@@ -228,10 +251,20 @@ Then exponentiating, we have (letting \(c_4=\pm e^{-c_3}\) ) \(1-y=c_4e^{-\frac{
 \end{solution}
 
 \begin{problem}{F3}
-
+A \(0.5 {\rm kg}\) ball is dropped from rest from the top of a \(30 {\rm m}\) tall building.  Its drag coefficient is \(3 {\rm kg\ s/m}\).
+\begin{enumerate}[(a)]
+\item Write down an IVP modelling this scenario.
+\item What is the terminal velocity of the ball?
+\end{enumerate}
 \end{problem}
 \begin{solution}
-
+The forces acting on the ball are gravity and air resistance (drag), so letting down be the positive direction, we have
+\[mv'=mg-bv^2.\]
+Substituting in our constants (and dividing through by \(m\)), we have
+\[v'=9.81- 6v^2 .\]
+The initial condition is that it is dropped from rest, i.e. \(v(0)=0\), giving the IVP 
+\[v'=9.81- 6v^2 \vspace{5em} v(0)=0.\]
+The terminal velocity is when \(v'=0\), i.e. when \(0=9.81-6v^2\), so when \(v= \sqrt{\frac{9.81}{6}}\).
 \end{solution}
 
 
@@ -274,7 +307,10 @@ We see that \(-1\) is a sink (stable), while \(1\) is a source (unstable).  A tr
 Solve \(y'+xy=x^3\).
 \end{problem}
 \begin{solution}
-Solve homog; then variation of parameters.
+First, we solve the homogeneous equation \(y'+xy=0\), which is separable: \(\frac{y'}{y}=-x\), so \(\ln|y|=-\frac{1}{2}x^2+c\), or \(y=c_1e^{-\frac{1}{2}x^2}\). We then use variation of parameters to find a particular solution, writing \(y_p = v e^{-\frac{1}{2}x^2}\); substituting in and simplifying yields
+\[x^3 = y_p ' +xy_p = v'e^{-\frac{1}{2}x^2} -vxe^{-\frac{1}{2}x^2} + xve^{-\frac{1}{2}x^2} = v'e^{-\frac{1}{2}x^2}.\]
+Thus, \(v'=x^3 e^{\frac{1}{2}x^2} \).  This can be integrated by parts to obtain \(v=x^2e^{\frac{1}{2}x^2}-2e^{\frac{1}{2}x^2}\), so \(y_p = v e^{-\frac{1}{2}x^2} = x^2-2\).  Thus the general solution is
+\[y=c_1e^{-\frac{1}{2}x^2} + x^2 - 2 .\]
 \end{solution}
 
 \begin{problem}{F6}
@@ -285,17 +321,11 @@ One of the two ODEs below is exact.  Identify which one, and solve it.
 \end{align*}
 \end{problem}
 \begin{solution}
-Rewrite the first equation as \(y'=\frac{3x-y}{x+3y}\); this corresponds to the autonomous system 
-\begin{align*}
-\frac{dy}{dt} &= 3x - y \\
-\frac{dx}{dt} &= x + 3y 
-\end{align*}
-If there is a function with \(\nabla F = \langle -(3x-y), x+3y\rangle\), then \[\frac{d}{dt}F(x,y)=\frac{\partial F}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial F}{\partial y} \frac{\partial y}{\partial t} = -(3x-y)(x+3y)+(x+3y)(3x-y)=0\], so \(F(x,y)=c\) is a solution of the autonomous system.
+Rewrite the first equation as \(y'=\frac{3x-y}{x+3y}\); if there is a function with \(\nabla F = \langle -(3x-y), x+3y\rangle\), then \[\frac{d}{dt}F(x,y)=\frac{\partial F}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial F}{\partial y} \frac{\partial y}{\partial t} = -(3x-y)(x+3y)+(x+3y)(3x-y)=0,\] so \(F(x,y)=c\) is a solution of the autonomous system.
 
 Note that  \(\langle -(3x-y), x+3y\rangle\) is conservative, as \(\frac{\partial}{\partial x}(x+3y)=1=\frac{\partial}{\partial y}(-3x+y)\); so a potential function \(F\) is found by integrating: \(F = \int x+3y\ dy = xy+\frac{3}{2}y^2+f(x) \), and differentiating with respect to \(x\), we have \(-3x+y=y+f'(x)\), so \(f'(x)=-3x\), in which case \(f(x)=\int -3x\ dx = \frac{-3}{2}x^2\), so a potential function is \(F(x,y)=xy+\frac{3}{2}y^2-\frac{3}{2}x^2\).  So the general solution to the ODE is
 \[ xy+\frac{3}{2}y^2-\frac{3}{2}x^2 = c.\]
 \end{solution}
-
 
 \begin{problem}{S1}
 
