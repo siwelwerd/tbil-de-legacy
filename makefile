@@ -15,12 +15,18 @@ pre-build:
 		done \
 	done
 
-build: pre-build pdf/rats/rat-*.pdf pdf/slides/slides*pdf pdf/course-notes.pdf \
+build: pre-build pdf/rats/rat-*.pdf slides pdf/course-notes.pdf \
 	pdf/course-slides.pdf pdf/standards.pdf \
 	pdf/exercise-library.pdf pdf/homework.pdf pdf/sample-exercises.pdf \
-	pdf/facilitator-notes.pdf 
+	pdf/facilitator-notes.pdf \
+	rats
 
+slides: pdf/slides/slides-1-C.pdf pdf/slides/slides-2-F.pdf \
+	pdf/slides/slides-3-S.pdf pdf/slides/slides-4-N.pdf \
+	pdf/slides/slides-5-D.pdf
 
+rats: pdf/rats/rat-1-C.pdf pdf/rats/rat-2-F.pdf pdf/rats/rat-3-S.pdf \
+	pdf/rats/rat-4-N.pdf pdf/rats/rat-5-D.pdf 
 
 pdf/course-notes.pdf: tex/course-notes.sty tex/tbil-de.sty tex/course-notes.tex \
 						tex/modules/*/sections/*.tex tex/modules/*/readiness/*.tex
@@ -59,40 +65,50 @@ pdf/sample-exercises.pdf: tex/sample-exercises.tex
 
 
 #slides
-#pdf/slides/slides-1-C.pdf: tex/tbil-de.sty tex/course-slides.sty  \
-#							tex/modules/1-C/sections/*.tex
-#	cd tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-1-C.tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-1-C.tex; \
-#	mv aux/slides-1-C.pdf ../pdf/slides
-#
-#pdf/slides/slides-2-F.pdf: tex/tbil-de.sty tex/course-slides.sty  \
-#							tex/modules/2-F/sections/*.tex
-#	cd tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-2-F.tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-2-F.tex; \
-#	mv aux/slides-2-F.pdf ../pdf/slides
-#
-#pdf/slides/slides-3-S.pdf: tex/tbil-de.sty tex/course-slides.sty  \
-#							tex/modules/3-S/sections/*.tex
-#	cd tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-3-S.tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-3-S.tex; \
-#	mv aux/slides-3-S.pdf ../pdf/slides
-#
-#pdf/slides/slides-4-N.pdf: tex/tbil-de.sty tex/course-slides.sty  \
-#							tex/modules/4-N/sections/*.tex
-#	cd tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-4-N.tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-4-N.tex; \
-#	mv aux/slides-4-N.pdf ../pdf/slides
-#
-#pdf/slides/slides-5-D.pdf: tex/tbil-de.sty tex/course-slides.sty  \
-#							tex/modules/5-D/sections/*.tex
-#	cd tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-5-D.tex; \
-#	pdflatex -shell-escape --output-directory=aux slides/slides-5-D.tex; \
-#	mv aux/slides-5-D.pdf ../pdf/slides
+pdf/slides/slides-1-C.pdf: tex/tbil-de.sty tex/course-slides.sty  \
+							tex/modules/1-C/sections/*.tex tex/slides/slides-1-C.tex 
+	cd tex; \
+	mv slides/slides-1-C.tex ./ ;\
+	pdflatex -shell-escape --output-directory=aux slides-1-C.tex; \
+	pdflatex -shell-escape --output-directory=aux slides-1-C.tex; \
+	mv aux/slides-1-C.pdf ../pdf/slides; \
+	mv slides-1-C.tex slides
+
+pdf/slides/slides-2-F.pdf: tex/tbil-de.sty tex/course-slides.sty  \
+							tex/modules/2-F/sections/*.tex tex/slides/slides-2-F.tex 
+	cd tex; \
+	mv slides/slides-2-F.tex ./ ;\
+	pdflatex -shell-escape --output-directory=aux slides-2-F.tex; \
+	pdflatex -shell-escape --output-directory=aux slides-2-F.tex; \
+	mv aux/slides-2-F.pdf ../pdf/slides; \
+	mv slides-2-F.tex slides
+
+pdf/slides/slides-3-S.pdf: tex/tbil-de.sty tex/course-slides.sty  \
+							tex/modules/3-S/sections/*.tex tex/slides/slides-3-S.tex 
+	cd tex; \
+	mv slides/slides-3-S.tex ./ ;\
+	pdflatex -shell-escape --output-directory=aux slides-3-S.tex; \
+	pdflatex -shell-escape --output-directory=aux slides-3-S.tex; \
+	mv aux/slides-3-S.pdf ../pdf/slides; \
+	mv slides-3-S.tex slides
+	
+pdf/slides/slides-4-N.pdf: tex/tbil-de.sty tex/course-slides.sty  \
+							tex/modules/4-N/sections/*.tex tex/slides/slides-4-N.tex 
+	cd tex; \
+	mv slides/slides-4-N.tex ./ ;\
+	pdflatex -shell-escape --output-directory=aux slides-4-N.tex; \
+	pdflatex -shell-escape --output-directory=aux slides-4-N.tex; \
+	mv aux/slides-4-N.pdf ../pdf/slides; \
+	mv slides-4-N.tex slides
+
+pdf/slides/slides-5-D.pdf: tex/tbil-de.sty tex/course-slides.sty  \
+							tex/modules/5-D/sections/*.tex tex/slides/slides-5-D.tex 
+	cd tex; \
+	mv slides/slides-5-D.tex ./ ;\
+	pdflatex -shell-escape --output-directory=aux slides-5-D.tex; \
+	pdflatex -shell-escape --output-directory=aux slides-5-D.tex; \
+	mv aux/slides-5-D.pdf ../pdf/slides; \
+	mv slides-5-D.tex slides
 
 
 
@@ -107,30 +123,40 @@ pdf/sample-exercises.pdf: tex/sample-exercises.tex
 #		mv $$file ../../pdf/rats/$$file; \
 #	done;
 
-pdf/rats/rat-1-C.pdf: tex/modules/1-C/readiness/test.tex tex/rat-1-C.tex tex/course-notes-rats.sty
+pdf/rats/rat-1-C.pdf: tex/modules/1-C/readiness/test.tex tex/rats/rat-1-C.tex tex/course-notes-rats.sty
 	cd tex; \
+	mv rats/rat-1-C.tex ./; \
 	pdflatex -shell-escape --output-directory=aux rat-1-C.tex; \
-	mv aux/rat-1-C.pdf ../pdf/rats
+	mv aux/rat-1-C.pdf ../pdf/rats; \
+	mv rat-1-C.tex rats
 
-pdf/rats/rat-2-F.pdf: tex/modules/2-F/readiness/test.tex tex/rat-2-F.tex tex/course-notes-rats.sty
+pdf/rats/rat-2-F.pdf: tex/modules/2-F/readiness/test.tex tex/rats/rat-2-F.tex tex/course-notes-rats.sty
 	cd tex; \
+	mv rats/rat-2-F.tex ./; \
 	pdflatex -shell-escape --output-directory=aux rat-2-F.tex; \
-	mv aux/rat-2-F.pdf ../pdf/rats
+	mv aux/rat-2-F.pdf ../pdf/rats; \
+	mv rat-2-F.tex rats
 
-pdf/rats/rat-3-S.pdf: tex/modules/3-S/readiness/test.tex tex/rat-3-S.tex tex/course-notes-rats.sty
+pdf/rats/rat-3-S.pdf: tex/modules/3-S/readiness/test.tex tex/rats/rat-3-S.tex tex/course-notes-rats.sty
 	cd tex; \
+	mv rats/rat-3-S.tex ./; \
 	pdflatex -shell-escape --output-directory=aux rat-3-S.tex; \
-	mv aux/rat-3-S.pdf ../pdf/rats
+	mv aux/rat-3-S.pdf ../pdf/rats; \
+	mv rat-3-S.tex rats
 
-pdf/rats/rat-4-N.pdf: tex/modules/4-N/readiness/test.tex tex/rat-4-N.tex tex/course-notes-rats.sty
+pdf/rats/rat-4-N.pdf: tex/modules/4-N/readiness/test.tex tex/rats/rat-4-N.tex tex/course-notes-rats.sty
 	cd tex; \
+	mv rats/rat-4-N.tex ./; \
 	pdflatex -shell-escape --output-directory=aux rat-4-N.tex; \
-	mv aux/rat-4-N.pdf ../pdf/rats
+	mv aux/rat-4-N.pdf ../pdf/rats; \
+	mv rat-4-N.tex rats
 
-pdf/rats/rat-5-D.pdf: tex/modules/5-D/readiness/test.tex tex/rat-5-D.tex tex/course-notes-rats.sty
+pdf/rats/rat-5-D.pdf: tex/modules/5-D/readiness/test.tex tex/rats/rat-5-D.tex tex/course-notes-rats.sty
 	cd tex; \
+	mv rats/rat-5-D.tex ./; \
 	pdflatex -shell-escape --output-directory=aux rat-5-D.tex; \
-	mv aux/rat-5-D.pdf ../pdf/rats
+	mv aux/rat-5-D.pdf ../pdf/rats; \
+	mv rat-5-D.tex rats
 
 
 
