@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  22 AUG 2018 08:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  22 AUG 2018 09:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1178,20 +1178,15 @@ onts/map/pdftex/updmap/pdftex.map}
 <media/cloud.jpg, id=133, 903.375pt x 602.25pt>
 File: media/cloud.jpg Graphic file (type jpg)
  <use media/cloud.jpg>
-Package pdftex.def Info: media/cloud.jpg used on input line 166.
+Package pdftex.def Info: media/cloud.jpg used on input line 168.
 (pdftex.def)             Requested size: 180.6718pt x 120.44786pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-
- []
-
-[2 <./media/cloud.jpg>]
+ [2 <./media/cloud.jpg>]
 ===== Image 'course-notes-figure0' is up-to-date. ======
 <aux/course-notes-figure0.pdf, id=148, 215.3907pt x 176.76941pt>
 File: aux/course-notes-figure0.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure0.pdf>
-Package pdftex.def Info: aux/course-notes-figure0.pdf used on input line 166.
+Package pdftex.def Info: aux/course-notes-figure0.pdf used on input line 168.
 (pdftex.def)             Requested size: 215.39017pt x 176.76897pt.
 
 ===== Image 'course-notes-figure1' is up-to-date. ======
@@ -1199,7 +1194,7 @@ Package pdftex.def Info: aux/course-notes-figure0.pdf used on input line 166.
 File: aux/course-notes-figure1.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure1.pdf>
-Package pdftex.def Info: aux/course-notes-figure1.pdf used on input line 166.
+Package pdftex.def Info: aux/course-notes-figure1.pdf used on input line 168.
 (pdftex.def)             Requested size: 215.39017pt x 176.76897pt.
  [3 <./aux/course-notes-figure0.pdf>])
 (./modules/1-C/sections/2.tex [4 <./aux/course-notes-figure1.pdf>] [5])
@@ -1254,99 +1249,108 @@ shocks-84.png> <./media/shocks/goodbadshocks-85.png> <./media/shocks/goodbadsho
 cks-86.png> <./media/shocks/goodbadshocks-87.png> <./media/shocks/goodbadshocks
 -88.png>
 ===== Image 'course-notes-figure2' is up-to-date. ======
-<aux/course-notes-figure2.pdf, id=755, 29.25229pt x 80.06813pt>
+<aux/course-notes-figure2.pdf, id=755, 30.94661pt x 80.06813pt>
 File: aux/course-notes-figure2.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure2.pdf>
-Package pdftex.def Info: aux/course-notes-figure2.pdf used on input line 87.
-(pdftex.def)             Requested size: 29.25221pt x 80.06792pt.
+Package pdftex.def Info: aux/course-notes-figure2.pdf used on input line 94.
+(pdftex.def)             Requested size: 30.94653pt x 80.06792pt.
 
 ===== Image 'course-notes-figure3' is up-to-date. ======
-<aux/course-notes-figure3.pdf, id=756, 29.25229pt x 80.06813pt>
+<aux/course-notes-figure3.pdf, id=756, 30.94661pt x 80.06813pt>
 File: aux/course-notes-figure3.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure3.pdf>
-Package pdftex.def Info: aux/course-notes-figure3.pdf used on input line 87.
-(pdftex.def)             Requested size: 29.25221pt x 80.06792pt.
+Package pdftex.def Info: aux/course-notes-figure3.pdf used on input line 94.
+(pdftex.def)             Requested size: 30.94653pt x 80.06792pt.
  [8 <./aux/course-notes-figure2.pdf>]
 ===== Image 'course-notes-figure4' is up-to-date. ======
-<aux/course-notes-figure4.pdf, id=769, 29.25229pt x 80.06813pt>
+<aux/course-notes-figure4.pdf, id=769, 30.94661pt x 80.06813pt>
 File: aux/course-notes-figure4.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure4.pdf>
-Package pdftex.def Info: aux/course-notes-figure4.pdf used on input line 87.
-(pdftex.def)             Requested size: 29.25221pt x 80.06792pt.
-) (./modules/1-C/sections/5.tex [9 <./aux/course-notes-figure3.pdf> <./aux/cour
-se-notes-figure4.pdf>] [10])
-(./modules/1-C/sections/6.tex [11]) (./modules/1-C/sections/7.tex [12])
-(./modules/1-C/sections/8.tex [13] [14]) (./modules/1-C/sections/9.tex [15])))
-(./modules/2-F/index.tex [16] (./modules/2-F/standards.tex)
-(./modules/2-F/readiness/outcomes.tex) (./modules/2-F/readiness/resources.tex)
-(./modules/2-F/sections.tex (./modules/2-F/sections/1.tex [17]
+Package pdftex.def Info: aux/course-notes-figure4.pdf used on input line 94.
+(pdftex.def)             Requested size: 30.94653pt x 80.06792pt.
+
 ===== Image 'course-notes-figure5' is up-to-date. ======
-<aux/course-notes-figure5.pdf, id=849, 215.3907pt x 199.51639pt>
+<aux/course-notes-figure5.pdf, id=770, 62.86285pt x 80.06813pt>
 File: aux/course-notes-figure5.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure5.pdf>
-Package pdftex.def Info: aux/course-notes-figure5.pdf used on input line 150.
-(pdftex.def)             Requested size: 215.39017pt x 199.51588pt.
-
+Package pdftex.def Info: aux/course-notes-figure5.pdf used on input line 94.
+(pdftex.def)             Requested size: 62.86269pt x 80.06792pt.
+ [9 <./aux/course-notes-figure3.pdf> <./aux/course-notes-figure4.pdf> <./aux/co
+urse-notes-figure5.pdf>])
+(./modules/1-C/sections/5.tex [10]) (./modules/1-C/sections/6.tex [11])
+(./modules/1-C/sections/7.tex [12] [13]) (./modules/1-C/sections/8.tex [14])
+(./modules/1-C/sections/9.tex [15]))) (./modules/2-F/index.tex [16]
+(./modules/2-F/standards.tex) (./modules/2-F/readiness/outcomes.tex)
+(./modules/2-F/readiness/resources.tex) (./modules/2-F/sections.tex
+(./modules/2-F/sections/1.tex [17]
 ===== Image 'course-notes-figure6' is up-to-date. ======
-<aux/course-notes-figure6.pdf, id=850, 172.31276pt x 159.61331pt>
+<aux/course-notes-figure6.pdf, id=855, 215.3907pt x 199.51639pt>
 File: aux/course-notes-figure6.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure6.pdf>
 Package pdftex.def Info: aux/course-notes-figure6.pdf used on input line 150.
-(pdftex.def)             Requested size: 172.31233pt x 159.6129pt.
- [18 <./aux/course-notes-figure5.pdf>]
+(pdftex.def)             Requested size: 215.39017pt x 199.51588pt.
+
 ===== Image 'course-notes-figure7' is up-to-date. ======
-<aux/course-notes-figure7.pdf, id=879, 214.8808pt x 198.81277pt>
+<aux/course-notes-figure7.pdf, id=856, 172.31276pt x 159.61331pt>
 File: aux/course-notes-figure7.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure7.pdf>
 Package pdftex.def Info: aux/course-notes-figure7.pdf used on input line 150.
-(pdftex.def)             Requested size: 214.88026pt x 198.81227pt.
- [19 <./aux/course-notes-figure6.pdf>]
-[20 <./aux/course-notes-figure7.pdf>]) (./modules/2-F/sections/2.tex [21])
-(./modules/2-F/sections/3.tex [22]
+(pdftex.def)             Requested size: 172.31233pt x 159.6129pt.
+ [18 <./aux/course-notes-figure6.pdf>]
 ===== Image 'course-notes-figure8' is up-to-date. ======
-<aux/course-notes-figure8.pdf, id=938, 161.54251pt x 132.5743pt>
+<aux/course-notes-figure8.pdf, id=885, 214.8808pt x 198.81277pt>
 File: aux/course-notes-figure8.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure8.pdf>
-Package pdftex.def Info: aux/course-notes-figure8.pdf used on input line 85.
-(pdftex.def)             Requested size: 161.54211pt x 132.57396pt.
-
+Package pdftex.def Info: aux/course-notes-figure8.pdf used on input line 150.
+(pdftex.def)             Requested size: 214.88026pt x 198.81227pt.
+ [19 <./aux/course-notes-figure7.pdf>]
+[20 <./aux/course-notes-figure8.pdf>]) (./modules/2-F/sections/2.tex [21])
+(./modules/2-F/sections/3.tex [22]
 ===== Image 'course-notes-figure9' is up-to-date. ======
-<aux/course-notes-figure9.pdf, id=939, 23.43756pt x 114.2107pt>
+<aux/course-notes-figure9.pdf, id=944, 161.54251pt x 132.5743pt>
 File: aux/course-notes-figure9.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure9.pdf>
 Package pdftex.def Info: aux/course-notes-figure9.pdf used on input line 85.
-(pdftex.def)             Requested size: 23.43748pt x 114.2104pt.
-) (./modules/2-F/sections/4.tex [23 <./aux/course-notes-figure8.pdf> <./aux/cou
-rse-notes-figure9.pdf>]
+(pdftex.def)             Requested size: 161.54211pt x 132.57396pt.
+
 ===== Image 'course-notes-figure10' is up-to-date. ======
-<aux/course-notes-figure10.pdf, id=961, 164.63005pt x 33.13881pt>
+<aux/course-notes-figure10.pdf, id=945, 23.43756pt x 114.2107pt>
 File: aux/course-notes-figure10.pdf Graphic file (type pdf)
 
 <use aux/course-notes-figure10.pdf>
-Package pdftex.def Info: aux/course-notes-figure10.pdf used on input line 94.
+Package pdftex.def Info: aux/course-notes-figure10.pdf used on input line 85.
+(pdftex.def)             Requested size: 23.43748pt x 114.2104pt.
+) (./modules/2-F/sections/4.tex [23 <./aux/course-notes-figure9.pdf> <./aux/cou
+rse-notes-figure10.pdf>]
+===== Image 'course-notes-figure11' is up-to-date. ======
+<aux/course-notes-figure11.pdf, id=967, 164.63005pt x 33.13881pt>
+File: aux/course-notes-figure11.pdf Graphic file (type pdf)
+
+<use aux/course-notes-figure11.pdf>
+Package pdftex.def Info: aux/course-notes-figure11.pdf used on input line 94.
 (pdftex.def)             Requested size: 164.62964pt x 33.1387pt.
-) (./modules/2-F/sections/5.tex [24 <./aux/course-notes-figure10.pdf>]) (./modu
+) (./modules/2-F/sections/5.tex [24 <./aux/course-notes-figure11.pdf>]) (./modu
 les/2-F/sections/6.tex [25])
 (./modules/2-F/sections/7.tex [26]))) (./modules/3-S/index.tex [27]
 (./modules/3-S/standards.tex) (./modules/3-S/readiness/outcomes.tex)
 (./modules/3-S/readiness/resources.tex) (./modules/3-S/sections.tex
 (./modules/3-S/sections/1.tex [28]
-===== Image 'course-notes-figure11' is up-to-date. ======
-<aux/course-notes-figure11.pdf, id=1012, 140.54308pt x 118.76169pt>
-File: aux/course-notes-figure11.pdf Graphic file (type pdf)
+===== Image 'course-notes-figure12' is up-to-date. ======
+<aux/course-notes-figure12.pdf, id=1018, 140.54308pt x 118.76169pt>
+File: aux/course-notes-figure12.pdf Graphic file (type pdf)
 
-<use aux/course-notes-figure11.pdf>
-Package pdftex.def Info: aux/course-notes-figure11.pdf used on input line 149.
+<use aux/course-notes-figure12.pdf>
+Package pdftex.def Info: aux/course-notes-figure12.pdf used on input line 149.
 (pdftex.def)             Requested size: 140.54271pt x 118.76138pt.
- [29 <./aux/course-notes-figure11.pdf>]
+ [29 <./aux/course-notes-figure12.pdf>]
 [30]))) (./modules/4-N/index.tex [31] (./modules/4-N/standards.tex)
 (./modules/4-N/readiness/outcomes.tex) (./modules/4-N/sections.tex
 (./modules/4-N/sections/1.tex [32]))) (./modules/5-D/index.tex [33]
@@ -1365,10 +1369,10 @@ Package rerunfilecheck Info: File `course-notes.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8.
  ) 
 Here is how much of TeX's memory you used:
- 36894 strings out of 494910
- 853974 string characters out of 6179836
- 1008279 words of memory out of 5000000
- 39271 multiletter control sequences out of 15000+600000
+ 36901 strings out of 494910
+ 854167 string characters out of 6179836
+ 1010543 words of memory out of 5000000
+ 39277 multiletter control sequences out of 15000+600000
  7990 words of font info for 31 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  76i,16n,100p,10395b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1385,10 +1389,10 @@ cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-notes.pdf (35 pages, 7981226 bytes).
+Output written on aux/course-notes.pdf (35 pages, 7983282 bytes).
 PDF statistics:
- 1158 PDF objects out of 1200 (max. 8388607)
- 713 compressed objects within 8 object streams
+ 1164 PDF objects out of 1200 (max. 8388607)
+ 717 compressed objects within 8 object streams
  164 named destinations out of 1000 (max. 500000)
- 1849 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1854 words of extra memory for PDF output out of 10000 (max. 10000000)
 

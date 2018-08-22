@@ -12,7 +12,7 @@ What happens when your tire hits a pothole?
 \end{observation}
 
 \begin{activity}{5}
-More abstractly, let's attach a mass (weighing \(m {\rm kg}\)) to a spring.
+More abstractly, let's attach a mass (weighing \(m\ {\rm kg}\)) to a spring.
 
 \begin{center}
 \springmass
@@ -57,16 +57,23 @@ Describe the long term behavior of the mass-spring system.
 In applications, this infinitely oscillating behavior is often inappropriate.
 \vfill
 Thus, a damper (dashpot) is often incorporated.  This provides a force proportional to the velocity.
+\begin{center}
+\springmassdamper
+\end{center}
 \vfill
 Write a differential equation modeling the displacement of a mass in a \textbf{damped} mass-spring system.
 \vfill
 \end{activity}
 
-\begin{definition}
-A \term{homogeneous second order constant coefficient} differential equation can be written in the form
-\[ay''+by'+cy=0.\]
+\begin{observation}
+The damped mass-spring system can be modelled by
+\[my''=-by'-ky.\]
+Here \(m\) is the mass, \(k\) is the spring constant, and \(b\) is the damping constant.  We can rearrange this as
+\[my''+by'+ky=0.\]
+\vfill
+This is a  \term{homogeneous second order constant coefficient} differential equation.
 Here, \term{homogeneous} refers to the \(0\) on the right hand side of the equation.
-\end{definition}
+\end{observation}
 
 \begin{activity}{15}
 Consider the second order constant coefficient equation \[y''=y.\]

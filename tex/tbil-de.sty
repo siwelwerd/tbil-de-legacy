@@ -84,17 +84,46 @@
 
 
 \newcommand{\springmass}[1][1]{
-\begin{tikzpicture}[every node/.style={draw,outer sep=0pt,thick},scale=#1]
+\begin{tikzpicture}[scale=#1]
 \tikzstyle{spring}=[thick,decorate,decoration={zigzag,pre length=0.3cm,post length=0.3cm,segment length=6}]
 \tikzstyle{ground}=[fill,pattern=north east lines,draw=none,minimum width=0.75cm,minimum height=0.3cm]
 
 
-\node (M) [minimum width=1cm,minimum height=1cm] {$m$};
+\node (M) [draw,outer sep=0pt,thick,minimum width=1cm,minimum height=1cm] {$m$};
 
-\node (ground1) at (M.north) [ground,yshift=1.5cm,anchor=south] {};
+\node (ground1) at (M.north) [draw,outer sep=0pt,thick,ground,yshift=1.5cm,anchor=south] {};
 \draw (ground1.south west) -- (ground1.south east);
-\draw [spring] (ground1.south) -- ($(M.north east)!(ground1.south)!(M.north west)$);
+\draw [spring] (ground1.south) -- ($(M.north east)!(ground1.south)!(M.north west)$) node [midway, label=right:$k$]{};
 
+
+\end{tikzpicture}
+
+}
+
+\newcommand{\springmassdamper}[1][1]{
+\begin{tikzpicture}[scale=#1]%[every node/.style={draw,outer sep=0pt,thick},scale=#1]
+\tikzstyle{spring}=[thick,decorate,decoration={zigzag,pre length=0.3cm,post length=0.3cm,segment length=6}]
+\tikzstyle{ground}=[fill,pattern=north east lines,draw=none,minimum width=1.5cm,minimum height=0.3cm]
+\tikzstyle{damper}=[thick,decoration={markings,  
+  mark connection node=dmp,
+  mark=at position 0.5 with 
+  {
+    \node (dmp) [thick,inner sep=0pt,transform shape,rotate=-90,minimum width=15pt,minimum height=3pt,draw=none] {};
+    \draw [thick] ($(dmp.north east)+(2pt,0)$) -- (dmp.south east) -- (dmp.south west) -- ($(dmp.north west)+(2pt,0)$);
+    \draw [thick] ($(dmp.north)+(0,-5pt)$) -- ($(dmp.north)+(0,5pt)$);
+  }
+}, decorate]
+
+
+
+\node (M) [draw,outer sep=0pt,thick,minimum width=1.5cm,minimum height=1cm] {$m$};
+
+\node (ground1) at (M.north) [draw,outer sep=0pt,thick,ground,yshift=1.5cm,anchor=south] {};
+\node (ground2) at (ground1) [xshift=0.5cm] {};
+\node (ground0) at (ground1) [xshift=-0.5cm] {};
+\draw (ground1.south west) -- (ground1.south east);
+\draw [spring] (ground2.south) -- ($(M.north east)!(ground2.south)!(M.north west)$) node [midway, label=right:$k$]{};
+\draw [damper] (ground0.south) -- ($(M.north east)!(ground0.south)!(M.north west)$) node [midway, label=left:$b\hspace{3pt}$]{};
 
 \end{tikzpicture}
 
