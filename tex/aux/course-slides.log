@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  21 AUG 2018 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.27)  22 AUG 2018 08:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1511,7 +1511,7 @@ Missing character: There is no ™ in font cmss10!
 <media/cloud.jpg, id=415, 903.375pt x 602.25pt>
 File: media/cloud.jpg Graphic file (type jpg)
  <use media/cloud.jpg>
-Package pdftex.def Info: media/cloud.jpg used on input line 142.
+Package pdftex.def Info: media/cloud.jpg used on input line 166.
 (pdftex.def)             Requested size: 180.6718pt x 120.44786pt.
  [8
 
@@ -1521,50 +1521,50 @@ Package pdftex.def Info: media/cloud.jpg used on input line 142.
 
 ] [11
 
+] [12
+
 ]
 ===== Image 'course-slides-figure0' is up-to-date. ======
-<aux/course-slides-figure0.pdf, id=580, 217.2376pt x 178.21582pt>
+<aux/course-slides-figure0.pdf, id=622, 217.2376pt x 178.21582pt>
 File: aux/course-slides-figure0.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure0.pdf>
-Package pdftex.def Info: aux/course-slides-figure0.pdf used on input line 142.
-(pdftex.def)             Requested size: 217.23705pt x 178.21538pt.
- [12
-
- <./aux/course-slides-figure0.pdf>]
-===== Image 'course-slides-figure1' is up-to-date. ======
-<aux/course-slides-figure1.pdf, id=633, 217.2376pt x 178.21582pt>
-File: aux/course-slides-figure1.pdf Graphic file (type pdf)
-
-<use aux/course-slides-figure1.pdf>
-Package pdftex.def Info: aux/course-slides-figure1.pdf used on input line 142.
+Package pdftex.def Info: aux/course-slides-figure0.pdf used on input line 166.
 (pdftex.def)             Requested size: 217.23705pt x 178.21538pt.
  [13
 
- <./aux/course-slides-figure1.pdf>]
-===== Image 'course-slides-figure2' is up-to-date. ======
-<aux/course-slides-figure2.pdf, id=684, 217.2376pt x 178.21582pt>
-File: aux/course-slides-figure2.pdf Graphic file (type pdf)
+ <./aux/course-slides-figure0.pdf>]
+===== Image 'course-slides-figure1' is up-to-date. ======
+<aux/course-slides-figure1.pdf, id=675, 217.2376pt x 178.21582pt>
+File: aux/course-slides-figure1.pdf Graphic file (type pdf)
 
-<use aux/course-slides-figure2.pdf>
-Package pdftex.def Info: aux/course-slides-figure2.pdf used on input line 142.
+<use aux/course-slides-figure1.pdf>
+Package pdftex.def Info: aux/course-slides-figure1.pdf used on input line 166.
 (pdftex.def)             Requested size: 217.23705pt x 178.21538pt.
  [14
 
- <./aux/course-slides-figure2.pdf>]
-===== Image 'course-slides-figure3' is up-to-date. ======
-<aux/course-slides-figure3.pdf, id=732, 217.2376pt x 178.21582pt>
-File: aux/course-slides-figure3.pdf Graphic file (type pdf)
+ <./aux/course-slides-figure1.pdf>]
+===== Image 'course-slides-figure2' is up-to-date. ======
+<aux/course-slides-figure2.pdf, id=726, 217.2376pt x 178.21582pt>
+File: aux/course-slides-figure2.pdf Graphic file (type pdf)
 
-<use aux/course-slides-figure3.pdf>
-Package pdftex.def Info: aux/course-slides-figure3.pdf used on input line 142.
+<use aux/course-slides-figure2.pdf>
+Package pdftex.def Info: aux/course-slides-figure2.pdf used on input line 166.
 (pdftex.def)             Requested size: 217.23705pt x 178.21538pt.
  [15
 
- <./aux/course-slides-figure3.pdf>]
-[16
+ <./aux/course-slides-figure2.pdf>]
+===== Image 'course-slides-figure3' is up-to-date. ======
+<aux/course-slides-figure3.pdf, id=773, 217.2376pt x 178.21582pt>
+File: aux/course-slides-figure3.pdf Graphic file (type pdf)
 
-] [17
+<use aux/course-slides-figure3.pdf>
+Package pdftex.def Info: aux/course-slides-figure3.pdf used on input line 166.
+(pdftex.def)             Requested size: 217.23705pt x 178.21538pt.
+ [16
+
+ <./aux/course-slides-figure3.pdf>]
+[17
 
 ] [18
 
@@ -1576,14 +1576,14 @@ Package pdftex.def Info: aux/course-slides-figure3.pdf used on input line 142.
 
 ] [22
 
-]) (./modules/1-C/sections/2.tex [23
+] [23
 
-] [24
+]) (./modules/1-C/sections/2.tex [24
+
+] [25
 
 ]
-[25
-
-] [26
+[26
 
 ] [27
 
@@ -1603,28 +1603,28 @@ Package pdftex.def Info: aux/course-slides-figure3.pdf used on input line 142.
 
 ] [35
 
+] [36
+
+] [37
+
+] [38
+
 ])
-(./modules/1-C/sections/3.tex [36
+(./modules/1-C/sections/3.tex [39
 
 ]
 File: media/cloud.jpg Graphic file (type jpg)
  <use media/cloud.jpg>
 Package pdftex.def Info: media/cloud.jpg used on input line 57.
 (pdftex.def)             Requested size: 180.6718pt x 120.44786pt.
- [37
-
-] [38
-
-] [39
-
-]
-[40
+ [40
 
 ] [41
 
 ] [42
 
-] [43
+]
+[43
 
 ] [44
 
@@ -1632,7 +1632,13 @@ Package pdftex.def Info: media/cloud.jpg used on input line 57.
 
 ] [46
 
-]) (./modules/1-C/sections/4.tex [47
+] [47
+
+] [48
+
+] [49
+
+]) (./modules/1-C/sections/4.tex [50
 
 ] <./media/shocks/goodbadshocks-0.png> <./media/shocks/goodbadshocks-1.png> <./
 media/shocks/goodbadshocks-2.png> <./media/shocks/goodbadshocks-3.png> <./media
@@ -1676,46 +1682,40 @@ dia/shocks/goodbadshocks-77.png> <./media/shocks/goodbadshocks-78.png> <./media
 ocks/goodbadshocks-81.png> <./media/shocks/goodbadshocks-82.png> <./media/shock
 s/goodbadshocks-83.png> <./media/shocks/goodbadshocks-84.png> <./media/shocks/g
 oodbadshocks-85.png> <./media/shocks/goodbadshocks-86.png> <./media/shocks/good
-badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [48
+badshocks-87.png> <./media/shocks/goodbadshocks-88.png> [51
 
 ]
 ===== Image 'course-slides-figure4' is up-to-date. ======
-<aux/course-slides-figure4.pdf, id=2679, 29.25229pt x 80.06813pt>
+<aux/course-slides-figure4.pdf, id=2802, 29.25229pt x 80.06813pt>
 File: aux/course-slides-figure4.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure4.pdf>
 Package pdftex.def Info: aux/course-slides-figure4.pdf used on input line 87.
 (pdftex.def)             Requested size: 29.25221pt x 80.06792pt.
- [49
+ [52
 
  <./aux/course-slides-figure4.pdf>]
 ===== Image 'course-slides-figure5' is up-to-date. ======
-<aux/course-slides-figure5.pdf, id=2728, 29.25229pt x 80.06813pt>
+<aux/course-slides-figure5.pdf, id=2851, 29.25229pt x 80.06813pt>
 File: aux/course-slides-figure5.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure5.pdf>
 Package pdftex.def Info: aux/course-slides-figure5.pdf used on input line 87.
 (pdftex.def)             Requested size: 29.25221pt x 80.06792pt.
- [50
+ [53
 
  <./aux/course-slides-figure5.pdf>]
 ===== Image 'course-slides-figure6' is up-to-date. ======
-<aux/course-slides-figure6.pdf, id=2775, 29.25229pt x 80.06813pt>
+<aux/course-slides-figure6.pdf, id=2897, 29.25229pt x 80.06813pt>
 File: aux/course-slides-figure6.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure6.pdf>
 Package pdftex.def Info: aux/course-slides-figure6.pdf used on input line 87.
 (pdftex.def)             Requested size: 29.25221pt x 80.06792pt.
- [51
+ [54
 
  <./aux/course-slides-figure6.pdf>]
-[52
-
-] [53
-
-] [54
-
-] [55
+[55
 
 ] [56
 
@@ -1729,14 +1729,14 @@ Package pdftex.def Info: aux/course-slides-figure6.pdf used on input line 87.
 
 ] [61
 
-])
-(./modules/1-C/sections/5.tex [62
+] [62
 
 ] [63
 
 ] [64
 
-] [65
+])
+(./modules/1-C/sections/5.tex [65
 
 ] [66
 
@@ -1748,18 +1748,18 @@ Package pdftex.def Info: aux/course-slides-figure6.pdf used on input line 87.
 
 ] [70
 
-]
-[71
+] [71
 
 ] [72
 
-]) (./modules/1-C/sections/6.tex [73
+] [73
 
-] [74
+]
+[74
 
 ] [75
 
-] [76
+]) (./modules/1-C/sections/6.tex [76
 
 ] [77
 
@@ -1767,50 +1767,50 @@ Package pdftex.def Info: aux/course-slides-figure6.pdf used on input line 87.
 
 ] [79
 
-]
-[80
+] [80
 
 ] [81
 
 ] [82
 
-]) (./modules/1-C/sections/7.tex [83
+]
+[83
 
 ] [84
 
 ] [85
 
-] [86
+]) (./modules/1-C/sections/7.tex [86
 
 ] [87
 
 ] [88
 
-]
-[89
+] [89
 
 ] [90
 
 ] [91
 
-]) (./modules/1-C/sections/8.tex [92
+]
+[92
 
 ] [93
 
 ] [94
 
-] [95
+]) (./modules/1-C/sections/8.tex [95
 
 ] [96
 
-])
-(./modules/1-C/sections/9.tex [97
+] [97
 
 ] [98
 
 ] [99
 
-] [100
+])
+(./modules/1-C/sections/9.tex [100
 
 ] [101
 
@@ -1820,12 +1820,12 @@ Package pdftex.def Info: aux/course-slides-figure6.pdf used on input line 87.
 
 ] [104
 
-]
-[105
+] [105
 
 ] [106
 
-] [107
+]
+[107
 
 ] [108
 
@@ -1835,32 +1835,39 @@ Package pdftex.def Info: aux/course-slides-figure6.pdf used on input line 87.
 
 ] [111
 
-]))) (./modules/2-F/index.tex [112
+] [112
 
-]
-(./modules/2-F/standards.tex [113
+] [113
 
 ] [114
 
-]) (./modules/2-F/readiness/outcomes.tex [115
+]))) (./modules/2-F/index.tex
+[115
 
-]) (./modules/2-F/readiness/resources.tex [116
+] (./modules/2-F/standards.tex [116
+
+] [117
 
 ])
-(./modules/2-F/sections.tex (./modules/2-F/sections/1.tex [117
+(./modules/2-F/readiness/outcomes.tex [118
 
-] [118
+])
+(./modules/2-F/readiness/resources.tex [119
 
-] [119
-
-]
-[120
+]) (./modules/2-F/sections.tex
+(./modules/2-F/sections/1.tex [120
 
 ] [121
 
+] [122
+
+] [123
+
+] [124
+
 ]
 ===== Image 'course-slides-figure7' is up-to-date. ======
-<aux/course-slides-figure7.pdf, id=5648, 217.2376pt x 202.8639pt>
+<aux/course-slides-figure7.pdf, id=5770, 217.2376pt x 202.8639pt>
 File: aux/course-slides-figure7.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure7.pdf>
@@ -1870,60 +1877,54 @@ Package pdftex.def Info: aux/course-slides-figure7.pdf used on input line 150.
 Overfull \vbox (5.46504pt too high) detected at line 150
  []
 
-[122
+[125
 
  <./aux/course-slides-figure7.pdf>]
 ===== Image 'course-slides-figure8' is up-to-date. ======
-<aux/course-slides-figure8.pdf, id=5708, 173.79128pt x 162.29233pt>
+<aux/course-slides-figure8.pdf, id=5829, 173.79128pt x 162.29233pt>
 File: aux/course-slides-figure8.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure8.pdf>
 Package pdftex.def Info: aux/course-slides-figure8.pdf used on input line 150.
 (pdftex.def)             Requested size: 173.79085pt x 162.29192pt.
- [123
+ [126
 
  <./aux/course-slides-figure8.pdf>]
-[124
+[127
 
-] [125
+] [128
 
-] [126
+] [129
 
-] [127
+] [130
 
 ]
 ===== Image 'course-slides-figure9' is up-to-date. ======
-<aux/course-slides-figure9.pdf, id=5918, 217.11714pt x 201.9776pt>
+<aux/course-slides-figure9.pdf, id=6039, 217.11714pt x 201.9776pt>
 File: aux/course-slides-figure9.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure9.pdf>
 Package pdftex.def Info: aux/course-slides-figure9.pdf used on input line 150.
 (pdftex.def)             Requested size: 217.11661pt x 201.9771pt.
- [128
+ [131
 
  <./aux/course-slides-figure9.pdf>]
-[129
+[132
 
-] [130
-
-] [131
-
-] [132
-
-]) (./modules/2-F/sections/2.tex [133
+] [133
 
 ] [134
 
 ] [135
 
-]
-[136
+]) (./modules/2-F/sections/2.tex [136
 
 ] [137
 
 ] [138
 
-] [139
+]
+[139
 
 ] [140
 
@@ -1935,20 +1936,26 @@ Package pdftex.def Info: aux/course-slides-figure9.pdf used on input line 150.
 
 ] [144
 
-])
-(./modules/2-F/sections/3.tex [145
+] [145
 
 ] [146
 
 ] [147
 
-] [148
+])
+(./modules/2-F/sections/3.tex [148
 
 ] [149
 
+] [150
+
+] [151
+
+] [152
+
 ]
 ===== Image 'course-slides-figure10' is up-to-date. ======
-<aux/course-slides-figure10.pdf, id=6777, 162.92871pt x 133.65935pt>
+<aux/course-slides-figure10.pdf, id=6899, 162.92871pt x 133.65935pt>
 File: aux/course-slides-figure10.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure10.pdf>
@@ -1956,45 +1963,39 @@ Package pdftex.def Info: aux/course-slides-figure10.pdf used on input line 85.
 (pdftex.def)             Requested size: 162.9283pt x 133.65901pt.
 
 ===== Image 'course-slides-figure11' is up-to-date. ======
-<aux/course-slides-figure11.pdf, id=6778, 24.58284pt x 114.2107pt>
+<aux/course-slides-figure11.pdf, id=6900, 24.58284pt x 114.2107pt>
 File: aux/course-slides-figure11.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure11.pdf>
 Package pdftex.def Info: aux/course-slides-figure11.pdf used on input line 85.
 (pdftex.def)             Requested size: 24.58276pt x 114.2104pt.
- [150
+ [153
 
- <./aux/course-slides-figure10.pdf> <./aux/course-slides-figure11.pdf>] [151
-
-] [152
-
-] [153
-
-] [154
+ <./aux/course-slides-figure10.pdf> <./aux/course-slides-figure11.pdf>] [154
 
 ] [155
 
+] [156
+
+] [157
+
+] [158
+
 ])
-(./modules/2-F/sections/4.tex [156
+(./modules/2-F/sections/4.tex [159
 
 ]
 ===== Image 'course-slides-figure12' is up-to-date. ======
-<aux/course-slides-figure12.pdf, id=7064, 166.85838pt x 34.45473pt>
+<aux/course-slides-figure12.pdf, id=7186, 166.85838pt x 34.45473pt>
 File: aux/course-slides-figure12.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure12.pdf>
 Package pdftex.def Info: aux/course-slides-figure12.pdf used on input line 94.
 (pdftex.def)             Requested size: 166.85796pt x 34.45462pt.
- [157
+ [160
 
  <./aux/course-slides-figure12.pdf>]
-[158
-
-] [159
-
-] [160
-
-] [161
+[161
 
 ] [162
 
@@ -2012,44 +2013,44 @@ Package pdftex.def Info: aux/course-slides-figure12.pdf used on input line 94.
 
 ] [169
 
-]
-[170
+] [170
 
 ] [171
 
 ] [172
 
-]) (./modules/2-F/sections/5.tex [173
+]
+[173
 
 ] [174
 
 ] [175
 
-] [176
+]) (./modules/2-F/sections/5.tex [176
 
-]
-[177
+] [177
 
 ] [178
 
 ] [179
 
-] [180
+]
+[180
 
-]) (./modules/2-F/sections/6.tex [181
+] [181
 
 ] [182
 
 ] [183
 
-]
-[184
+]) (./modules/2-F/sections/6.tex [184
 
 ] [185
 
 ] [186
 
-] [187
+]
+[187
 
 ] [188
 
@@ -2057,48 +2058,48 @@ Package pdftex.def Info: aux/course-slides-figure12.pdf used on input line 94.
 
 ] [190
 
-]) (./modules/2-F/sections/7.tex
-[191
+] [191
 
 ] [192
 
 ] [193
 
-]))) (./modules/3-S/index.tex [194
+]) (./modules/2-F/sections/7.tex
+[194
 
-]
-(./modules/3-S/standards.tex [195
+] [195
 
 ] [196
 
-]) (./modules/3-S/readiness/outcomes.tex [197
+]))) (./modules/3-S/index.tex [197
 
-]) (./modules/3-S/readiness/resources.tex [198
+]
+(./modules/3-S/standards.tex [198
+
+] [199
+
+]) (./modules/3-S/readiness/outcomes.tex [200
+
+]) (./modules/3-S/readiness/resources.tex [201
 
 ])
-(./modules/3-S/sections.tex (./modules/3-S/sections/1.tex [199
+(./modules/3-S/sections.tex (./modules/3-S/sections/1.tex [202
 
-] [200
+] [203
 
 ]
 ===== Image 'course-slides-figure13' is up-to-date. ======
-<aux/course-slides-figure13.pdf, id=8735, 140.54308pt x 118.76169pt>
+<aux/course-slides-figure13.pdf, id=8856, 140.54308pt x 118.76169pt>
 File: aux/course-slides-figure13.pdf Graphic file (type pdf)
 
 <use aux/course-slides-figure13.pdf>
 Package pdftex.def Info: aux/course-slides-figure13.pdf used on input line 149.
 
 (pdftex.def)             Requested size: 140.54271pt x 118.76138pt.
- [201
+ [204
 
  <./aux/course-slides-figure13.pdf>]
-[202
-
-] [203
-
-] [204
-
-] [205
+[205
 
 ] [206
 
@@ -2110,36 +2111,42 @@ Package pdftex.def Info: aux/course-slides-figure13.pdf used on input line 149.
 
 ] [210
 
-])))
-(./modules/4-N/index.tex [211
+] [211
 
-] (./modules/4-N/standards.tex [212
+] [212
 
 ] [213
 
-])
-(./modules/4-N/readiness/outcomes.tex [214
+])))
+(./modules/4-N/index.tex [214
 
-]) (./modules/4-N/sections.tex
-(./modules/4-N/sections/1.tex [215
+] (./modules/4-N/standards.tex [215
 
 ] [216
 
-]))) (./modules/5-D/index.tex [217
+])
+(./modules/4-N/readiness/outcomes.tex [217
 
-]
-(./modules/5-D/standards.tex [218
+]) (./modules/4-N/sections.tex
+(./modules/4-N/sections/1.tex [218
 
 ] [219
 
-]) (./modules/5-D/readiness/outcomes.tex [220
-
-]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [221
+]))) (./modules/5-D/index.tex [220
 
 ]
-Package atenddvi Info: Last page = 222.
+(./modules/5-D/standards.tex [221
 
-[222
+] [222
+
+]) (./modules/5-D/readiness/outcomes.tex [223
+
+]) (./modules/5-D/sections.tex (./modules/5-D/sections/1.tex [224
+
+]
+Package atenddvi Info: Last page = 225.
+
+[225
 
 ]))))
 \tf@nav=\write6
@@ -2169,10 +2176,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 14.
  ) 
 Here is how much of TeX's memory you used:
- 40767 strings out of 494910
- 948428 string characters out of 6179836
- 1101748 words of memory out of 5000000
- 42653 multiletter control sequences out of 15000+600000
+ 40777 strings out of 494910
+ 948529 string characters out of 6179836
+ 1101944 words of memory out of 5000000
+ 42657 multiletter control sequences out of 15000+600000
  12995 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  82i,16n,106p,10396b,915s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2190,10 +2197,10 @@ m/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on aux/course-slides.pdf (222 pages, 8429135 bytes).
+Output written on aux/course-slides.pdf (225 pages, 8441169 bytes).
 PDF statistics:
- 9602 PDF objects out of 10688 (max. 8388607)
- 8880 compressed objects within 89 object streams
- 469 named destinations out of 1000 (max. 500000)
+ 9725 PDF objects out of 10688 (max. 8388607)
+ 8999 compressed objects within 90 object streams
+ 475 named destinations out of 1000 (max. 500000)
  1889 words of extra memory for PDF output out of 10000 (max. 10000000)
 
