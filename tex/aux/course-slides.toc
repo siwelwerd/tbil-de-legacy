@@ -16,7 +16,7 @@
 \beamer@subsectionintoc {2}{4}{Section F{}.4}{159}{0}{2}
 \beamer@subsectionintoc {2}{5}{Section F{}.5}{176}{0}{2}
 \beamer@subsectionintoc {2}{6}{Section F{}.6}{184}{0}{2}
-\beamer@subsectionintoc {2}{7}{Section F{}.7}{194}{0}{2}
+\beamer@subsectionintoc {2}{7}{Section F{}.7}{193}{0}{2}
 \beamer@sectionintoc {3}{Module S{}}{197}{0}{3}
 \beamer@subsectionintoc {3}{1}{Section S{}.1}{202}{0}{3}
 \beamer@sectionintoc {4}{Module N{}}{214}{0}{4}
