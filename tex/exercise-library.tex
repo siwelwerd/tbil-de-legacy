@@ -4,9 +4,16 @@
 \usepackage[colorlinks=true,linkcolor=blue]{hyperref}
 \usepackage{tikz,pgfplots}
 \usepackage{tbil-de}
-%\usetikzlibrary{external}
-%\tikzexternalize 
-%\tikzsetexternalprefix{aux/}
+\usetikzlibrary{external}
+\tikzexternalize 
+\tikzset{%
+  external/system call={pdflatex \tikzexternalcheckshellescape --halt-on-error --interaction=batchmode --output-directory=./aux --jobname "\image" "\texsource"},
+  /pgf/images/include external/.code={%
+    \includegraphics{aux/#1}%
+  },
+}
+
+
 
 \newenvironment{problem}[1]
 {
