@@ -251,20 +251,20 @@ Then exponentiating, we have (letting \(c_4=\pm e^{-c_3}\) ) \(1-y=c_4e^{-\frac{
 \end{solution}
 
 \begin{problem}{F3}
-A \(0.5 {\rm kg}\) ball is dropped from rest from the top of a \(30 {\rm m}\) tall building.  Its drag coefficient is \(3 {\rm kg\ s/m}\).
+A ball has a mass of \(0.1 {\rm kg}\) and a drag coefficient of \(0.001 {\rm kg/m}\).  It is thrown with a velocity of \(20 {\rm m/s}\). 
 \begin{enumerate}[(a)]
-\item Write down an IVP modelling this scenario.
-\item What is the terminal velocity of the ball?
+\item Write down an IVP modelling the horizontal velocity of the ball (ignore any vertical movement in the ball).
+\item How long does it take the ball to travel \(20 {\rm m}\)?
 \end{enumerate}
 \end{problem}
 \begin{solution}
-The forces acting on the ball are gravity and air resistance (drag), so letting down be the positive direction, we have
-\[mv'=mg-bv^2.\]
+The only force acting on the ball is air resistance (drag), so we have
+\[mv'=-bv^2.\]
 Substituting in our constants (and dividing through by \(m\)), we have
-\[v'=9.81- 6v^2 .\]
-The initial condition is that it is dropped from rest, i.e. \(v(0)=0\), giving the IVP 
-\[v'=9.81- 6v^2 \vspace{5em} v(0)=0.\]
-The terminal velocity is when \(v'=0\), i.e. when \(0=9.81-6v^2\), so when \(v= \sqrt{\frac{9.81}{6}}\).
+\[v'=- 0.1v^2 .\]
+The initial condition is that it is travelling \(20 {\rm m/s}\), i.e. \(v(0)=20\), giving the IVP 
+\[v'=- 0.1v^2 \vspace{5em} v(0)=20.\]
+Solving this separable ODE, we obtain \(v=\frac{20}{1+2t}\).  To model the position of the ball, we integrate again, obtaining \(x=\int \frac{20}{1+2t}\ dt = 10 \ln |1+2t| +C\); using \(x(0)=0\), we see \(C=0\).  Then we simply need to solve \(x(t)=20\), i.e. \(20=10\ln|1+2t|\), so \(t=\frac{1}{2}(e^2-1) \approx 3.19 {\rm s}\).
 \end{solution}
 
 
