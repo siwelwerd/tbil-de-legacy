@@ -5,79 +5,234 @@
 \begin{applicationActivities}
 
 
-
 \begin{observation}
-Recall that we can model the velocity of a water droplet in a cloud by
-\[mv'=-mg-bv\]
-where negative numbers represent downward motion,
-\(m>0\) is the mass of the droplet, 
-\(g>0\) is the magnitude of acceleration due to gravity, and 
-\(b>0\) is the proportion of wind resistance to speed.
-\begin{center}
-\includegraphics[scale=0.2]{media/cloud.jpg}
-\end{center}
+What happens when your tire hits a pothole?
+
+%\animategraphics[loop,width=\linewidth,controls=true]{15}{media/shocks/goodbadshocks-}{0}{88}
+\url{https://prof.clontz.org/assets/img/good-bad-shocks.gif}
+
 \end{observation}
 
-%\begin{activity}{5}
-%A water droplet with a radius of \(10\operatorname{\mu m}\) has a mass of about \(4 \times 10^{-15}\operatorname{kg}\).  
-%It is determined in a laboratory that for a droplet this size, the constant \(b\) has a value of \(3\times 10^{-3}\operatorname{kg/s}\),
-%and it is known that \(g\) is approximately \(9.8\operatorname{m/s}^2\).
-%
-%\vfill
-%
-%To study this motion mathematically, which option would you prefer?
-%\begin{enumerate}[a)]
-%\item Substitute the measurements into the differential equation \(mv'=-mg-bv\) and solve the result:
-%\[4\times 10^{-15}v'=-39.2\times 10^{-15}-3\times 10^{-3}v \]
-%\item Solve the differential equation in terms of \(m,g,b\) first, and substitute values in later.
-%\end{enumerate}
-%\end{activity}
+\begin{activity}{5}
+More abstractly, let's attach a mass (weighing \(m\ {\rm kg}\)) to a spring.
 
-\begin{activity}{20}
-A water droplet with a radius of \(10\operatorname{\mu m}\) has a mass of about \(4 \times 10^{-15}\operatorname{kg}\).  
-It is determined in a laboratory that for a droplet this size, the constant \(b\) has a value of \(3\times 10^{-3}\operatorname{kg/s}\),
-and it is known that \(g\) is approximately \(9.8\operatorname{m/s}^2\).
-
+\begin{center}
+\springmass
+\end{center}
 \vfill
-
-Complete the following tasks to study the motion of this droplet.
-\begin{subactivity}
-Rewrite \(mv'=-mg-bv\) in the form of \(v'+av=\unknown\) for some value of \(a\).
-\end{subactivity}
-\begin{subactivity}
-Find the general solution of this ODE in terms of \(a\) and \(g\). 
-(Let \(v_p=wv_0\) when using variation of parameters to avoid confusion.)
-\end{subactivity}
-\begin{subactivity}
-Due to wind resistence, eventually the droplet will effectively stop accelerating upon reaching a certain velocity.
-What is this \term{terminal velocity} of the droplet in terms of \(a\) and \(g\)?
-\end{subactivity}
-\begin{subactivity}
-If the droplet starts from rest (\(v=0\) when \(t=0\)), what is its velocity after \(0.01\operatorname{s}\)?
-Use a calculator to compute the answer in \(\operatorname{m/s}\).
-\end{subactivity}
-\end{activity}
-
-\begin{definition}
-The last part of the previous activity is an example of an \term{Initial Value Problem (IVP)}; we were given the initial value of the velocity in addition to our differential equation.
-\vfill
-Physical scenarios often produce IVPs with a unique solution.
-\end{definition}
-
-\begin{activity}{10}
-Solve the IVP
-\[y'+3y=0,\hspace{3em} y(0)=2.\]
-\end{activity}
-
-\begin{activity}{10}
-Solve the IVP
-\[y'-2y=2, \hspace{3em} y(0)=1.\]
+List all forces acting on the mass.
 \end{activity}
 
 \begin{activity}{5}
-Solve the IVP
-\[y'-2y=2, \hspace{3em} y(2)=1.\]
+\term{Hooke's law} says that the force exerted by the spring is proportional to the distance the spring is stretched.
+
+\begin{center}
+\springmass
+\end{center}
+\vfill
+Write a differential equation modeling the displacement of the mass.
 \end{activity}
+
+\begin{observation}
+There is an equillibrium point where the force of gravity balances the spring force.  If we measure displacement from this point, we can model the mass-spring system by
+\[my''=ky.\]
+\vfill
+\begin{center}
+\springmass
+\end{center}
+\end{observation}
+
+\begin{activity}{15}
+Consider the (numerically simplified) mass-spring equation \[y''=-y.\]
+\begin{subactivity}
+Find a solution.
+\end{subactivity}
+\begin{subactivity}
+Find the general solution.
+\end{subactivity}
+\begin{subactivity}
+Describe the long term behavior of the mass-spring system.
+\end{subactivity}
+\end{activity}
+
+\begin{activity}{5}
+In applications, this infinitely oscillating behavior is often inappropriate.
+\vfill
+Thus, a damper (dashpot) is often incorporated.  This provides a force proportional to the velocity.
+\begin{center}
+\springmassdamper
+\end{center}
+\vfill
+Write a differential equation modeling the displacement of a mass in a \textbf{damped} mass-spring system.
+\vfill
+\end{activity}
+
+\begin{observation}
+The damped mass-spring system can be modelled by
+\[my''=-by'-ky.\]
+Here \(m\) is the mass, \(k\) is the spring constant, and \(b\) is the damping constant.  We can rearrange this as
+\[my''+by'+ky=0.\]
+\vfill
+This is a  \term{homogeneous second order constant coefficient} differential equation.
+Here, \term{homogeneous} refers to the \(0\) on the right hand side of the equation.
+\end{observation}
+
+\begin{activity}{15}
+Consider the second order constant coefficient equation \[y''=y.\]
+\begin{subactivity}
+Find a solution.
+\end{subactivity}
+\begin{subactivity}
+Find the general solution.
+\end{subactivity}
+\begin{subactivity}
+Describe the long term behavior of the solutions.
+\end{subactivity}
+\end{activity}
+
+\begin{observation}
+It is sometimes useful to think in terms of \term{differential  operators}.
+\begin{itemize}
+\item We will use \(D\) to represent a derivative; another common notation is \(\frac{\partial}{\partial x}\).  So for any function \(y\),  \[D(y)=\frac{\partial y}{\partial x}=y'.\]
+\item \(D^2\) will denote the second derivative operator (i.e. differentiate twice, or apply D twice).
+\item We will use \(I\) for the identity operator; it does nothing to a function.  That is, \(I(y)=y\).  It can be thought of as \(I=D^0\) (i.e. differentiate zero times).
+\end{itemize}
+\vfill
+In this language, the differential equation \(y'+3y=0\) can be rewritten as \(D(y)+3I(y)=0\), or \( (D+3I)(y)=0\).
+\vfill
+Thus, the question of solving the homogeneous differential equation is the question of finding the \term{kernel} of the differential operator \(D+3I\).
+\end{observation}
+
+\begin{activity}{5}
+What is the kernel of \(D-I\) ?
+\vfill
+\begin{subactivity}
+Write a differential equation that corresponds to this question.
+\end{subactivity}
+\begin{subactivity}
+Find the general solution of this differential equation.
+\end{subactivity}
+\end{activity}
+
+\begin{activity}{5}
+Find a differential operator whose kernel is the solution set of the ODE \(y'=4y\).
+\end{activity}
+
+\begin{activity}{10}
+Consider the ODE \[y''+5y+6y=0.\]
+\vfill
+\begin{subactivity}
+Find a differential operator whose kernel is the solution set of the above ODE.
+\end{subactivity}
+\begin{subactivity}
+Factor this differential operator as a composition of two operators. (This works because \(D\) and \(I\) commute).
+\end{subactivity}
+\begin{subactivity}
+Find the general solution of the ODE.
+\end{subactivity}
+\end{activity}
+
+\begin{observation}
+If we let \(\L=D^2+5D+6I\), we can write the ODE \[y''+5y+6y=0\] as \[\L(y)=0.\]
+
+Note that such an \(\L\) is always a \term{linear transformation}.
+\end{observation}
+
+\begin{activity}{10}
+Consider the ODE \[y''+5y-6y=0.\]
+\vfill
+\begin{subactivity}
+Find a differential operator whose kernel is the solution set of the above ODE.
+\end{subactivity}
+\begin{subactivity}
+Factor this differential operator as a composition of two operators. (This works because \(D\) and \(I\) commute).
+\end{subactivity}
+\begin{subactivity}
+Find the general solution of the ODE.
+\end{subactivity}
+\end{activity}
+
+\begin{activity}{10}
+Solve the ODE \[ 2y''+7y'+6y=0.\]
+\end{activity}
+
+\begin{activity}{15}
+Solve the ODE \[ y''+y=0.\]
+\end{activity}
+
+\begin{activity}{15}
+Consider the ODE \[y''+2y'+5y=0\].
+\vfill
+\begin{subactivity}
+Find the general solution.
+\end{subactivity}
+\begin{subactivity}
+Describe the long-term behavior of the solutions.
+\end{subactivity}
+\end{activity}
+
+
+\begin{activity}{10}
+Solve the ODE \[ y''-4y'+4y=0.\]
+\end{activity}
+
+\begin{observation}
+To solve this, we need to find the kernel of \( (D-2I)(D-2I) \).
+\begin{itemize}
+\item The kernel of \(D-2I\) is \(\left\{ ce^{2t}\ \middle|\ c \in \IR \right\}\).
+\item However, if \( (D-2I)(y) = Ae^{2t} \), then applying \(D-2I\) twice will yield zero!
+\item So we must solve the ODE \[y'-2y=e^{2t}.\]
+\end{itemize}
+\end{observation}
+
+\begin{activity}{15}
+Solve \(y'-2y=e^{2t}\).
+\end{activity}
+
+
+\begin{observation}
+Thus, we have shown that the general solution of \[y''-4y'+4y=0\] is \[y=c_0e^{2t}+c_1te^{2t}.\]
+\end{observation}
+
+\begin{activity}{15}
+Solve \(y''-6y'+9y=0\).
+\end{activity}
+
+\begin{activity}{10}
+Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
+If \(r\) is a number such that \(ar^2+br+c=0\), what can you conclude?
+\begin{enumerate}[(a)]
+\item \(e^{rt}\) is a solution.
+\item \(e^{-rt}\) is a solution.
+\item \(te^{rt}\) is a solution.
+\item There are no solutions.
+\end{enumerate}
+\end{activity}
+
+\begin{activity}{5}
+Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
+
+When does the general solution have the form \(c_0 e^{rt}+te^{rt}\) ?
+\begin{enumerate}[(a)]
+\item When the polynomial \(ax^2+bx+c\) has two distinct real roots.
+\item When the polynomial \(ax^2+bx+c\) has a repeated real root.
+\item When the polynomial \(ax^2+bx+c\) has two distinct non-real roots.
+\item When the polynomial \(ax^2+bx+c\) has a repeated non-real root.
+\end{enumerate}
+\end{activity}
+
+
+\begin{observation}
+Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
+\vfill
+\begin{itemize}
+\item If \(r\) is a root of \(ax^2+bx+c=0\), then \(e^{rt}\) is a solution of the ODE.
+\item If \(r\) is a double root, variation of parameters shows that \(te^{rt}\) is also a solution.
+\item if \(r\) is not real, Euler's formula allows us to express the solution in terms of \(\sin(rt)\) and \(\cos(rt)\).
+\end{itemize}
+\end{observation}
+
+
 
 
 \end{applicationActivities}

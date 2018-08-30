@@ -165,4 +165,96 @@ Solve \(y^{\prime}=y+2\).
 \end{subactivity}
 \end{activity}
 
+\begin{activity}{15}
+Find the solution for \(y'=y+2\) directly.
+\vfill
+\textbf{Simple idea:} Since \(y_0=e^x\) was a particular solution of \(y'=y\), 
+we guess that a particular solution for \(y'=y+2\) is of the form \(y_p =  v e^x\) 
+for some \textbf{function} \(v(x)\). 
+\vfill
+\begin{subactivity}
+Use the Product Rule to find \(y_p'=\frac{d}{dx}[ve^x]\).
+\end{subactivity}
+\begin{subactivity}
+Substitute \(y_p\) and \(y_p'\) into the equation \(y'=y+2\).
+\end{subactivity}
+\begin{subactivity}
+Solve for \(v\).
+\end{subactivity}
+\begin{subactivity}
+Find \(y_p\).
+\end{subactivity}
+\end{activity}
+
+\begin{observation}
+The technique outlined in the previous activity is called \term{variation of parameters}.  
+If \(y_0\) is a particular solution of the \term{homogeneous} equation, 
+assume that a particular solution of the 
+\term{non-homogeneous} equation has the form \(y_p = v y_0\), and then determine what \(v\) must be. 
+
+\vfill
+
+\textbf{Example: }
+\begin{align*}
+y'+3y = 0 & & \text{homogeneous} \\
+y'+3y = x & & \text{non-homogeneous}
+\end{align*}
+
+Note that each term of the homogeneous equation includes \(y\) or it derivatives.
+\end{observation}
+
+\begin{activity}{20}
+Solve \(y'=x-3y\) by first solving its corresponding homogeneous equation and using
+variation of parameters: 
+\begin{align*}
+y'+3y = 0 & & \text{homogeneous} \\
+y'+3y = x & & \text{non-homogeneous}
+\end{align*}
+\begin{subactivity}
+Modify \(e^x\) to find the general solution \(y_h\) for the homogeneous equation.
+\end{subactivity}
+\begin{subactivity}
+Choose a particular solution \(y_0\) for the homogeneous equation, and
+assume \(y_p = v y_0 \) is a particular solution of the non-homogeneous equation for some \textbf{function} \(v\).
+Substitute \(y_p\) into non-homogeneous equation and simplify.
+\end{subactivity}
+\begin{subactivity}
+Determine \(v\), and then determine \(y_p\).
+\end{subactivity}
+\end{activity}
+
+\begin{observation}
+Since \(y_h=ke^{-3x}\) was the general solution of \(y'+3y=0\), 
+and \(y_p = \frac{x}{3}-\frac{1}{9}\) is a particular solution of \(y'+3y=x\), 
+\[y=y_h+y_p = \left(ke^{-3x}\right)+\left(\frac{x}{3}-\frac{1}{9}\right)\]
+is a solution to \(y'+3y=x\):
+
+\vfill
+
+\[\frac{d}{dx}[y_h+y_p]+3(y_h+y_p)=(y_h'+3y_h)+(y_p'+3y_p)=0+x=x\]
+\end{observation}
+
+\begin{fact}
+Let \(a\) be a constant real number.
+Every constant coefficient first order ODE
+\[y'+ay=f(x)\]
+has the general solution
+\[y=y_h+y_p\]
+where \(y_h\) is the general solution to the homogeneous equation \(y'+ay=0\)
+and \(y_p\) is a particular solution to \(y'+ay=f(t)\).
+\end{fact}
+
+\begin{activity}{15}
+Find the general solution to \(y'=2y+x+1\) using variation of parameters:
+
+\vfill
+
+\begin{itemize}
+\item Write the homogeneous equation and find its general solution \(y_h\).
+\item Use a particular solution \(y_0\) for the homogeneous equation to find a particular solution
+      \(y_p=vy_0\) for the original equation.
+\item Then \(y=y_h+y_p\) gives the general solution to the equation.
+\end{itemize}
+\end{activity}
+
 \end{applicationActivities}
