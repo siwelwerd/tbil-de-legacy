@@ -13,29 +13,34 @@ What happens when your tire hits a pothole?
 
 \end{observation}
 
+%\begin{activity}{5}
+%This motion may be modeled as a mass (weighing \(m\ {\rm kg}\)) hanging downward from a spring.
+%
+%\begin{center}
+%\springmass
+%\end{center}
+%\vfill
+%List all forces acting on the mass.
+%\end{activity}
+
 \begin{activity}{5}
-More abstractly, let's attach a mass (weighing \(m\ {\rm kg}\)) to a spring.
+\term{Hooke's law} says that the force exerted by the spring is proportional to the distance 
+the spring is stretched from its natural length, given by a spring coefficient \(k>0\).
 
 \begin{center}
 \springmass
 \end{center}
 \vfill
-List all forces acting on the mass.
-\end{activity}
 
-\begin{activity}{5}
-\term{Hooke's law} says that the force exerted by the spring is proportional to the distance the spring is stretched.
-
-\begin{center}
-\springmass
-\end{center}
-\vfill
-Write a differential equation modeling the displacement of the mass.
+Let \(y\) measure the displacement of the mass from the spring's natural length.
+Write a differential equation modeling the displacement of the \(m\operatorname{kg}\) mass,
+assuming that the only force acting on the mass comes from the spring.
 \end{activity}
 
 \begin{observation}
-There is an equillibrium point where the force of gravity balances the spring force.  If we measure displacement from this point, we can model the mass-spring system by
-\[my''=ky.\]
+Since the spring acts on the mass in the opposite direction of displacement, we
+may model the mass-spring system with
+\[my''=-ky.\]
 \vfill
 \begin{center}
 \springmass
@@ -43,7 +48,8 @@ There is an equillibrium point where the force of gravity balances the spring fo
 \end{observation}
 
 \begin{activity}{15}
-Consider the (numerically simplified) mass-spring equation \[y''=-y.\]
+Consider the mass-spring equation \(my''=-ky\) where \(m=k=1\): 
+\[y''=-y.\]
 \begin{subactivity}
 Find a solution.
 \end{subactivity}
@@ -56,9 +62,11 @@ Describe the long term behavior of the mass-spring system.
 \end{activity}
 
 \begin{activity}{5}
-In applications, this infinitely oscillating behavior is often inappropriate.
+The general solution \(y=c_1\cos(t)+c_2\sin(t)\) models infinitely oscillating behavior,
+but in applications this does not occur.
 \vfill
-Thus, a damper (dashpot) is often incorporated.  This provides a force proportional to the velocity.
+Thus, a damper (a.k.a. dashpot) is often considered, which provides a force proportional to
+velocity, given by the coefficient \(b>0\). For example, friction may act as a damper to a mass-spring system. 
 \begin{center}
 \springmassdamper
 \end{center}
@@ -71,7 +79,8 @@ Write a differential equation modeling the displacement of a mass in a \textbf{d
 The damped mass-spring system can be modelled by
 \[my''=-by'-ky.\]
 Here \(m\) is the mass, \(k\) is the spring constant, and \(b\) is the damping constant.  We can rearrange this as
-\[my''+by'+ky=0.\]
+\[y''+By'+Ky=0\]
+where \(B=\frac{b}{m}\) and \(K=\frac{k}{m}\).
 \vfill
 This is a  \term{homogeneous second order constant coefficient} differential equation.
 Here, \term{homogeneous} refers to the \(0\) on the right hand side of the equation.
@@ -93,42 +102,73 @@ Describe the long term behavior of the solutions.
 \begin{observation}
 It is sometimes useful to think in terms of \term{differential  operators}.
 \begin{itemize}
-\item We will use \(D\) to represent a derivative; another common notation is \(\frac{\partial}{\partial x}\).  So for any function \(y\),  \[D(y)=\frac{\partial y}{\partial x}=y'.\]
+\item We will use \(D\) to represent a derivative.%; another common notation is \(\frac{\partial}{\partial x}\).  
+  So for any function \(y\),  \[D(y)=\frac{\partial y}{\partial x}=y'.\]
 \item \(D^2\) will denote the second derivative operator (i.e. differentiate twice, or apply D twice).
-\item We will use \(I\) for the identity operator; it does nothing to a function.  That is, \(I(y)=y\).  It can be thought of as \(I=D^0\) (i.e. differentiate zero times).
+\item We will use \(I\) for the identity operator, so \(I(y)=y\).  
+  (It can be thought of as \(I=D^0\), take the derivative zero times.)
 \end{itemize}
 \vfill
-In this language, the differential equation \(y'+3y=0\) can be rewritten as \(D(y)+3I(y)=0\), or \( (D+3I)(y)=0\).
+In this language, the differential equation \(y'+3y=0\) can be rewritten as \(D(y)+3I(y)=0\), 
+or more simply \( (D+3)(y)=0\).
 \vfill
-Thus, the question of solving the homogeneous differential equation is the question of finding the \term{kernel} of the differential operator \(D+3I\).
+Thus, the question of solving the homogeneous differential equation is the question of finding the 
+\term{kernel} of the differential operator \(D+3I\): all the functions \(y\) that the transformation
+\(D+3\) turns into the zero function.
 \end{observation}
 
 \begin{activity}{5}
-What is the kernel of \(D-I\) ?
-\vfill
-\begin{subactivity}
-Write a differential equation that corresponds to this question.
-\end{subactivity}
-\begin{subactivity}
-Find the general solution of this differential equation.
-\end{subactivity}
+Find a differential operator whose kernel is the solution set of the ODE \(y'=4y\).
+\begin{enumerate}[a)]
+\item \(D-4\)
+\item \(D+4\)
+\item \(D^2-4\)
+\item \(D^2+4D\)
+\end{enumerate}
 \end{activity}
 
 \begin{activity}{5}
-Find a differential operator whose kernel is the solution set of the ODE \(y'=4y\).
+The kernel of the differential operator \(D-4\) whose kernel is the general solution of the ODE 
+\(y'=4y\). What is its general solution?
+\begin{enumerate}[a)]
+\item \(y=ke^{-4x}\)
+\item \(y=ke^{4x}\)
+\item \(y=4x+k\)
+\item \(y=4\)
+\end{enumerate}
 \end{activity}
 
-\begin{activity}{10}
-Consider the ODE \[y''+5y+6y=0.\]
+\begin{activity}{5}
+What are ODE and general solution given by the kernel of the differential operator \(D-a\) for a real number \(a\)?
+\begin{enumerate}[a)]
+\item \(y'-ay=0\) and \(y=ke^{ax}\).
+\item \(y'+ay=0\) and \(y=ke^{-ax}\).
+\item \(y'-a=0\) and \(y=ax+k\).
+\item \(y''+a=0\) and \(y=-\frac{a}{2}x^2+kx+l\).
+\end{enumerate}
+\end{activity}
+
+\begin{observation}
+The kernel of the differential operator \(D-a\) is given by the general solution \(y=ke^{ax}\).
+\end{observation}
+
+\begin{activity}{15}
+Consider the ODE \[y''+5y'+6y=0.\]
 \vfill
 \begin{subactivity}
-Find a differential operator whose kernel is the solution set of the above ODE.
+Use \(I,D,D^2\) to write a differential operator whose kernel is the solution set of the above ODE.
 \end{subactivity}
 \begin{subactivity}
-Factor this differential operator as a composition of two operators. (This works because \(D\) and \(I\) commute).
+Factor this differential operator as a composition of two simpler operators, as you would a polynomial. 
+(This works because the order of applying the transformations \(D\) and \(I\) doesn't matter).
 \end{subactivity}
 \begin{subactivity}
-Find the general solution of the ODE.
+Find the general solution for each factor, and then combine to find the general solution
+to the overall ODE.
+\end{subactivity}
+\begin{subactivity}
+Check that your general solution is valid by computing \(y',y''\) and plugging into
+\(y''+5y'+5y=0\).
 \end{subactivity}
 \end{activity}
 
