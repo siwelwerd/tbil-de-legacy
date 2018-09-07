@@ -110,25 +110,25 @@ It is sometimes useful to think in terms of \term{differential  operators}.
 \end{itemize}
 \vfill
 In this language, the differential equation \(y'+3y=0\) can be rewritten as \(D(y)+3I(y)=0\), 
-or more simply \( (D+3)(y)=0\).
+or more simply \( (D+3I)(y)=0\).
 \vfill
 Thus, the question of solving the homogeneous differential equation is the question of finding the 
 \term{kernel} of the differential operator \(D+3I\): all the functions \(y\) that the transformation
-\(D+3\) turns into the zero function.
+\(D+3I\) turns into the zero function.
 \end{observation}
 
 \begin{activity}{5}
 Find a differential operator whose kernel is the solution set of the ODE \(y'=4y\).
 \begin{enumerate}[a)]
-\item \(D-4\)
-\item \(D+4\)
-\item \(D^2-4\)
+\item \(D-4I\)
+\item \(D+4I\)
+\item \(D^2-4I\)
 \item \(D^2+4D\)
 \end{enumerate}
 \end{activity}
 
 \begin{activity}{5}
-The kernel of the differential operator \(D-4\) whose kernel is the general solution of the ODE 
+The kernel of the differential operator \(D-4I\) whose kernel is the general solution of the ODE 
 \(y'=4y\). What is its general solution?
 \begin{enumerate}[a)]
 \item \(y=ke^{-4x}\)
@@ -139,7 +139,7 @@ The kernel of the differential operator \(D-4\) whose kernel is the general solu
 \end{activity}
 
 \begin{activity}{5}
-What are ODE and general solution given by the kernel of the differential operator \(D-a\) for a real number \(a\)?
+What are ODE and general solution given by the kernel of the differential operator \(D-aI\) for a real number \(a\)?
 \begin{enumerate}[a)]
 \item \(y'-ay=0\) and \(y=ke^{ax}\).
 \item \(y'+ay=0\) and \(y=ke^{-ax}\).
@@ -149,7 +149,7 @@ What are ODE and general solution given by the kernel of the differential operat
 \end{activity}
 
 \begin{observation}
-The kernel of the differential operator \(D-a\) is given by the general solution \(y=ke^{ax}\).
+The kernel of the differential operator \(D-aI\) is given by the general solution \(y=ke^{ax}\).
 \end{observation}
 
 \begin{activity}{15}
@@ -168,75 +168,101 @@ to the overall ODE.
 \end{subactivity}
 \begin{subactivity}
 Check that your general solution is valid by computing \(y',y''\) and plugging into
-\(y''+5y'+5y=0\).
+\(y''+5y'+6y=0\).
 \end{subactivity}
 \end{activity}
 
 \begin{observation}
-If we let \(\L=D^2+5D+6I\), we can write the ODE \[y''+5y+6y=0\] as \[\L(y)=0.\]
-
-Note that such an \(\L\) is always a \term{linear transformation}.
-\end{observation}
-
-\begin{activity}{10}
-Consider the ODE \[y''+5y-6y=0.\]
+The kernel of \((D+3I)(D+2I)\) is given by \(y=k_1e^{-3t}+k_2e^{-2t}\).
 \vfill
-\begin{subactivity}
-Find a differential operator whose kernel is the solution set of the above ODE.
-\end{subactivity}
-\begin{subactivity}
-Factor this differential operator as a composition of two operators. (This works because \(D\) and \(I\) commute).
-\end{subactivity}
-\begin{subactivity}
-Find the general solution of the ODE.
-\end{subactivity}
-\end{activity}
+In general for \(\alpha\not=\beta\), the kernel of \((D-\alpha I)(D-\beta I)\) is given by
+\(y=k_1e^{at}+k_2e^{bt}\).
+\vfill
+\end{observation}
+%
+%\begin{observation}
+%If we let \(\L=D^2+5D+6I\), we can write the ODE \[y''+5y+6y=0\] as \[\L(y)=0.\]
+%
+%Note that such an \(\L\) is always a \term{linear transformation}.
+%\end{observation}
+
+%\begin{activity}{10}
+%Consider the ODE \[y''+5y'-6y=0.\]
+%\vfill
+%\begin{subactivity}
+%Find a differential operator whose kernel is the solution set of the above ODE.
+%\end{subactivity}
+%\begin{subactivity}
+%Factor this differential operator as a composition of two simpler operators.
+%(Note: 
+%\end{subactivity}
+%\begin{subactivity}
+%Find the general solution of the ODE.
+%\end{subactivity}
+%\end{activity}
 
 \begin{activity}{10}
 Solve the ODE \[ 2y''+7y'+6y=0.\]
 \end{activity}
 
 \begin{activity}{15}
-Solve the ODE \[ y''+y=0.\]
+Recall that the general solution to \(y''+y=0\)
+is given by \(y=c_1\sin(x)+c_2\cos(x)\).
+Show how to find this solution using the differential
+operator \(D^2+1\).
 \end{activity}
 
 \begin{activity}{15}
 Consider the ODE \[y''+2y'+5y=0\].
-\vfill
 \begin{subactivity}
-Find the general solution.
+Find its general solution using complex numbers.
 \end{subactivity}
 \begin{subactivity}
-Describe the long-term behavior of the solutions.
+Describe the general solution only involving real numbers.
 \end{subactivity}
 \end{activity}
 
+%\begin{observation}
+%The kernel of \(aD^2+bD+cI\) is given by the general solution
+%\(y=k_1e^{\alpha x}+k_2e^{\beta x}\) where \(\alpha\not=\beta\)
+%are given by the roots of the polynomial \(ar^2+br+c\):
+%\[\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]
+%When \(\alpha,\beta\) have imaginary parts, a substitution like
+%\(k_1e^{ix}+k_2e^{-ix}=c_1\cos(x)+c_2\sin(x)\) must be used
+%to obtain real-valued solutions.
+%\end{observation}
 
-\begin{activity}{10}
-Solve the ODE \[ y''-4y'+4y=0.\]
+\begin{activity}{5}
+Which of these are solutions to the following ODE? 
+\[ y''-4y'+4y=0\]
+\begin{enumerate}[a)]
+\item \(y=e^{2t}\), where \(y'=2e^{2t}\) and \(y''=4e^{2t}\)
+\item \(y=te^{2t}\), where \(y'=e^{2t}+2te^{2t}\) and \(y''=4e^{2t}+4e^{2t}\)
+\item \(y=e^{2t}+te^{2t}\), where \(y'=3e^{2t}+2te^{2t}\) and \(y''=8e^{2t}+4e^{2t}\)
+\item All of the above
+\end{enumerate}
 \end{activity}
 
 \begin{observation}
-To solve this, we need to find the kernel of \( (D-2I)(D-2I) \).
+To solve \(y''-4y'+4y=0\), we need to find the kernel of \( (D-2I)(D-2I)=(D-2I)^2 \).
 \begin{itemize}
-\item The kernel of \(D-2I\) is \(\left\{ ce^{2t}\ \middle|\ c \in \IR \right\}\).
-\item However, if \( (D-2I)(y) = Ae^{2t} \), then applying \(D-2I\) twice will yield zero!
-\item So we must solve the ODE \[y'-2y=e^{2t}.\]
+\item The kernel of \(D-2I\) is given by \(ke^{2x}\).
+\item But if \( (D-2I)(y) = e^{2t} \), then \((D-2I)(D-2I)(y)=(D-2I)(e^{2t})=0\) also.
+\item That means the kernel of \((D-2I)^2\) is given by both
+  \((D-2I)(y)=0\) and \((D-2I)(y)=e^{2t}\).
 \end{itemize}
 \end{observation}
 
 \begin{activity}{15}
-Solve \(y'-2y=e^{2t}\).
+Solve \((D-2I)(y)=e^{2x}\).
 \end{activity}
 
 
 \begin{observation}
-Thus, we have shown that the general solution of \[y''-4y'+4y=0\] is \[y=c_0e^{2t}+c_1te^{2t}.\]
+Since \((D-2I)(y)=0\) solves to \(ke^{2t}\) and \((D-2I)(y)=e^{2t}\) solves to
+\(kte^{2t}\), 
+we have shown that the general solution of \[y''-4y'+4y=0\] is \[y=c_0e^{2t}+c_1te^{2t}.\]
 \end{observation}
-
-\begin{activity}{15}
-Solve \(y''-6y'+9y=0\).
-\end{activity}
 
 \begin{activity}{10}
 Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
@@ -252,7 +278,7 @@ If \(r\) is a number such that \(ar^2+br+c=0\), what can you conclude?
 \begin{activity}{5}
 Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
 
-When does the general solution have the form \(c_0 e^{rt}+te^{rt}\) ?
+When does the general solution have the form \(c_0 e^{rt}+c_1 te^{rt}\) ?
 \begin{enumerate}[(a)]
 \item When the polynomial \(ax^2+bx+c\) has two distinct real roots.
 \item When the polynomial \(ax^2+bx+c\) has a repeated real root.
@@ -263,15 +289,23 @@ When does the general solution have the form \(c_0 e^{rt}+te^{rt}\) ?
 
 
 \begin{observation}
-Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
+Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0\]
+given by the differential operator \(aD^2+bD+cI\) with complex root \(r\):
 \vfill
 \begin{itemize}
-\item If \(r\) is a root of \(ax^2+bx+c=0\), then \(e^{rt}\) is a solution of the ODE.
-\item If \(r\) is a double root, variation of parameters shows that \(te^{rt}\) is also a solution.
-\item if \(r\) is not real, Euler's formula allows us to express the solution in terms of \(\sin(rt)\) and \(\cos(rt)\).
+\item \(e^{rt}\) is a particular solution of the ODE.
+\item If \(r\) is a double root, \(te^{rt}\) is also a particular solution.
+\item if \(r=\alpha+\beta i\) is not real, Euler's formula allows us to express the real-valued solutions in terms of 
+  \(\sin(\beta t)\) and \(\cos(\beta t)\).
 \end{itemize}
+Due to the usefulness of its roots,
+the polynomial \(ax^2+bx+c=0\) is called the \term{characteristic equation} for this ODE.
 \end{observation}
-
+%
+%
+%\begin{activity}{15}
+%Solve \(y''-6y'+9y=0\).
+%\end{activity}
 
 
 
