@@ -102,27 +102,56 @@ Thus \(y_p = ve^{-t} = (-t^2+2t-2)e^te^{-t}=-t^2+2t-2\), so the general solution
 
 \begin{problem}{C2}
 Consider the following scenario: 
-A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\) and a terminal velocity of \(3\ {\rm \frac{cm}{s}}\).  The droplet is dropped from rest.  
+A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \times 10^{-15} {\rm kg}\) 
+and a terminal velocity of \(3\ {\rm \frac{cm}{s}}\).  The droplet is dropped from rest;
+assume that acceleration due to gravity is given by \(9.8{\rm\frac{m}{s^2}}\).
 \begin{enumerate}[(a)]
-\item Write down an IVP modelling the velocity of the water droplet.
-\item What is its velocity after \(0.01\ {\rm s}\)?
+\item Explain how to model this scenario as an initial value problem (IVP).
+\item Calculate its velocity after \(0.01\ {\rm s}\).
 \end{enumerate}
 \end{problem}
 \begin{solution}
-The forces acting on the water droplet are gravity (\(mg\) downwards) and air resistance; in a water droplet this size, this is proportional to its velocity.  Let \(b\) denote this drag coefficient; then by Newton's second law (if we let up be the positive direction and down be negative), we have
-\[ m \frac{dv}{dt} = -mg - bv .\]
-Note that we have \(-mg\) since gravity always acts downwards, and \(-bv\) because the drag acts in the opposite direction of \(v\).
-It is actually convenient to let \(a=\frac{b}{m}\), and divide this equation by the mass, yielding 
-\[ \frac{dv}{dt} = -g - av .\]
-The intial condition is that it is dropped from rest, i.e. \(v(0)=0\), so an IVP modelling velocity is 
-\[  \frac{dv}{dt} = -g - av \hspace{6em} v(0)=0 .\]
-This is a separable differential equation; we thus have
-\[ \int \frac{1}{g+av}\ dv = \int (-1)dt .\]
-Thus, \(\frac{1}{a}\ln|g+av| = -t+c_1\), or \(|g+av| = e^{-at+ac_1}=c_2e^{-at}\) (where \(c_2=e^{ac_1}\)).  To avoid the pesky absolute value sign, we can absorb a potential negative into the constant to write \(g+av=c_3 e^{-at}\), or (letting \(c_0=\frac{c_3}{a}\))
-\[ v=-\frac{g}{a} +c_0 e^{-at}.\]
-Note that \(\lim _{t \rightarrow \infty} v = -\frac{g}{a}\), so since we are given the terminal velocity, so after converting to meters per second we can solve \(-0.03 = -\frac{9.8}{a}\) to obtain \(a=\frac{9.8}{0.03}\).  We also know that it is dropped from rest, so we compute \(0=v(0)=-0.03+c_0\), so \(c_0=0.03\).  Thus our model for velocity is 
-\[ v=-0.03+0.03e^{-\frac{9.8}{0.03} t}.\]
-Then we simply compute \(v(0.01)=-0.03+0.03e^{-\frac{9.8}{0.03} (0.01)} \approx -0.029 \).  So after \(0.01\ {\rm s}\), the drop is falling approximately  \(2.9\ {\rm \frac{cm}{s}}\).
+\begin{enumerate}[(a)]
+\item Let \(v\) be the velocity of the droplet.
+The total force \(F_t\) acting on the water droplet is the sum of  gravity \(F_g\) and air resistance \(F_r\).
+\[F_t=F_g+F_r\]
+The total force is given by mass times the accleration \(v'\): \(F_t=mv'\).
+The force of gravity is given by mass times acceleration due to gravity, negative as it oriented downwards: \(F_g=-mg\).
+In a water droplet this size, air resistance is proportional to its velocity, \(F_r=-bv\) for a drag coefficient \(b>0\).
+
+Since the object is dropped from rest, we know \(v=0\) when \(t=0\). So the initial value problem is given by
+\[mv'=-mg-bv\hspace{3em}v(0)=0\]
+where \(m=4\times 10^{-15}\operatorname{kg}\) and \(g=9.8\). To find \(b\), we note that terminal velocity 
+\(v_t=-0.03\) (in meters/sec)  occurs when
+there is no acceleration: \(v'=0\). So we may solve
+\[0=-mg-bv_t\]
+to get \(b=-\frac{mg}{v_t}\). Thus the simplified IVP is given by
+\[v'-av=-g\hspace{3em}v(0)=0\]
+where \(a=\frac{g}{v_t}\).
+
+\item To solve for \(v\), we first solve the homogeneous system
+\[v_h'-av_h=0\]
+which has the general solution \(v_h=ke^{at}\), and a simple
+particular solution \(v_0=e^{at}\). So we use varation of parameters to
+assert that \(v_p=wv_0=we^{at}\) is a particular solution for the original equation.
+If so, then \(v_p'=w'e^{at}+awe^{at}\) and thus
+\[v_p'-av_p=w'e^{at}+awe^{at}-awe^{at}=w'e^{at}=-g\]
+and therefore \(w'=-ge^{-at}\). By integration, \(w=\frac{g}{a}e^{-at}\)
+and thus \(v_p=\frac{g}{a}\).
+
+Therefore the general solution is given by \(v=v_h+v_p=ke^{at}+\frac{g}{a}\).
+Using the initial condition \(v(0)=0\), we have \(0=ke^0+\frac{g}{a}\)
+and thus \(k=-\frac{g}{a}\). So we have that \(v=-\frac{g}{a}e^{at}+\frac{g}{a}\)
+or \(v=\frac{g}{a}(1-e^{at})\).
+Thus our final answer is given by plugging in 
+\[
+g=9.8,\hspace{1em}
+a=\frac{g}{v_t}=\frac{9.8}{-0.03}\approx-326.7,\hspace{1em}
+t=0.01
+\]
+which yields the result \(v\approx -0.029\). So after 1/100 of a second,
+the droplet is falling at a rate of about 29 millimeters per second.
+\end{enumerate}
 \end{solution}
 
 
