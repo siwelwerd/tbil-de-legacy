@@ -106,23 +106,29 @@ A water droplet with a radius of \(10\ {\rm \mu m}\) has a mass of about \(4 \ti
 and a terminal velocity of \(3\ {\rm \frac{cm}{s}}\).  The droplet is dropped from rest;
 assume that acceleration due to gravity is given by \(9.8{\rm\frac{m}{s^2}}\).
 \begin{enumerate}[(a)]
-\item Explain how to model this scenario as an initial value problem (IVP).
-\item Calculate its velocity after \(0.01\ {\rm s}\).
+\item Write down an IVP modelling the velocity.
+\item What is its velocity after \(0.01\ {\rm s}\)?
 \end{enumerate}
 \end{problem}
 \begin{solution}
 \begin{enumerate}[(a)]
-\item Let \(v\) be the velocity of the droplet.
-The total force \(F_t\) acting on the water droplet is the sum of  gravity \(F_g\) and air resistance \(F_r\).
-\[F_t=F_g+F_r\]
-The total force is given by mass times the accleration \(v'\): \(F_t=mv'\).
-The force of gravity is given by mass times acceleration due to gravity, negative as it oriented downwards: \(F_g=-mg\).
-In a water droplet this size, air resistance is proportional to its velocity, \(F_r=-bv\) for a drag coefficient \(b>0\).
-
+\item 
+%Let \(v\) be the velocity of the droplet.
+%The total force \(F_t\) acting on the water droplet is the sum of  gravity \(F_g\) and air resistance \(F_r\).
+%\[F_t=F_g+F_r\]
+%The total force is given by mass times the accleration \(v'\): \(F_t=mv'\).
+%The force of gravity is given by mass times acceleration due to gravity, negative as it oriented downwards: \(F_g=-mg\).
+%In a water droplet this size, air resistance is proportional to its velocity, \(F_r=-bv\) for a drag coefficient \(b>0\).
+%
+The ODE modeling the velocity of a tiny mass under gravity and air resistence
+is \(mv'=-mg-bv\)
+where \(m\) is the mass and \(g\) is the acceleration due to gravity, both given.
+The coefficient of air resistence \(b\) is not given.
 Since the object is dropped from rest, we know \(v=0\) when \(t=0\). So the initial value problem is given by
 \[mv'=-mg-bv\hspace{3em}v(0)=0\]
-where \(m=4\times 10^{-15}\operatorname{kg}\) and \(g=9.8\). To find \(b\), we note that terminal velocity 
-\(v_t=-0.03\) (in meters/sec)  occurs when
+
+To find \(b\), we note that the given terminal velocity 
+\(v_t\) occurs when
 there is no acceleration: \(v'=0\). So we may solve
 \[0=-mg-bv_t\]
 to get \(b=-\frac{mg}{v_t}\). Thus the simplified IVP is given by
