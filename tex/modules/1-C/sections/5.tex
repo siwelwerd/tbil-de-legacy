@@ -3,6 +3,61 @@
 
 \begin{applicationActivities}
 
+<<<<<<< HEAD
+=======
+\begin{observation}
+It is sometimes useful to think in terms of \term{differential  operators}.
+\begin{itemize}
+\item We will use \(D\) to represent a derivative; another common notation is \(\frac{\partial}{\partial x}\).  So for any function \(y\),  \[D(y)=\frac{\partial y}{\partial x}=y'.\]
+\item \(D^2\) will denote the second derivative operator (i.e. differentiate twice, or apply D twice).
+\item We will use \(I\) for the identity operator; it does nothing to a function.  That is, \(I(y)=y\).  It can be thought of as \(I=D^0\) (i.e. differentiate zero times).
+\end{itemize}
+\vfill
+In this language, the differential equation \(y'+3y=0\) can be rewritten as \(D(y)+3I(y)=0\), or \( (D+3I)(y)=0\).
+\vfill
+Thus, the question of solving the homogeneous differential equation is the question of finding the \term{kernel} of the differential operator \(D+3I\).
+\end{observation}
+
+\begin{activity}{5}
+What is the kernel of \(D-I\) ?
+\vfill
+\begin{subactivity}
+Write a differential equation that corresponds to this question.
+\end{subactivity}
+\begin{subactivity}
+Find the general solution of this differential equation.
+\end{subactivity}
+\end{activity}
+
+\begin{activity}{5}
+Find a differential operator whose kernel is the solution set of the ODE \(y'=4y\).
+\end{activity}
+
+\begin{activity}{10}
+Consider the ODE \[y''+5y'+6y=0.\]
+\vfill
+\begin{subactivity}
+Find a differential operator whose kernel is the solution set of the above ODE.
+\end{subactivity}
+\begin{subactivity}
+Factor this differential operator as a composition of two operators. (This works because \(D\) and \(I\) commute).
+\end{subactivity}
+\begin{subactivity}
+Find the general solution of the ODE.
+\end{subactivity}
+\end{activity}
+
+\begin{observation}
+If we let \(\L=D^2+5D+6I\), we can write the ODE \[y''+5y+6y=0\] as \[\L(y)=0.\]
+
+Note that such an \(\L\) is always a \term{linear transformation}.
+\end{observation}
+>>>>>>> master
+
+\begin{activity}{5}
+Find the general solution to
+\[y''+y'-12y=0.\]
+\end{activity}
 
 
 
