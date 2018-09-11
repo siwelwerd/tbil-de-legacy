@@ -165,9 +165,11 @@ the droplet is falling at a rate of about 29 millimeters per second.
 Find the general solution to \[y''+6y'+13y=0.\]
 \end{problem}
 \begin{solution}
-We begin by writing the auxilliary equation \(r^2+6r+13=0\) and finding the roots.  There are many ways to do this; here, we complete  the square:
-\[0=r^2+6r+13=r^2+6r+9+4=(r+3)^2+4.\]
-Thus, we can easily solve to obtain \(r=-3\pm2i\).  Thus the general solution is
+We begin by writing the auxilliary equation \(r^2+6r+13=0\) and find its roots \(r=-3\pm2i\).
+Thus the general solution using complex numbers is \[y=k_1e^{-3t+2it}+k_2e^{-3t-2it}.\]
+
+By applying Euler's formula \(e^{i\theta}=\cos\theta+i\sin\theta\), we may
+obtain the real-valued general solution
 \[ y= c_1 e^{-3t} \cos(2t) + c_2 e^{-3t} \sin(2t) .\]
 \end{solution}
 
