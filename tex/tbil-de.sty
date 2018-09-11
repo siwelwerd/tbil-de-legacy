@@ -128,3 +128,19 @@
 \end{tikzpicture}
 
 }
+
+\newcommand{\springdoublemass}[1][1]{
+\begin{tikzpicture}[scale=#1]
+\tikzstyle{spring}=[thick,decorate,decoration={zigzag,pre length=0.3cm,post length=0.3cm,segment length=6}]
+\tikzstyle{ground}=[fill,pattern=north east lines,draw=none,minimum width=0.75cm,minimum height=0.3cm]
+
+
+\node (M) [draw,outer sep=0pt,thick,minimum width=1cm,minimum height=1cm] {$m_1$};
+\node (N) at (M.south) [draw,outer sep=0pt,thick,minimum width=1cm,minimum height=1cm, yshift=-2cm] {$m_2$};
+
+\node (ground1) at (M.north) [draw,outer sep=0pt,thick,ground,yshift=1.5cm,anchor=south] {};
+\draw (ground1.south west) -- (ground1.south east);
+\draw [spring] (ground1.south) -- ($(M.north east)!(ground1.south)!(M.north west)$) node [midway, label=right:$k_1$]{};
+\draw [spring] (M.south) -- ($(N.north east)!(M.south)!(N.north west)$) node [midway, label=right:$k_2$]{};
+\end{tikzpicture}
+}
