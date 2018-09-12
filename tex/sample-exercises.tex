@@ -165,7 +165,8 @@ the droplet is falling at a rate of about 29 millimeters per second.
 Find the general solution to \[y''+6y'+13y=0.\]
 \end{problem}
 \begin{solution}
-We begin by writing the auxilliary equation \(r^2+6r+13=0\) and find its roots \(r=-3\pm2i\).
+Rewriting in terms of differential operators, we have \( (D^2+6D+13I)(y)=0\), so we need to find the roots of the equation
+\(r^2+6r+13=0\), which are  \(r=-3\pm2i\).
 Thus the general solution using complex numbers is \[y=k_1e^{-3t+2it}+k_2e^{-3t-2it}.\]
 
 By applying Euler's formula \(e^{i\theta}=\cos\theta+i\sin\theta\), we may
@@ -181,7 +182,7 @@ y'' + 10y' + 24y = 0
 when \(y(0)=-3\) and \(y'(0)=2\).
 \end{problem}
 \begin{solution}
-The auxilliary equation is \(r^2+10r+24=0\), which has roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\).  
+Rewriting in terms of differential operators, we have \( (D^2+10D+24I)(y)=0\), so we need to find the roots of the equation \(r^2+10r+24=0\), namely roots \(r=-6\) and \(r=-4\).  Thus, the general solution is of the form \(y=c_1e^{-4t}+c_2e^{-6t}\).  
 \begin{align*}
 -3 &= y(0) = c_1+c_2 \\
 2 &= y'(0)  = -4c_1-6c_2 
