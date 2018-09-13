@@ -3,62 +3,88 @@
 
 \begin{applicationActivities}
 
-<<<<<<< HEAD
-=======
 \begin{observation}
-It is sometimes useful to think in terms of \term{differential  operators}.
+Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
+\vfill
 \begin{itemize}
-\item We will use \(D\) to represent a derivative; another common notation is \(\frac{\partial}{\partial x}\).  So for any function \(y\),  \[D(y)=\frac{\partial y}{\partial x}=y'.\]
-\item \(D^2\) will denote the second derivative operator (i.e. differentiate twice, or apply D twice).
-\item We will use \(I\) for the identity operator; it does nothing to a function.  That is, \(I(y)=y\).  It can be thought of as \(I=D^0\) (i.e. differentiate zero times).
+\item If \(r\) is a root of \(ax^2+bx+c=0\), then \(e^{rt}\) is a solution of the ODE.
+\item If \(r\) is a double root (that is, \(ax^2+bx+c=(x-r)^2\)), \(te^{rt}\) is also a solution.
+\item If \(r=a+bi\) is not real, Euler's formula allows us to express
+  \(e^{at+bit}\) in terms of \(e^{at}\), \(\sin(bt)\), and \(\cos(bt)\) to get
+  a real-valued general solution.
 \end{itemize}
-\vfill
-In this language, the differential equation \(y'+3y=0\) can be rewritten as \(D(y)+3I(y)=0\), or \( (D+3I)(y)=0\).
-\vfill
-Thus, the question of solving the homogeneous differential equation is the question of finding the \term{kernel} of the differential operator \(D+3I\).
 \end{observation}
 
-\begin{activity}{5}
-What is the kernel of \(D-I\) ?
-\vfill
+\begin{activity}{15}
+Consider the following scenario:  a mass of \(4\ {\rm kg}\) suspended from a 
+damped spring with spring constant \(k=2\ {\rm kg/s^2}\) and 
+damping constant \(b= 6\ {\rm kg/s}\). As previously discussed, this is modeled
+by the ODE
+\[my''=-by'-ky.\]
 \begin{subactivity}
-Write a differential equation that corresponds to this question.
+Find the general solution for the ODE in terms of \(m,b,k\).
 \end{subactivity}
 \begin{subactivity}
-Find the general solution of this differential equation.
+The mass is pulled down \(0.3\ {\rm m}\) from its natural length and released from rest.  
+Use the initial conditions \(y(0)=\unknown\) and \(y'(0)=\unknown\) to 
+find the particular solution modeling this scenario.
 \end{subactivity}
 \end{activity}
 
 \begin{activity}{5}
-Find a differential operator whose kernel is the solution set of the ODE \(y'=4y\).
-\end{activity}
-
-\begin{activity}{10}
-Consider the ODE \[y''+5y'+6y=0.\]
-\vfill
-\begin{subactivity}
-Find a differential operator whose kernel is the solution set of the above ODE.
-\end{subactivity}
-\begin{subactivity}
-Factor this differential operator as a composition of two operators. (This works because \(D\) and \(I\) commute).
-\end{subactivity}
-\begin{subactivity}
-Find the general solution of the ODE.
-\end{subactivity}
+A \(1\ {\rm kg}\) mass is suspended from a spring with spring constant \(k= 9\ {\rm kg/s^2}\).
+No damping is applied, but an external electromagnetic force of \(F(t)=\sin(t)\)
+is applied. Which of these ODEs models this scenario?
+\begin{enumerate}[a)]
+\item \(my''+ky+\sin(t)=0\)
+\item \(my''+ky=\sin(t)\)
+\item \(my''+by'=\sin(t)\)
+\item \(my''+by'+\sin(t)=0\)
+\end{enumerate}
 \end{activity}
 
 \begin{observation}
-If we let \(\L=D^2+5D+6I\), we can write the ODE \[y''+5y+6y=0\] as \[\L(y)=0.\]
+Because \(my''\) is the total force acting on the object,
+\(-by'-ky\) is the force acting on the object by the spring,
+and an additional external force of \(F(t)\) is applied,
+we get \(my''=-by'-ky+F(t)\) which rearranges to
+\[my''+ky=\sin(t)\]
+when \(b=0\) (no damping) and \(F(t)=\sin(t)\).
 
-Note that such an \(\L\) is always a \term{linear transformation}.
+\vfill
+
+This is an example of a \term{nonhomogeneous} second-order constant coefficient
+equation of the form
+\[
+ay''+by'+cy=F(t)
+\] 
+since the \(F(t)=\sin(t)\) term is not a multiple of \(y\) or its derivatives.
+As with first-order examples, these may be solved with variation of parameters.
 \end{observation}
->>>>>>> master
 
-\begin{activity}{5}
-Find the general solution to
-\[y''+y'-12y=0.\]
+\begin{activity}{15}
+Suppose \(y_1\) and \(y_2\) are two independent particular solutions of 
+\(ay''+by'+cy=0\).  
+\vfill
+By variation of paraameters, we'll assume we can find a particular
+solution \(y_p = v_1 y_1 + v_2 y_2\) for the ODE using
+the currently unknown functions \(v_1,v_2\).
+\vfill
+\begin{subactivity}
+Use the product rule (on \(v_1y_1\) and \(v_2y_2\)) to compute \(y_p'\).
+\end{subactivity}
+
+\begin{subactivity} 
+Since we get to choose what \(v_1,v_2\) are, let's only look for examples
+where \(v_1'y_1+v_2'y_2=0\) to simplify calculations.
+Assuming this, compute \(y_p''\).
+\end{subactivity}
+
+\begin{subactivity}
+Simplify the ODE \(ay_p''+by_p'+cy_p=f(x)\), keeping in mind that
+\(ay_1''+by_1'+cy_1=0\) and \(ay_2''+by_2'+cy_2=0\).
+\end{subactivity}
+\vfill
 \end{activity}
-
-
 
 \end{applicationActivities}
