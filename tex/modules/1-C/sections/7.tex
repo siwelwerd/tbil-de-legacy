@@ -3,6 +3,68 @@
 
 \begin{applicationActivities}
 
+<<<<<<< HEAD
+=======
+\begin{activity}{10}
+Solve the ODE \[ y''-4y'+4y=0.\]
+\end{activity}
+
+\begin{observation}
+To solve this, we need to find the kernel of \( (D-2I)(D-2I) \).
+\begin{itemize}
+\item The kernel of \(D-2I\) is \(\left\{ ce^{2t}\ \middle|\ c \in \IR \right\}\).
+\item However, if \( (D-2I)(y) = Ae^{2t} \), then applying \(D-2I\) twice will yield zero!
+\item So we must solve the ODE \[y'-2y=e^{2t}.\]
+\end{itemize}
+\end{observation}
+
+\begin{activity}{15}
+Solve \(y'-2y=e^{2t}\).
+\end{activity}
+
+
+\begin{observation}
+Thus, we have shown that the general solution of \[y''-4y'+4y=0\] is \[y=c_0e^{2t}+c_1te^{2t}.\]
+\end{observation}
+
+\begin{activity}{15}
+Solve \(y''-6y'+9y=0\).
+\end{activity}
+
+\begin{activity}{10}
+Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
+If \(r\) is a number such that \(ar^2+br+c=0\), what can you conclude?
+\begin{enumerate}[(a)]
+\item \(e^{rt}\) is a solution.
+\item \(e^{-rt}\) is a solution.
+\item \(te^{rt}\) is a solution.
+\item There are no solutions.
+\end{enumerate}
+\end{activity}
+
+\begin{activity}{5}
+Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
+
+When does the general solution have the form \(c_0 e^{rt}+te^{rt}\) ?
+\begin{enumerate}[(a)]
+\item When the polynomial \(ax^2+bx+c\) has two distinct real roots.
+\item When the polynomial \(ax^2+bx+c\) has a repeated real root.
+\item When the polynomial \(ax^2+bx+c\) has two distinct non-real roots.
+\item When the polynomial \(ax^2+bx+c\) has a repeated non-real root.
+\end{enumerate}
+\end{activity}
+
+
+\begin{observation}
+Consider the homogeneous second order constant coefficient ODE \[ay''+by'+cy=0.\]
+\vfill
+\begin{itemize}
+\item If \(r\) is a root of \(ax^2+bx+c=0\), then \(e^{rt}\) is a solution of the ODE.
+\item If \(r\) is a double root, variation of parameters shows that \(te^{rt}\) is also a solution.
+\item If \(r\) is not real, Euler's formula allows us to express the complex exponential part of the solution in terms of \(\sin(rt)\) and \(\cos(rt)\).
+\end{itemize}
+\end{observation}
+>>>>>>> master
 
 
 

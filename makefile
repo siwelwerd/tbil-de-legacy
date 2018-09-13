@@ -21,7 +21,7 @@ build: pre-build pdf/rats/rat-*.pdf slides pdf/course-notes.pdf \
 	pdf/facilitator-notes.pdf \
 	rats
 
-slides: pdf/slides/slides-1-C.pdf pdf/slides/slides-2-F.pdf \
+slides: pre-build pdf/slides/slides-1-C.pdf pdf/slides/slides-2-F.pdf \
 	pdf/slides/slides-3-S.pdf pdf/slides/slides-4-N.pdf \
 	pdf/slides/slides-5-D.pdf
 
