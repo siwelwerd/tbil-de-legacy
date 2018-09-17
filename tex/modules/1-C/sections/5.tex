@@ -87,4 +87,54 @@ Simplify the ODE \(ay_p''+by_p'+cy_p=f(x)\), keeping in mind that
 \vfill
 \end{activity}
 
+\begin{observation}
+If we can find functions \(v_1\) and \(v_2\) that solve the
+system of equations
+\begin{alignat*}{2}
+y_1 v_1' + y_2 v_2'&=0 \\
+y_1' v_1' + y_2' v_2'&=\frac{1}{a}f(t)
+\end{alignat*}
+then \(y_p=y_1v_1+y_2v_2\) is a particular
+solution for \(ay''+by'+cy=f(x)\).  
+\end{observation}
+
+\begin{activity}{20}
+Consider the nonhomogeneous ODE \[y''+9y=\sin(t)\] of the
+form \(ay''+by'+cy=f(t)\) for \(a=1,b=0,c=9,f(t)=\sin(t)\).
+\vfill
+\begin{subactivity}
+Find \(y_h=k_1y_1+k_2y_2\), where \(y_1,y_2\) are
+independent real-valued particular
+solutions of \(y_h''+9y_h=0\).
+\end{subactivity}
+\begin{subactivity}
+Substitute \(a,f(t),y_1,y_2,y_1',y_2'\) into
+\begin{alignat*}{2}
+y_1 v_1' + y_2 v_2'&=0 \\
+y_1' v_1' + y_2' v_2'&=\frac{1}{a}f(t) 
+\end{alignat*}
+\end{subactivity}
+\begin{subactivity}
+Find \(v_1\), \(v_2\) by solving that system, and using
+\(\int\sin(t)\cos(3t)dt=\frac{1}{8}\cos(t)\cos(3t)+\frac{3}{8}\sin(t)\sin(3t)+C\) and
+\(\int\sin(t)\sin(3t)dt=-\frac{1}{8}\cos(t)\sin(3t)+\frac{3}{8}\sin(t)\cos(3t)+C\).
+\end{subactivity}
+\begin{subactivity}
+Use \(y_p=y_1v_1+y_2v_2\) to write the general solution \(y=y_h+y_p\) 
+of the original nonhomogeneous ODE.
+\end{subactivity}
+\end{activity}
+
+%\begin{activity}{10}
+%Solve the nonhomogeneous ODE \(y''+9y=\sin(3t)\) by solving the
+%variation of parameters system
+%\begin{alignat*}{2}
+%y_1 v_1' + y_2 v_2'&=0 \\
+%y_1' v_1' + y_2' v_2'&=\frac{1}{a}f(t) 
+%\end{alignat*}
+%noting that \(y_1=\cos(3t),y_2=\sin(3t)\) are still solutions to 
+%its
+%homogeneous variant.
+%\end{activity}
+
 \end{applicationActivities}
