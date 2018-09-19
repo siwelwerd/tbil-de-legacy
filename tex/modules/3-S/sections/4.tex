@@ -1,6 +1,71 @@
 \begin{applicationActivities}
 
-\begin{activity}{20}
+\begin{activity}{10}
+Consider two coupled masses with two springs. 
+
+\vfill
+
+\begin{columns}
+\column{0.3\textwidth}
+\springdoublemass
+\column{0.7\textwidth}
+Let \(x_1\) be the position of the upper mass, and \(x_2\) the position of the lower mass.  Which ODE models the forces acting on the \textbf{lower} mass?
+\vfill
+\begin{enumerate} [(A)]
+\item \(m_2x_2'' +k_2 x_2 = 0 \)
+\item \(m_2x_2'' +k_2 x_1 = 0 \)
+\item \(m_2x_2'' +k_2 (x_2-x_1) = 0 \)
+\item \(m_2x_2'' +k_2 (x_1-x_2) = 0 \)
+\end{enumerate}
+\end{columns}
+\end{activity}
+
+\begin{activity}{5}
+Consider two coupled masses with two springs. 
+
+\vfill
+
+\begin{columns}
+\column{0.3\textwidth}
+\springdoublemass
+\column{0.7\textwidth}
+Let \(x_1\) be the position of the upper mass, and \(x_2\) the position of the lower mass.  Which ODE models the forces acting on the \textbf{upper} mass?
+\vfill
+\begin{enumerate} [(A)]
+\item \(m_1x_1'' +k_1 x_1 = 0 \)
+\item \(m_1x_1'' +k_1 x_1 -k_2x_2= 0 \)
+\item \(m_1x_1'' +k_1 x_1 + k_2(x_2-x_1) = 0 \)
+\item \(m_1x_1'' +k_1 x_1 + k_2(x_1-x_2) = 0 \)
+\end{enumerate}
+\end{columns}
+\end{activity}
+
+\begin{activity}{30}
+Suppose we are given \(m_1=2 {\rm kg}\), \(m_2=1 {\rm kg}\), \(k_1 = 4 {\rm kg/s^2}\), and \(k_2 = 2 {\rm kg/s^2}\).  Then our model is
+\vfill
+\begin{columns}
+\column{0.3\textwidth}
+\springdoublemass
+\column{0.7\textwidth}
+\begin{alignat*}
+2x_1''+6x_1-2x_2 &= 0 \\
+2x_2''+2x_2-2x_1 &= 0 
+\end{alignat*}
+\vfill
+\begin{subactivity}
+Rewrite the system using differential operators.
+\end{subactivity}
+\begin{subactivity}
+Use elimination to write a single fourth order ODE for \(x_1\).
+\end{subactivity}
+\begin{subactivity}
+Solve the ODE \[2x_1''''+10x_1''+8x_1 = 0 .\] 
+\end{subactivity}
+\begin{subactivity}
+Determine a function for \(x_2\) as well. 
+\end{subactivity}
+\vfill
+\end{columns}
 \end{activity}
 
 \end{applicationActivities}
