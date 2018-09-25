@@ -58,12 +58,12 @@ Find the general solution to \[y'+y=-t^2.\]
 First, we find a general solution to the homogeneous equation (removing all non-\(y\) terms) 
 \[y_h'+y_h=0.\]
 Since this is a first-order constant coefficient ODE, we know the answer is a modification of
-\(ke^x\). We find that \(y_h=ke^{-x}\) is valid, since
-\[y_h'+y_h=\frac{d}{dx}[ke^{-x}]+ke^{-x}=-ke^{-x}+ke^{x}=0.\]
+\(ke^t\). We find that \(y_h=ke^{-t}\) is valid, since
+\[y_h'+y_h=\frac{d}{dt}[ke^{-t}]+ke^{-t}=-ke^{-t}+ke^{t}=0.\]
 
-The simplest particular solution for this homogeneous ODE is \(y_0=e^{-x}\),
+The simplest particular solution for this homogeneous ODE is \(y_0=e^{-t}\),
 so we use variation of parameters by assuming there is a non-homogeneous particular solution
-\(y_p=vy_0=ve^{-x}\) for some function \(v\) (which we now need to find).
+\(y_p=vy_0=ve^{-t}\) for some function \(v\) (which we now need to find).
 
 Using the product rule we find \(y_p' = v'e^{-t}-ve^{-t}\), so we may substitute into the original ODE to find
 \[y_p ' + y_p = (v'e^{-t}-ve^{-t}) + ve^{-t} = v'e^{-t}=-t^2.\]
@@ -73,30 +73,7 @@ Thus \(y_p = ve^{-t} = (-t^2+2t-2)e^te^{-t}=-t^2+2t-2\), so the general solution
 \[y=y_h+y_p=ke^{-t}-t^2+2t-2.\]
 \end{solution}
 
-%% Original solution using undetermined coefficients
-%We can find a particular solution \(y_p\) to the given equation by using undetermined coefficients; since \(-t^2\) is a polynomial, we let \(y_p = At^2+Bt+D\) and determine the coefficients \(A\), \(B\), and \(D\).  
 
-%\begin{align*}
-
-%y_p ^\prime +y_p= &= (2At+B)+(At^2+Bt+D) \\
-
-%&= At^2+(2A+B)+(B+D)
-
-%\end{align*}
-
-%
-
-%So if \(y_p\) is a solution, we must have \(y_p ^\prime+y_p = -t^2\), giving us the system of equations
-
-%\begin{align*}
-
-%A&=-1 \\ 2A+B &= 0 \\ B+D&=0
-
-%\end{align*}
-
-%Thus we easily deduce that \(A=-1\), \(B=2\), and \(D=-2\), giving \(y_p = -t^2+2t-2\).  Thus, the general solution is
-
-%\[y = -t^2+2t-2+ce^{-t}.\]
 
 
 
@@ -133,7 +110,7 @@ there is no acceleration: \(v'=0\). So we may solve
 \[0=-mg-bv_t\]
 to get \(b=-\frac{mg}{v_t}\). Thus the simplified IVP is given by
 \[v'-av=-g\hspace{3em}v(0)=0\]
-where \(a=\frac{g}{v_t}\).
+where \(a=\frac{g}{v_t} = \frac{9.8}{-0.03} {\rm s^{-1}} \approx -326.7 {\rm s^{-1}}\).
 
 \item To solve for \(v\), we first solve the homogeneous system
 \[v_h'-av_h=0\]
@@ -319,7 +296,7 @@ The only force acting on the ball is air resistance (drag), so we have
 Substituting in our constants (and dividing through by \(m\)), we have
 \[v'=- 0.1v^2 .\]
 The initial condition is that it is travelling \(20 {\rm m/s}\), i.e. \(v(0)=20\), giving the IVP 
-\[v'=- 0.1v^2 \vspace{5em} v(0)=20.\]
+\[v'=- 0.1v^2 \hspace{5em} v(0)=20.\]
 Solving this separable ODE, we obtain \(v=\frac{20}{1+2t}\).  To model the position of the ball, we integrate again, obtaining \(x=\int \frac{20}{1+2t}\ dt = 10 \ln |1+2t| +C\); using \(x(0)=0\), we see \(C=0\).  Then we simply need to solve \(x(t)=20\), i.e. \(20=10\ln|1+2t|\), so \(t=\frac{1}{2}(e^2-1) \approx 3.19 {\rm s}\).
 \end{solution}
 
@@ -391,22 +368,22 @@ Note that  \(\langle -(3x-y), x+3y\rangle\) is conservative, as \(\frac{\partial
 \end{solution}
 
 \begin{problem}{S2}
-Consider the following scenario:
-Two competing fish species (red fish and blue fish) live in a lake.  In the absence of one species, the lake will support \(30,000\) of the other fish (as the species competes among itself for resources).  It is calculated that the competition coefficients are \(\alpha _{1,2}=\alpha _{2,1} = 0.5\).
-\begin{enumerate}[(a)]
-\item Write down a system of ODEs modelling the interaction of the two species.
-\item If the lake is stocked with \(12,000\) blue fish and \(40,000\) red fish, what will happen to the populations in the long run?
-\end{enumerate}
+%Consider the following scenario:
+%Two competing fish species (red fish and blue fish) live in a lake.  In the absence of one species, the lake will support \(30,000\) of the other fish (as the species competes among itself for resources).  It is calculated that the competition coefficients are \(\alpha _{1,2}=\alpha _{2,1} = 0.5\).
+%\begin{enumerate}[(a)]
+%\item Write down a system of ODEs modelling the interaction of the two species.
+%\item If the lake is stocked with \(12,000\) blue fish and \(40,000\) red fish, what will happen to the populations in the long run?
+%\end{enumerate}
 \end{problem}
 \begin{solution}
-
-\begin{align*}
-x' &= \frac{r_1}{30000}x\left(30000-x-0.5y\right) \\
-y' &= \frac{r_2}{30000}y\left(30000-y-0.5x\right) 
-\end{align*}
-
-Then the nontrivial isoclines are \(x+0.5y=30000\) and \(0.5x+y=30000\) which intersect at the (equillibrium) point \(20000,20000\).  Plotting the isoclines (TODO) shows that this a stable equillibrium (sink), so regardless of the intial populations, they will approach \(20,000\) of each species in the long run.
-
+%
+%\begin{align*}
+%x' &= \frac{r_1}{30000}x\left(30000-x-0.5y\right) \\
+%y' &= \frac{r_2}{30000}y\left(30000-y-0.5x\right) 
+%\end{align*}
+%
+%Then the nontrivial isoclines are \(x+0.5y=30000\) and \(0.5x+y=30000\) which intersect at the (equillibrium) point \(20000,20000\).  Plotting the isoclines (TODO) shows that this a stable equillibrium (sink), so regardless of the intial populations, they will approach \(20,000\) of each species in the long run.
+%
 \end{solution}
 
 \begin{problem}{S3}
