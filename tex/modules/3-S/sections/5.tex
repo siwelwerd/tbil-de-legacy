@@ -1,12 +1,13 @@
 \begin{applicationActivities}
 
 %Short day
-\begin{activity}{5}
+\begin{activity}{10}
 Consider populations of Green Sunfish (\(G\)) and Bluegills (\(B\)) in the same lake.  They compete for the same food.
 
 \vfill
 Which system of ODEs would model this interaction best?
-
+\begin{columns}
+\column{0.5\textwidth}
 \begin{enumerate}[(A)]
 \item 
 \begin{alignat*}{2}
@@ -19,20 +20,23 @@ Which system of ODEs would model this interaction best?
 \frac{dG}{dt} &= 0.1G-0.002G^2-0.005BG \\
 \frac{dB}{dt} &= -0.1B-0.003B^2+0.005BG
 \end{alignat*}
+\end{enumerate}
 
-\item 
+\column{0.5\textwidth}
+\begin{enumerate}
+\item[(C)]
 \begin{alignat*}{2}
 \frac{dG}{dt} &= -0.1G-0.002G^2+0.005BG \\
 \frac{dB}{dt} &= 0.1B-0.003B^2-0.005BG
 \end{alignat*}
 
-\item 
+\item[(D)]
 \begin{alignat*}{2}
 \frac{dG}{dt} &= 0.1G-0.002G^2+0.005BG \\
 \frac{dB}{dt} &= 0.1B-0.003B^2+0.005BG
 \end{alignat*}
 \end{enumerate}
-
+\end{columns}
 
 
 \end{activity}
@@ -57,7 +61,7 @@ If the lake is stocked with 25 Bluegills and 5 Greenfish, what will happen?
 
 \end{activity}
 
-\begin{activity}{10}
+\begin{activity}{5}
 Plotting the slope field along with the isoclines makes the unstable behavior more clear.
 \begin{center}
 \begin{tikzpicture}[scale=0.9]
