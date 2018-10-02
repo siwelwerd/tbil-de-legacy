@@ -361,29 +361,93 @@ Note that  \(\langle -(3x-y), x+3y\rangle\) is conservative, as \(\frac{\partial
 \end{solution}
 
 \begin{problem}{S1}
-
+Find the general solution of the system
+\begin{align*}
+x' & = 2x + y,\\
+y' & = x + 2y
+\end{align*}
 \end{problem}
 \begin{solution}
+
+We begin by moving all \(x\) and \(y\) terms to one side, and rewriting in terms of differential operators
+\begin{align*}
+(D-2I)x-Iy & =0 ,\\
+(-I)x+(D-2I)y & = 0
+\end{align*}
+Applying \(D-2I\) to the top equation and adding, we obtain \( (D-2I)^2x-Ix=0\), or \((D^2-4D+3I)x=0\), which factors as \((D-3I)(D-I)x=0\).  Thus the general solution for \(x\) is \(x=c_1 e^{3t}+c_2e^t\).  But rearranging the first equation, we have \(y=x'-2x\), so \(y=\left(c_1 e^{3t}+c_2e^t\right)'-2\left(c_1 e^{3t}+c_2e^t\right) = c_1e^{3t}-c_2e^t\).  Thus the general solution is
+\begin{align*}
+x&=c_1e^{3t}+c_2e^t \\
+y&=c_1e^{3t}-c_2e^t
+\end{align*}
 
 \end{solution}
 
 \begin{problem}{S2}
-%Consider the following scenario:
-%Two competing fish species (red fish and blue fish) live in a lake.  In the absence of one species, the lake will support \(30,000\) of the other fish (as the species competes among itself for resources).  It is calculated that the competition coefficients are \(\alpha _{1,2}=\alpha _{2,1} = 0.5\).
-%\begin{enumerate}[(a)]
-%\item Write down a system of ODEs modelling the interaction of the two species.
-%\item If the lake is stocked with \(12,000\) blue fish and \(40,000\) red fish, what will happen to the populations in the long run?
-%\end{enumerate}
+Two populations of competing species of fish, bluegills and greenfish, are modelled by the system
+\begin{alignat*}{2}
+\frac{dG}{dt} &= 0.1G - 0.005G^2 - 0.004BG \\
+\frac{dB}{dt} & = 0.2B - 0.01B^2 - 0.004BG.
+\end{alignat*}
+\begin{enumerate}[(a)]
+\item Identify all equillibrium points for the system.
+\item If a lake is stocked with \(25\) bluegills and \(35\) greenfish , what will happen to the two populations in the long term?
+\end{enumerate}
 \end{problem}
 \begin{solution}
-%
-%\begin{align*}
-%x' &= \frac{r_1}{30000}x\left(30000-x-0.5y\right) \\
-%y' &= \frac{r_2}{30000}y\left(30000-y-0.5x\right) 
-%\end{align*}
-%
-%Then the nontrivial isoclines are \(x+0.5y=30000\) and \(0.5x+y=30000\) which intersect at the (equillibrium) point \(20000,20000\).  Plotting the isoclines (TODO) shows that this a stable equillibrium (sink), so regardless of the intial populations, they will approach \(20,000\) of each species in the long run.
-%
+
+The greenfish isocline is given by \[0=0.1G-0.005G^2-0.004BG=0.001G(100-5G-4B)\], while the bluegill isocline is given by 
+\[0=0.2B-0.01B^2-0.004BG=0.001B(200-10B-4G).\]
+
+If \(G=0\), then the bluegill isocline implies \(B=0\) or \(200-10B=0\), i.e. \(B=20\), giving two equillibrium points ( \(B=0,G=0\) and \(B=20,G=0\).  On the other hand, if \(100-5G-4B=0\) and \(B=0\), then we obtain an equillibrum point at \(B=0,G=20\); but if \(100-54G-4B=0\) and  \(200-10B-4G=0\), solving this system yields  \( B=2.94, G=17.65\) as an equillibrium point.
+
+
+Now that we have identified the four equillbrium points, to answer part (b), we plot the isoclines, and the general direction of the slopes in each of the four regions
+
+\begin{center}
+\begin{tikzpicture}[scale=0.1]
+\draw[->] (0,0) -- (27,0);
+\draw[->] (0,0) -- (0,51);
+\node at (30,0){\(B\)};
+\node at (0,55){\(G\)};
+\draw[thick,red] (25,0) -- (0,20);
+\draw[thick,red] (20,0) -- (0,50);
+\draw[thick,blue,->] (5,25) -- (10,18);
+\draw[thick,blue,->] (5,5) -- (10,6);
+\draw[thick,blue,->] (22,1) -- (20,3);
+\draw[thick,blue,->] (25,15) -- (20,10);
+\end{tikzpicture}
+\end{center}
+
+Analyzing the slopes in each of the four regions on the graph shows that the central equillibrium point is a sink.  Thus, in the long term the populations will approach the central equillbirum of \(2.94\) bluegills and \(17.65\) greenfish.
+
+Here is a slope field to make the intuition of the above rough sketch more clear:
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        domain=0:50,
+        view={0}{90},
+        axis background/.style={fill=white},
+		yticklabels={,,},
+		xticklabels={,,},
+		xlabel={B},
+		ylabel={G},
+		ticks=none,
+    ]
+        \addplot3[black,
+            quiver={
+             u={10*(0.2*x-0.01*x^2-0.004*x*y)/sqrt(  (0.2*x-0.01*x^2-0.004*x*y)^2+  (0.1*y-0.005*y^2-0.004*x*y)^2)  },
+             v={10*(0.1*y-0.005*y^2-0.004*x*y)/sqrt(  (0.2*x-0.01*x^2-0.004*x*y)^2+  (0.1*y-0.005*y^2-0.004*x*y)^2)},
+             scale arrows=0.2,
+            },
+            -stealth,samples=15]
+                {exp(-x) - 1/2*sin(x) - 1/2*cos(x)};
+		\addplot[red] coordinates {(25,0) (0,20)};
+		\addplot[red] coordinates {(20,0) (0,50)};
+    \end{axis}
+
+\end{tikzpicture}
+\end{center}
+
 \end{solution}
 
 \begin{problem}{S3}
