@@ -451,10 +451,54 @@ Here is a slope field to make the intuition of the above rough sketch more clear
 \end{solution}
 
 \begin{problem}{S3}
-
+\begin{minipage}[t]{0.8\linewidth}
+Consider the dual mass-spring system at the right.  The upper mass is \(2 {\rm kg}\) while the lower is \(1 {\rm kg}\).  The upper spring has a spring constant of \( 2 {\rm N/m}\) while the lower spring constant is \(1 {\rm N/m}\).  The lower spring is pulled down \(1 {\rm m}\) without disturbing the upper spring, and released from rest. 
+\begin{enumerate}[(a)]
+\item Write down an IVP modelling the motion of the two masses.
+\item Where will the two masses be after \(2 {\rm s}\)?
+\end{enumerate}
+\end{minipage}
+\hfill
+\springdoublemassQuiz[0.7]
+\hfill
 \end{problem}
 \begin{solution}
+Let \(y_1, y_2\) represent the positions of the two masses respectively, as measured from equillibrium.  The lower mass is only affected by the lower spring, so its motion is modelled by \( y_2''=-1(y_2-y_1)\), since the length the lower string is stretched is \(y_2-y_1\).  The upper mass is affected by both springs, so it has a force of \(1(y_2-y_1) \) from the lower spring, and \(-2 y_1\) for the upper spring.  Thus, the upper mass's motion is modelled by \(2y_1''=-2(y_1) + 1(y_2-y_1)\).  Simplifying and adding in the initial conditions \(y_1(0)=0, y_1'(0)=0, y_2(0)=-1, y_2'(0)=0\), we have the IVP
+\begin{align*}
+2y_1''&=-3y_1+y_2 & y_1(0)=0, y_1'(0)=0 \\
+y_2''&= y_1-y_2 & y_2(0)=-1, y_2'(0)=0
+\end{align*}
 
+To answer part (b), we need to solve this system.  First, we rewrite in terms of differential operators:
+\begin{align*}
+(2D^2+3)y_1-y_2 &= 0 \\
+-y_1 + (D^2+1)y_2 &= 0\\
+\end{align*}
+
+Applying \(D^2+1\) to the top  equation and adding to the bottom yields
+\[0=\left( (D^2+1)(2D^2+3) -1 \right)y_1 = (2D^4+5D^2+2)y_1 = (2D^2+1)(D^2+2)y_1\]
+
+Note that the kernel of \(2D^2+1\) is \(c_1 \cos\left(\frac{t}{\sqrt{2}}\right)+c_2 \sin\left(\frac{t}{\sqrt{2}}\right)\) and the kernel of \(D^2+2\) is \(c_3 \cos\left(t\sqrt{2}\right)+c_4 \sin\left(t\sqrt{2}\right)\).  Thus, the general solution for \(y_1\) is 
+\[y_1 = c_1 \cos\left(\frac{t}{\sqrt{2}}\right)+c_2 \sin\left(\frac{t}{\sqrt{2}}\right)+c_3 \cos\left(t\sqrt{2}\right)+c_4 \sin\left(t\sqrt{2}\right).\]
+
+Since \(y_2=2y_1''+3y_1\), we thus obtain
+\[ y_2 = \frac{1}{2}c_1 \cos\left(\frac{t}{\sqrt{2}}\right)+\frac{1}{2}c_2 \sin\left(\frac{t}{\sqrt{2}}\right)-2c_3 \cos\left(t\sqrt{2}\right)-2c_4 \sin\left(t\sqrt{2}\right).\]
+
+Now, using our initial conditions, we have
+\begin{align*}
+0 &= y_1(0) = c_1+c_3 \\
+-1 &= y_2 (0) = \frac{1}{2}c_1-2c_3 \\
+0 &= y_1'(0) = \frac{1}{\sqrt{2}}c_2+\sqrt{2}c_4 \\
+0 &= y_2'(0) = \frac{1}{2\sqrt{2}} c_2 -2\sqrt{2}c_4
+\end{align*}
+
+The last two equations imply \(c_2=c_4=0\), while the first two yield \(c_1=-\frac{2}{5}\) and \(c_3 = \frac{2}{5}\).  Thus, the solution to the IVP is
+\begin{align*}
+y_1 &= -\frac{2}{5} \cos\left(\frac{t}{\sqrt{2}}\right)+\frac{2}{5}\cos\left(t\sqrt{2}\right) \\
+y_2 &= \frac{1}{5} \cos\left(\frac{t}{\sqrt{2}}\right)-\frac{4}{5} \cos\left(t\sqrt{2}\right)
+\end{align*}
+
+Thus, after two seconds, the upper mass is at \(y_1(2) \approx -0.443\) (i.e. \(0.443 {\rm m}\) down) and the lower mass is at \(y_2(2) \approx 0.792\) (i.e. \(0.792 {\rm m}\) up).
 \end{solution}
 
 
