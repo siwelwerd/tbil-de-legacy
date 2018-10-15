@@ -1,101 +1,71 @@
 \begin{applicationActivities}
 
-%Short day
 \begin{activity}{10}
-Consider populations of Green Sunfish (\(G\)) and Bluegills (\(B\)) in the same lake.  They compete for the same food.
+Consider two coupled masses with two springs. 
 
 \vfill
-Which system of ODEs would model this interaction best?
+
 \begin{columns}
-\column{0.5\textwidth}
-\begin{enumerate}[(A)]
-\item 
-\begin{alignat*}{2}
-\frac{dG}{dt} &= 0.1G-0.002G^2-0.005BG \\
-\frac{dB}{dt} &= 0.1B-0.003B^2-0.005BG
-\end{alignat*}
-
-\item 
-\begin{alignat*}{2}
-\frac{dG}{dt} &= 0.1G-0.002G^2-0.005BG \\
-\frac{dB}{dt} &= -0.1B-0.003B^2+0.005BG
-\end{alignat*}
-\end{enumerate}
-
-\column{0.5\textwidth}
-\begin{enumerate}
-\item[(C)]
-\begin{alignat*}{2}
-\frac{dG}{dt} &= -0.1G-0.002G^2+0.005BG \\
-\frac{dB}{dt} &= 0.1B-0.003B^2-0.005BG
-\end{alignat*}
-
-\item[(D)]
-\begin{alignat*}{2}
-\frac{dG}{dt} &= 0.1G-0.002G^2+0.005BG \\
-\frac{dB}{dt} &= 0.1B-0.003B^2+0.005BG
-\end{alignat*}
+\column{0.3\textwidth}
+\springdoublemass
+\column{0.7\textwidth}
+Let \(x_1\) be the position of the upper mass, and \(x_2\) the position of the lower mass (both measured from equillibrium).  Which ODE models the forces acting on the \textbf{lower} mass?
+\vfill
+\begin{enumerate} [(A)]
+\item \(m_2x_2'' +k_2 x_2 = 0 \)
+\item \(m_2x_2'' +k_2 x_1 = 0 \)
+\item \(m_2x_2'' +k_2 (x_2-x_1) = 0 \)
+\item \(m_2x_2'' +k_2 (x_1-x_2) = 0 \)
 \end{enumerate}
 \end{columns}
-
-
-\end{activity}
-
-\begin{activity}{15}
-Consider our Greenfish-Bluegill lake modeled by
-
-\begin{alignat*}{2}
-\frac{dG}{dt} &= 0.1G-0.002G^2-0.005BG \\
-\frac{dB}{dt} &= 0.1B-0.003B^2-0.005BG
-\end{alignat*}
-
-\begin{subactivity}
-Plot the isoclines for each species.
-\end{subactivity}
-\begin{subactivity}
-If the lake is stocked with 10 Bluegills and 20 Greenfish, what will happen?
-\end{subactivity}
-\begin{subactivity}
-If the lake is stocked with 25 Bluegills and 5 Greenfish, what will happen?
-\end{subactivity}
-
 \end{activity}
 
 \begin{activity}{5}
-Plotting the slope field along with the isoclines makes the unstable behavior more clear.
-\begin{center}
-\begin{tikzpicture}[scale=0.9]
-    \begin{axis}[
-        domain=0:55,
-        view={0}{90},
-        axis background/.style={fill=white},
-		%yticklabels={,,},
-		%xticklabels={,,},
-		xlabel={B},
-		ylabel={G},
-		%ticks=none,
-    ]
-        \addplot3[black,
-            quiver={
-             u={(0.1*x-0.003*x^2-0.005*x*y)/sqrt(  (0.1*x-0.003*x^2-0.005*x*y)^2+  (0.1*y-0.002*y^2-0.005*x*y)^2)  },
-             v={(0.1*y-0.002*y^2-0.005*x*y)/sqrt(  (0.1*x-0.003*x^2-0.005*x*y)^2+  (0.1*y-0.002*y^2-0.005*x*y)^2)},
-             scale arrows=2,
-            },
-            -stealth,samples=15]
-                {exp(-x) - 1/2*sin(x) - 1/2*cos(x)};
-		\addplot[thick,red] coordinates {(33.3,0) (0,20)};
-		\addplot[thick,red] coordinates {(20,0) (0,50)};
-    \end{axis}
+Consider two coupled masses with two springs. 
 
-\end{tikzpicture}
-\end{center}
+\vfill
 
+\begin{columns}
+\column{0.3\textwidth}
+\springdoublemass
+\column{0.7\textwidth}
+Let \(x_1\) be the position of the upper mass, and \(x_2\) the position of the lower mass.  Which ODE models the forces acting on the \textbf{upper} mass?
+\vfill
+\begin{enumerate} [(A)]
+\item \(m_1x_1'' +k_1 x_1 = 0 \)
+\item \(m_1x_1'' +k_1 x_1 -k_2x_2= 0 \)
+\item \(m_1x_1'' +k_1 x_1 + k_2(x_2-x_1) = 0 \)
+\item \(m_1x_1'' +k_1 x_1 + k_2(x_1-x_2) = 0 \)
+\end{enumerate}
+\end{columns}
+\end{activity}
+
+\begin{activity}{30}
+Suppose we are given \(m_1=2 {\rm kg}\), \(m_2=1 {\rm kg}\), \(k_1 = 4 {\rm kg/s^2}\), and \(k_2 = 2 {\rm kg/s^2}\).  Then our model is
+\vfill
+\begin{columns}
+\column{0.3\textwidth}
+\springdoublemass
+\column{0.7\textwidth}
+\begin{alignat*}
+2x_1''+6x_1-2x_2 &= 0 \\
+2x_2''+2x_2-2x_1 &= 0 
+\end{alignat*}
+\vfill
 \begin{subactivity}
-If the lake is stocked with 20 of each species, what will happen?
+Rewrite the system using differential operators.
 \end{subactivity}
 \begin{subactivity}
-If the lake is stocked with 30 Bluegills and 10 Greenfish, what will happen?
+Use elimination to write a single fourth order ODE for \(x_1\).
 \end{subactivity}
+\begin{subactivity}
+Solve the ODE \[2x_1''''+10x_1''+8x_1 = 0 .\] 
+\end{subactivity}
+\begin{subactivity}
+Determine a function for \(x_2\) as well. 
+\end{subactivity}
+\vfill
+\end{columns}
 \end{activity}
 
 \end{applicationActivities}
