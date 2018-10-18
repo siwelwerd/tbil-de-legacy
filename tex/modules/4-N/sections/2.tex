@@ -1,0 +1,82 @@
+\begin{applicationActivities}
+
+\begin{observation}
+We previously saw that the first order IVP
+\[ y'=f(x,y), \hspace{5em} y(x_0)=y_0 \]
+had a unique solution on some (possibly tiny!) interval containing \(x_0\) when \(f(x,y)\) and \(\frac{\partial f}{\partial y}\) are both continuous at \((x_0,y_0)\).
+\vfill
+\end{observation}
+
+\begin{activity}{10}
+Consider the second order ODE 
+\[(x^2-1)^2y''+4x=0\].
+\begin{subactivity}
+Solve for \(y''\), and then integrate to find \(y'\).
+\end{subactivity}
+\begin{subactivity}
+Integrate again to find \(y\). ({\bf Hint: } \(\frac{2}{x^2-1}=\frac{1}{x-1}-\frac{1}{x+1}\))
+\end{subactivity}
+\begin{subactivity}
+For what values of \(x\) is your solution valid?
+\end{subactivity}
+\end{activity}
+
+\begin{observation}
+The ODE \( (x^2-1)^2y''+4x=0\) did not have a solution where the coefficient of \(y''\) vanished, i.e. at \(x=1\) and \(x=-1\).
+\vfill
+In general, if \(x_1 < x < x_2\) is an interval containing \(x_0\) for which
+\begin{itemize}
+\item \((a(x),b(x),c(x),\text{ and } f(x)\) are continuous, and
+\item \( a(x)\) does not vanish
+\end{itemize}
+Then the second order {\bf linear} IVP
+\[ a(x)y''+b(x)y'+c(x)y=f(x), \hspace{5em} y(x_0)=y_0,\ y'(x_0)=y_1 \]
+will have a unique solution on \(x_1<x<x_2\).
+\end{observation}
+
+\begin{observation}
+Our uniqueness result for first order equations applied to all first order equations.  Our second order result applies to only {\bf linear} equations, but provides added information--a precise interval on which the unique solution exists.
+\vfill
+For example, the IVP 
+\[ (x^2-1)^2y''+4x=0 , \hspace{5em} y(2)=3,\ y'(2)=4\]
+will have a unique solution valid for \(1<x<\infty\).
+\end{observation}
+
+
+\begin{activity}{5}
+Consider the IVP
+\[ \sin(x)y''+\cos(x)y= x^2-4, \hspace{5em} y\left(\frac{\pi}{4}\right)=1,\ y'\left(\frac{\pi}{4}\right)=0.\]
+Determine the largest interval on which a unique solution is guaranteed to exist.
+\end{activity}
+
+\begin{activity}{5}
+Consider the IVP
+\[ y''+\frac{1}{x}y'-\frac{1}{x-4}y=0 \hspace{5em} y\left(2\right)=5,\ y'\left(2\right)=-1.\]
+Determine the largest interval on which a unique solution is guaranteed to exist.
+\end{activity}
+
+
+\begin{activity}{5}
+Consider the ODE
+\[ (x^2-1)y'' + \frac{1}{x}y' + e^x y = 0.\]
+Determine \textbf{all} intervals on which a unique solution is guaranteed to exist.
+\end{activity}
+
+
+\begin{activity}{5}
+Consider the ODE
+\[ \frac{x}{x-1}y'' + \frac{x+2}{x+1}y' + e^{-x} y = 0.\]
+Determine \textbf{all} intervals on which a unique solution is guaranteed to exist.
+\end{activity}
+
+
+\begin{activity}{5}
+Consider the ODE
+\[ \sqrt{x^2-1} y'' + y' + \frac{1}{x} y = 0.\]
+Determine \textbf{all} intervals on which a unique solution is guaranteed to exist.
+\end{activity}
+
+
+
+
+\end{applicationActivities}

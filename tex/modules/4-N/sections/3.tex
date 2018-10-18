@@ -1,0 +1,43 @@
+\begin{applicationActivities}
+
+\begin{activity}{10}
+Consider the first order ODE \(y'= x+\sqrt{y}\).  Suppose \(y(x)\) is a solution with \(y(2)=4\).
+\begin{subactivity}
+Compute the slope of the solution at the point \((2,4)\).
+\end{subactivity}
+\begin{subactivity}
+Use a linear approximation to estimate the value of \(y(2.1)\).
+\end{subactivity}
+\begin{subactivity}
+Calculate the slope at the point \((2.1,4.4)\).
+\end{subactivity}
+\begin{subactivity}
+Use a linear approximation at \((2.1,4.4)\) to estimate the value of \(y(2.2)\).
+\end{subactivity}
+\end{activity}
+
+\begin{observation}
+This technique is called \textbf{Euler's method} (with step size \(h=0.1\)) for the IVP
+\[y'=x+\sqrt{y},\hspace{5em} y(2)=4.\]
+\vfill
+It is often convenient to organize this information in a table
+\begin{center}
+\begin{tabular}{c|c|c|c|c}
+\(x_n\) & \(y_n\) & \(y'(x_n,y_n)\) & \(x_{n+1}=x_n+h\) & \(y_{n+1}=y_n+hy'(x_n,y_n)\) \\ \hline \hline
+2 & 4 & 4 & 2.1 & 4.4 \\ \hline
+2.1 & 4.4 & 4.19762 & 2.2 & 4.81976 \\\hline
+\end{tabular}
+\end{center}
+\end{observation}
+
+\begin{activity}{10}
+Use Euler's method with stepsize \(h=0.2\) to estimate \(y(3)\), where \(y\) is a solution of the IVP
+\[ y'= x-3y^2, \hspace{5em} y(2.2)=1.\]
+\end{activity}
+
+\begin{activity}{10}
+Use Euler's method with stepsize \(h=0.2\) to estimate \(y(4)\), where \(y\) is a solution of the IVP
+\[ y'= \sqrt{x-y}, \hspace{5em} y(3)=1.\]
+\end{activity}
+
+\end{applicationActivities}
