@@ -1,19 +1,116 @@
 \begin{readinessAssuranceTest}
 \setcounter{enumi}{30}
-\item Which of the following is a solution to the system of linear equations
-      \begin{align*}
-      x+3y-z    &=   2 \\
-      2x+8y+3z  &=  -1 \\
-      -x-y+9z   &= -10
-      \end{align*}
+%A B B D C D B D D C
 
 %A
+\item Solve \(y'=2xy\).
 \begin{multicols}{4}
 \begin{readinessAssuranceTestChoices}
-\item \(\begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix}\)
-\item \(\begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}\)
-\item \(\begin{bmatrix} 0 \\ 1 \\ -1 \end{bmatrix}\)
-\item \(\begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}\)
+\item \(y=ke^{x^2}\) % Correct
+\item \(y=e^{x^2}+C\)
+\item \(y=ke^{2x}\)
+\item \(y=e^{2x}+C\)
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+%B
+\item Solve \(y'=3y^2\).
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item \(y=-\frac{1}{3x}+C\) 
+\item \(y=-\frac{1}{3x+C}\)%Correct
+\item \(y=x^3+C\)
+\item \(y=x^\frac{1}{3}+C\)
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+
+%B
+\item If \(f(x,y) = \frac{x}{y}\), compute \(\frac{\partial f}{\partial y}\).
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item \(\frac{-x}{y}\) 
+\item \(\frac{-x}{y^2}\) %Correct
+\item \(\frac{1}{y^2}\) 
+\item \(\frac{1}{y}\)
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+%D
+\item If \(f(x,y) = e^{x^2+y^2}\), compute \(\frac{\partial f}{\partial x}\).
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item \(e^{x^2}\) 
+\item \(e^{x^2+y^2}\) 
+\item \(2xe^{x^2}\) 
+\item \(2xe^{x^2+y^2}\)  %Correct
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+%C
+\item If \(f(x,y) = \sin(xy^2\), compute \(\frac{\partial f}{\partial y}\).
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item \(\cos(xy^2)\) 
+\item \(2y\cos(xy^2)\) 
+\item \(2xy\cos(xy^2)\)  %Correct
+\item \(xy^2\cos(xy^2)\) 
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+%D
+\item At how many points does the function \(f(x,y)=\sqrt{x^2+y^2}\) fail to be continuous?
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item Infinitely many
+\item \(2\) 
+\item \(1\)  
+\item \(0\) %Correct
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+
+%B
+\item At how many points does the function \(f(x,y)=\frac{1}{\sqrt{x^2+y^2}}\) fail to be continuous?
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item \(0\) 
+\item \(1\) %Correct 
+\item \(2\) 
+\item Infinitely many
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+%D
+\item At how many points does the function \(f(x,y)=\sqrt{x^2-y^2}\) fail to be continuous?
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item \(0\) 
+\item \(1\) 
+\item \(2\) 
+\item Infinitely many %Correct
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+%D
+\item Let \(f(x)\) be a function with \(f(3)=2\) and \(f'(3)=-1\).  Use a linear approximation to estimate \(f(3.2)\). 
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item \(2.2\)
+\item \(2.1\)
+\item \(1.9\)
+\item \(1.8\) %Correct
+\end{readinessAssuranceTestChoices}
+\end{multicols}
+
+%C
+\item Let \(f(x)\) be a function with \(f(0)=3\) and \(f'(x)=e^{x^2}\).  Use a linear approximation to estimate \(f(0.3)\). 
+\begin{multicols}{4}
+\begin{readinessAssuranceTestChoices}
+\item \(1\)
+\item \(1.09\)
+\item \(3.3\) %Correct
+\item \(3.9\) 
 \end{readinessAssuranceTestChoices}
 \end{multicols}
 
