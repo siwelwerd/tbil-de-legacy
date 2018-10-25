@@ -503,38 +503,75 @@ Thus, after two seconds, the upper mass is at \(y_1(2) \approx -0.443\) (i.e. \(
 
 
 \begin{problem}{N1}
-
+Determine whether a unique solution to the IVP below is guaranteed to exist.
+Be sure to explain your reasoning.
+\[
+y' = |x+y|;\,\,\,\,\,\,\,\,\,y(2) = -2
+\]
 \end{problem}
 \begin{solution}
-
+Let \(f(x,y)=|x+y|\).  This is continuous around \((2,-2)\), but \(\frac{\partial f}{\partial y}\) does not exist when \(x+y=0\).  Since \(\frac{\partial f}{\partial y}\) is not continuous around \((2,-2)\), the IVP is not guaranteed to have a unique solution.
 \end{solution}
 
 \begin{problem}{N2}
-
+Consider the differential equation
+\[
+xy'' - \frac{1}{1+x}y' + \frac{1}{(1+x)^2}y = 0.
+\]
+Determine all intervals on which a unique solution is guaranteed to exist.
 \end{problem}
 \begin{solution}
-
+Since \(\frac{1}{1+x}\) and \(\frac{1}{(1+x)^2}\) are not continuous at \(x=-1\), and the coefficient of \(y''\) vanishes at \(x=0\), the ODE is only guaranteed to have a solution on the intervals \( -\infty <x<-1\), \(-1<x<0\), and \(0<x<\infty\).  
 \end{solution}
 
 \begin{problem}{N3}
-
+Determine all intervals on which a unique solution is guaranteed to exist.
+\begin{align*}
+x' & = -tx+y + \sqrt{t-1},\\
+y' & = 2x + \sqrt{1-t}y + \sqrt[3]{t}\\
+\end{align*}
 \end{problem}
 \begin{solution}
-
+Note that the only coefficient functions that are not continous everywhere are \(\sqrt{t+1}\) and \(\sqrt{1-t}\).  The former is continuous on \( -1<t<\infty\), while the latter is continuous on \(-\infty<t<1\).  Thus, a unique solution exists on the intersection of these intervals, namely \(-1<t<1\).
 \end{solution}
 
 \begin{problem}{N4}
-
+Use Euler's method with stepsize \(h=0.25\) to estimate \(y(2)\), where \(y\) is a solution to the IVP
+\[y'+y^2=x,\hspace{5em}y(1)=1\].
 \end{problem}
 \begin{solution}
-
+First, we rewrite the ODE as \(y'=x-y^2\).  Then we construct a table
+\begin{center}
+\begin{tabular}{c|c|c|c|c}
+\(x_n\) & \(y_n\) & \(y'(x_n,y_n)\) & \(x_{n+1}=x_n+h\) & \(y_{n+1}=y_n+hy'(x_n,y_n)\) \\ \hline \hline
+1 & 1 & 0 & 1.25 & 1 \\ \hline
+1.25 & 1 & 0.25 & 1.5  & 1.0625 \\\hline
+1.5 & 1.0625 & 0.3711 & 1.75 & 1.1553  \\\hline
+1.75 & 1.1553 & 0.4153  & 2 & 1.2591 \\\hline
+2 & 1.2591 &  &  &  \\\hline
+\end{tabular}
+\end{center}
+Thus, \(y(2) \approx 1.2591\).
 \end{solution}
 
 \begin{problem}{N5}
-
+Use Euler's method with stepsize \(h=0.1\) to estimate \(x(2.3)\) and \(y(2.3)\), where \(x\) and \(y\) are solutions to the IVP
+\begin{align*}
+x'&=3x-ty & x(2)=1 \\
+y'&=x-y^2 & y(2)=0 
+\end{align*}
 \end{problem}
 \begin{solution}
-
+\begin{center}
+\begin{tabular}{c|c|c||c|c||c|c|c}
+\(t_n\) & \(x_n\) & \(y_n\) & \(x'(t_n,x_n,y_n)\) &\(y'(t_n,x_n,y_n)\) & \(t_{n+1}\) & \(x_{n+1}=x_n+hx'(t_n,x_n,y_n)\) & \(y_{n+1}=y_n+hy'(t_n,x_n,y_n)\) \\ \hline \hline
+2 & 1 & 0  & 3 & 1 & 2.1 & 1.3 & 0.1\\ \hline
+2.1 & 1.3 &0.1 & 3.69 & 1.29 & 2.2 & 1.669  & 0.229 \\ \hline
+2.2 & 1.669 & 0.229 & 4.5032 & 1.6166 & 2.3 & 2.1193 & 0.3907 \\ \hline
+2.3 & 2.1993 & 0.3907 & & & & & \\ \hline
+\end{tabular}
+\end{center}
+Thus, \(x(2.3) \approx 2.1993\) and  \(y(2.3) \approx 0.3907\).
 \end{solution}
 
 
