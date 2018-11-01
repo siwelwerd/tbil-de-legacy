@@ -1,18 +1,119 @@
 \begin{applicationActivities}
 
+\begin{activity}{10}
+A \(1\ {\rm kg}\) mass is hung from a spring with spring constant \(k=1\ {\rm N/m}\).  The mass is at rest, when it is hit with a hammer imparting \(3 {\rm J}\) of energy.
+\vfill
+\begin{columns}
+\begin{column}{0.3\textwidth}
+\begin{center}
+\springmass
+\end{center}
+\end{column}
+\begin{column}{0.7\textwidth}
+\begin{subactivity}
+Draw a graph of the kinetic energy in the system with respect to time.
+\end{subactivity}
+\begin{subactivity}
+Write an initial value problem modelling this system.
+\end{subactivity}
+\end{column}
+\end{columns}
+\end{activity}
+
 \begin{definition}
-A \term{linear transformation} (also known as a \term{linear map})
-is a map between vector spaces that preserves the vector space operations.
-More precisely, if \(V\) and \(W\) are vector spaces, a map
-\(T:V\rightarrow W\) is called a linear transformation if
-\begin{enumerate}
-\item \(T(\vec{v}+\vec{w}) = T(\vec{v})+T(\vec{w})\)
-      for any \(\vec{v},\vec{w} \in V\).
-\item \(T(c\vec{v}) = cT(\vec{v})\)
-      for any \(c \in \IR,\vec{v} \in V\).
-\end{enumerate}
-In other words, a map is linear when vector space operations
-can be applied before or after the transformation without affecting the result.
+The \term{Dirac delta distribution} \(\delta(t)\) models the application of instantaneous force.  \textbf{It is not a function}, but makes sense in definite integrals: 
+\vfill
+If \(a,b\) is any open interval containing \(0\), then
+\[ \int _a ^b f(t)\delta(t)dt = f(0)\]
+for any function \(f(t)\) that is continuous around \(0\).
 \end{definition}
+
+\begin{definition}
+The \term{unit impulse function} \(u(t)\) is given by \[u(t)=\begin{cases} 1 & t > 0 \\ 0 & t<0. \end{cases}\]
+\vfill
+Note that \(u(s)=\int _{-\infty} ^s  \delta(t)\ dt\); in this fuzzy sense, \(\delta\) is the derivative of \(u(t)\) (which is not differentiable everywhere!)
+\end{definition}
+
+\begin{activity}{10}
+Try to solve the IVP 
+\[y''+y=\delta(t)\]
+
+\vfill
+Where does our existing technique break down?
+\end{activity}
+
+\begin{observation}
+To get around this difficulty, we will apply an \term{integral transform} called the \term{Laplace Transform} to our ODE.
+\vfill
+\begin{itemize}
+\item We want to use a definite integral to handle things like \(\delta\), which we can only understand via a definite integral.
+\item Since we are focused on IVPs, we can integrate starting at \(0\), but need to go to \(\infty\)
+\item But now we need to worry about convergence--thus we will multiply by a suitable function that decays fast enough to make most functions converge.
+\end{itemize}
+\end{observation}
+
+\begin{activity}{5}
+Arrange the following functions in order of how fast they decay to zero in the limit at infinity:
+\begin{enumerate}[(A)]
+\item \(x^{-n}\) for a positive integer \(n\)
+\item \(e^{-ax}\) for a positive integer \(a\)
+\item \(\frac{1}{\ln(ax)}\) for a positive integer \(a\)
+\item \(\frac{1}{\ln(x^n)}\) for a positive integer \(n\)
+\end{enumerate}
+\end{activity}
+
+\begin{definition}
+The \term{Laplace Transform} of a function \(f(t)\) is the function
+\[F(s)=\int _0 ^\infty e^{-st}f(t)\ dt.\]
+We will also use the notation \(\L(f)=F\).
+\vfill
+Note that the Laplace transform turns a function of \(t\) into a function of \(s\).
+\vfill
+Moreover, \(\L\) is linear: \(\L(f+g)=\L(f)+\L(g)\), and \(\L(cf)=c\L(f)\) for constants \(c\).
+\end{definition}
+
+
+\begin{activity}{5}
+Recall that \[\L(f(t))=\int _0 ^\infty e^{-st} f(t)\ dt.\]
+\begin{subactivity}
+Compute \(\L(\delta(t))\)
+\end{subactivity}
+\begin{subactivity}
+If \(a>0\), compute \(\L(\delta(t-a))\)
+\end{subactivity}
+\end{activity}
+
+\begin{activity}{5}
+Recall that \[\L(f(t))=\int _0 ^\infty e^{-st} f(t)\ dt.\]
+\begin{subactivity}
+Compute \(\L(e^t)\)
+\end{subactivity}
+\begin{subactivity}
+If \(a>0\), compute \(\L(e^{at})\)
+\end{subactivity}
+\end{activity}
+
+\begin{activity}{15}
+Recall that \[\L(f(t))=\int _0 ^\infty e^{-st} f(t)\ dt.\]
+\begin{subactivity}
+Compute \(\L(1)\)
+\end{subactivity}
+\begin{subactivity}
+Compute \(\L(t)\)
+\end{subactivity}
+\begin{subactivity}
+Compute \(\L(t^2)\)
+\end{subactivity}
+\begin{subactivity}
+Compute \(\L(t^3)\)
+\end{subactivity}
+\begin{subactivity}
+Compute \(\L(t^4)\)
+\end{subactivity}
+\end{activity}
+
+
+
+
 
 \end{applicationActivities}
