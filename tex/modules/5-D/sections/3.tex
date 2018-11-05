@@ -1,3 +1,57 @@
 \begin{applicationActivities}
 
+\begin{observation}
+To solve an IVP using Laplace transforms:
+\begin{enumerate}[1)]
+\item Apply \(\L\) to the ODE.  Use the initial condition(s) in computing \(\L(y')\), \(\L(y'')\), etc.
+\item Solve for \(\L(y)\).
+\item Take the inverse transform (using a table) to find the solution \(y\).
+\end{enumerate}
+\end{observation}
+
+\begin{activity}{5}
+Compute \(\L^{-1} \left( \frac{e^{-10s}}{s}\right) \)
+\begin{enumerate}[(a)]
+\item \(u(t-10)\)
+\item \(\delta(t-10)\)
+\item \(u(t-10)e^{-t}\)
+\item \(\delta(t-10)e^{-t}\)
+\end{enumerate}
+\end{activity}
+
+
+\begin{activity}{5}
+Compute \(\L^{-1} \left( \frac{1}{s+5}\right) \)
+\begin{enumerate}[(a)]
+\item \(u(t-5)\)
+\item \(\delta(t-5)\)
+\item \(e^{5t}\)
+\item \(e^{-5t}\)
+\end{enumerate}
+\end{activity}
+
+\begin{activity}{5}
+Compute \(\L^{-1} \left( \frac{e^{-10s}}{s+5}\right) \)
+\begin{enumerate}[(a)]
+\item \(u(t-10)\)
+\item \(\delta(t-10)\)
+\item \(u(t-10)e^{-5(t-10)}\)
+\item \(\delta(t-10)e^{-5t(t-10)}\)
+\end{enumerate}
+\end{activity}
+
+
+
+
+\begin{activity}{30}
+A tiny water droplet in a cloud with a mass of \(4 \times 10^{-12}\ {\rm kg}\) and a terminal velocity of \(27\ {\rm cm/s}\) is at rest.  It is blown upward by an updraft applying a constant force of \(10\ {\rm N}\) for \(10\ {\rm s}\).
+\begin{subactivity}
+Write down an IVP modelling the velocity of the water droplet scenario.
+\end{subactivity}
+\begin{subactivity}
+How fast (and in what direction) will the water droplet be travelling after 10.75 {\rm s}?
+\end{subactivity}
+\end{activity}
+
+
 \end{applicationActivities}
