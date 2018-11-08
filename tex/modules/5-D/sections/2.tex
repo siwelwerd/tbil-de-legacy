@@ -2,76 +2,75 @@
 
 \begin{observation}
 Last week, we encountered the \term{Laplace Transform} of a function \(f(t)\):
-\[F(s)=\int _0 ^\infty e^{-st}f(t)\ dt.\]
-We also use the notation \(\L(f)=F\).
+\[\L\{f\}(s)=\int _0 ^\infty e^{-st}f(t)\ dt.\]
 \vfill
 Recall that the Laplace transform turns a function of \(t\) into a function of \(s\).
 \vfill
-Moreover, \(\L\) is linear: \(\L(f+g)=\L(f)+\L(g)\), and \(\L(cf)=c\L(f)\) for constants \(c\).
+Moreover, \(\L\) is linear: \(\L\{f+g\}=\L\{f\}+\L\{g\}\), and \(\L\{cf\}=c\L\{f\}\) for constants \(c\).
 \end{observation}
 
 \begin{observation}
 We computed a few Laplace Transforms:
 \begin{itemize}
-\item \(\L(\delta(t-a)) = e^{-as}\) for any \(a>0\).
-\item \(\L(e^{at}) = \frac{1}{s-a}\) 
-\item \(\L(t^n) = \frac{n!}{s^{n+1}}\) for any positive integer \(n\).
-\item \(\L(1) = \frac{1}{s}\)
+\item \(\L\{\delta(t-a)\} = e^{-as}\) for any \(a>0\).
+\item \(\L\{e^{at}\} = \frac{1}{s-a}\) 
+\item \(\L\{t^n\} = \frac{n!}{s^{n+1}}\) for any positive integer \(n\).
+\item \(\L\{1\} = \frac{1}{s}\)
 \end{itemize}
 \end{observation}
 
 \begin{activity}{10}
-Recall \[\L(f)=\int _0 ^\infty e^{-st}f(t)dt.\]
+Recall \[\L\{f\}(s)=\int _0 ^\infty e^{-st}f(t)dt.\]
 \begin{subactivity}
-Compute \(\L(\sin(t))\).
+Compute \(\L\{\sin(t)\}\).
 \end{subactivity}
 \begin{subactivity}
-Compute \(\L(\cos(t))\).
+Compute \(\L\{\cos(t)\}\).
 \end{subactivity}
 \end{activity}
 
 \begin{observation}
 So now our list of Laplace transforms is:
 \begin{itemize}
-\item \(\L(\delta(t-a)) = e^{-as}\) for any \(a>0\).
-\item \(\L(e^{at}) = \frac{1}{s-a}\) 
-\item \(\L(t^n) = \frac{n!}{s^{n+1}}\) for any positive integer \(n\).
-\item \(\L(1) = \frac{1}{s}\)
-\item \(\L(\sin(t)) = \frac{1}{s^2+1}\)
-\item \(\L(\cos(t)) = \frac{s}{s^2+1}\)
+\item \(\L\{\delta(t-a)\} = e^{-as}\) for any \(a>0\).
+\item \(\L\{e^{at}\} = \frac{1}{s-a}\) 
+\item \(\L\{t^n\} = \frac{n!}{s^{n+1}}\) for any positive integer \(n\).
+\item \(\L\{1\} = \frac{1}{s}\)
+\item \(\L\{\sin(t)\} = \frac{1}{s^2+1}\)
+\item \(\L\{\cos(t)\} = \frac{s}{s^2+1}\)
 \end{itemize}
 \end{observation}
 
 \begin{activity}{10}
-Suppose we want to apply the Laplace transform to an IVP: we will need to know how \(\L(y')\) is related to \(\L(y)\).  Recall
-\[\L(f)=\int _0 ^\infty e^{-st}f(t)dt.\]
+Suppose we want to apply the Laplace transform to an IVP: we will need to know how \(\L\{y'\}\) is related to \(\L\{y\}\).  Recall
+\[\L\{f\}(s)=\int _0 ^\infty e^{-st}f(t)dt.\]
 \vfill
 \begin{subactivity}
-Use integration by parts to relate \(\L(y')\) to \(\L(y)\).
+Use integration by parts to relate \(\L\{y'\}\) to \(\L\{y\}\).
 \end{subactivity}
 \begin{subactivity}
-Use integration by parts (and the fact that \(\L(y')=s\L(y)-y(0)\)) to relate \(\L(y'')\) to \(\L(y)\).
+Use integration by parts (and the fact that \(\L\{y'\}=s\L\{y\}-y(0)\)) to relate \(\L\{y''\}\) to \(\L\{y\}\).
 \end{subactivity}
 \end{activity}
 
 \begin{observation}
 We have
 \begin{align*}
-\L(y') &= sL(y)-y(0) \\
-\L(y'') &= s^2L(y)-sy(0)-y'(0) 
+\L\{y'\} &= s\L\{y\}-y(0) \\
+\L\{y''\} &= s^2\L\{y\}-sy(0)-y'(0) 
 \end{align*}
 \vfill
-This allows us to easily rewrite expressions like \(ay''+by'+cy\) in terms of \(\L(y)\).
+This allows us to easily rewrite expressions like \(ay''+by'+cy\) in terms of \(\L\{y\}\).
 \end{observation}
 
 \begin{activity}{10}
 Consider the simple IVP
 \[y''+y=\delta(t),\hspace{5em} y(0)=0, y'(0)=0.\]
 \begin{subactivity}
-Apply the Laplace transform to this IVP, and simplify.  Solve for \(\L(y)\).
+Apply the Laplace transform to this IVP, and simplify.  Solve for \(\L\{y\}\).
 \end{subactivity}
 \begin{subactivity}
-Find a function \(y\) satisfying \(\L(y)=\frac{1}{s^2+1}\).  We write \(y=\L^{-1}\left(\frac{1}{s^2+1}\right)\).
+Find a function \(y\) satisfying \(\L\{y\}=\frac{1}{s^2+1}\).  We write \(y=\L^{-1}\left\{\frac{1}{s^2+1}\right\}\).
 \end{subactivity}
 \end{activity}
 

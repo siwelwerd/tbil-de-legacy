@@ -576,11 +576,11 @@ Thus, \(x(2.3) \approx 2.1993\) and  \(y(2.3) \approx 0.3907\).
 
 
 \begin{problem}{D1}
-Show directly from the definition that \(\L\left(te^t\right) = \frac{1}{(1-s)^2}\).
+Show directly from the definition that \(\L\left\{te^t\right\}(s) = \frac{1}{(1-s)^2}\).
 \end{problem}
 \begin{solution}
 \begin{align*}
-\L\left(te^t\right) &= \int _0 ^\infty e^{-st} te^t \ dt & \text{definition of Laplace transform}\\
+\L\left\{te^t\right\}(s) &= \int _0 ^\infty e^{-st} te^t \ dt & \text{definition of Laplace transform}\\
 &=\int _0 ^\infty t e^{(1-s)t}\ dt  & \text{collect exponentials} \\
 &= t\frac{e^{(1-s)t}}{(1-s)} \big |_{t=0} ^{\infty} - \int _0 ^\infty \frac{e^{(1-s)t}}{(1-s)}\ dt  & \text{integration by parts, \(u=t\), \(dv= e^{(1-s)t}\ dt\)}\\
 &= -\frac{1}{1-s} \int _0 ^\infty e^{(1-s)t}\ dt & \text{evaluate first term}\\
@@ -594,15 +594,15 @@ Solve the IVP
 \[y''+4y=\delta(t-2), \hspace{5em} y(0)=0,\ y'(0)=1\]
 \end{problem}
 \begin{solution}
-Apply the Laplace transform to both sides, and solve for \(\L(y)\):
+Apply the Laplace transform to both sides, and solve for \(\L\{y\}\):
 \begin{align*}
-\L(y'')+4\L(y) &= \L(\delta(t-2)) \\
-\left( s^2\L(y)-sy(0)-y'(0) \right) + 4 \L(y) &= e^{-2s} \\
-(s^2+4)\L(y) -1 &= e^{-2s} \\
-\L(y)&= \frac{1+e^{-2s}}{s^2+4}
+\L\{y''\}+4\L\{y\} &= \L\{\delta(t-2)\} \\
+\left( s^2\L\{y\}-sy(0)-y'(0) \right) + 4 \L\{y\} &= e^{-2s} \\
+(s^2+4)\L\{y\} -1 &= e^{-2s} \\
+\L\{y\}&= \frac{1+e^{-2s}}{s^2+4}
 \end{align*}
-Note that \(\L^{-1}\left(\frac{1}{s^2+4}\right) = \frac{1}{2} \sin(2t)\).  Thus, \(\L^{-1}\left(e^{-2s} \frac{1}{s^2+4}\right) = u(t-2) \left(\frac{1}{2} \sin(2(t-2)\right) = \frac{1}{2} u(t-2) \sin(2t-4)\).  Combining these two, we see
-\[y = \L^{-1} \left(\frac{1}{s^2+4}\right)+\L^{-1}\left(\frac{e^{-2s}}{s^2+4}\right) = \frac{1}{2}\sin(2t)+\frac{1}{2} u(t-2)\sin(2t-4).\]
+Note that \(\L^{-1}\left\{\frac{1}{s^2+4}\right\} = \frac{1}{2} \sin(2t)\).  Thus, \(\L^{-1}\left\{e^{-2s} \frac{1}{s^2+4}\right\} = u(t-2) \left(\frac{1}{2} \sin(2(t-2)\right) = \frac{1}{2} u(t-2) \sin(2t-4)\).  Combining these two, we see
+\[y = \L^{-1} \left\{\frac{1}{s^2+4}\right\}+\L^{-1}\left\{\frac{e^{-2s}}{s^2+4}\right\} = \frac{1}{2}\sin(2t)+\frac{1}{2} u(t-2)\sin(2t-4).\]
 \end{solution}
 
 \begin{problem}{D3}
@@ -617,16 +617,16 @@ The thrust force can be modelled by the function \(F(t)= 20 \left( u(t)-u(t-100)
 \[ 500v' = 20 \left( u(t)-u(t-100)\right), \hspace{5em} v(0)=50.\]
 
 For part (b), we need to solve this IVP and then compute \(v(200)\).  Applying the Laplace transform to both sides, we have
-\[ 500 \left( s\L(v) - v(0) \right) = 20 \left( \frac{1}{s} - \frac{ e^{-100s}}{s} \right) \]
-Substituting \(v(0)=50\) and solving for \(\L(v)\), we obtain
-\[\L(v) = 50\frac{1}{s} + \frac{1}{25} \left( \frac{1}{s^2} - e^{-100s}{s^2} \right)\]
+\[ 500 \left( s\L\{v\}- v(0) \right) = 20 \left( \frac{1}{s} - \frac{ e^{-100s}}{s} \right) \]
+Substituting \(v(0)=50\) and solving for \(\L\{v\}\), we obtain
+\[\L\{v\} = 50\frac{1}{s} + \frac{1}{25} \left( \frac{1}{s^2} - \frac{e^{-100s}}{s^2} \right)\]
 Then, applying the inverse Laplace transform, we see
 \[v=50+\frac{1}{25}t-\frac{1}{25} u(t-100)(t-100).\]
 Then, we compute \[v(200)=50+\frac{1}{25}(200)- \frac{1}{25}(1)(100) = 54\ {\rm m/s}.\]
 \end{solution}
 
 \begin{problem}{D4}
-A \(4\ {\rm kg}\) mass is suspended on a spring with spring constant \(16\ {\rm N/m}\).  It is pulled down \(1 {\rm m}\) and released from rest.  Then, after \(5\ {\rm s}\), it is struck by a hammer imparting \(4 {\rm N}\) of upward force.
+A \(4\ {\rm kg}\) mass is suspended on a spring with spring constant \(16\ {\rm N/m}\).  It is pulled down \(1 {\rm m}\) and released from rest.  Then, after \(5\ {\rm s}\), it is struck by a hammer imparting \(4 {\rm Ns}\) of upward impulse.
 \begin{enumerate}[(a)]
 \item Write down an IVP modelling the position of the mass.
 \item What is the position of the mass after \(10 \ {\rm s}\)?  Is this above or below the equillibrium position?
@@ -638,12 +638,12 @@ Let \(y\) model the position of the mass relative to equillibrium, with up being
 To answer part (b), we need to solve this IVP, and then compute \(y(10)\).  First, rearrange the equation and divide by \(4\) for convenience, giving 
 \[ y'' + 4y =  \delta(t-5).\]
 Now, apply the Laplace transform:
-\[\left(s^2\L(y)+sy(0)+y'(0)\right)+4\L(y) = e^{-5s}.\]
-Substitute in \(y(0)=-1\) and \(y'(0)=0\) and solve for \(\L(y)\):
-\[\L(y) = \frac{s}{s^2+4} + \frac{e^{-5s}}{s^2+4}.\]
+\[\left(s^2\L\{y\}+sy(0)+y'(0)\right)+4\L\{y\} = e^{-5s}.\]
+Substitute in \(y(0)=-1\) and \(y'(0)=0\) and solve for \(\L\{y\}\):
+\[\L\{y\} = \frac{s}{s^2+4} + \frac{e^{-5s}}{s^2+4}.\]
 
-Note that \(\L^{-1}\left(\frac{s}{s^2+4}\right) =  \cos(2t)\).  Also, since \(\L^{-1} \left(\frac{1}{s^2+4}\right) = \frac{1}{2} \sin(2t)\), we have \(\L^{-1}\left(e^{-5s} \frac{1}{s^2+4}\right) = u(t-5) \left(\frac{1}{2} \sin(2(t-5)\right) = \frac{1}{2} u(t-5) \sin(2t-10)\).  Combining these two, we see
-\[y = \L^{-1} \left(\frac{s}{s^2+4}\right)+\L^{-1}\left(\frac{e^{-5s}}{s^2+4}\right) = \cos(2t)+\frac{1}{2} u(t-5)\sin(2t-10).\]
+Note that \(\L^{-1}\left\{\frac{s}{s^2+4}\right\} =  \cos(2t)\).  Also, since \(\L^{-1} \left\{\frac{1}{s^2+4}\right\} = \frac{1}{2} \sin(2t)\), we have \(\L^{-1}\left\{e^{-5s} \frac{1}{s^2+4}\right\} = u(t-5) \left(\frac{1}{2} \sin(2(t-5)\right) = \frac{1}{2} u(t-5) \sin(2t-10)\).  Combining these two, we see
+\[y = \L^{-1} \left\{\frac{s}{s^2+4}\right\}+\L^{-1}\left\{\frac{e^{-5s}}{s^2+4}\right\} = \cos(2t)+\frac{1}{2} u(t-5)\sin(2t-10).\]
 Then, after \(10{\rm s}\), the mass is at
 \[y(10)= \cos(20) + \frac{1}{2} \sin(10) \approx 0.136 \]
 i.e. it is \(0.136\ {\rm m}\) above the equillibrium position.

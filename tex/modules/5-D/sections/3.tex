@@ -3,25 +3,14 @@
 \begin{observation}
 To solve an IVP using Laplace transforms:
 \begin{enumerate}[1)]
-\item Apply \(\L\) to the ODE.  Use the initial condition(s) in computing \(\L(y')\), \(\L(y'')\), etc.
-\item Solve for \(\L(y)\).
+\item Apply \(\L\) to the ODE.  Use the initial condition(s) in computing \(\L\{y'\}\), \(\L\{y''\}\), etc.
+\item Solve for \(\L\{y\}\).
 \item Take the inverse transform (using a table) to find the solution \(y\).
 \end{enumerate}
 \end{observation}
 
 \begin{activity}{5}
-Compute \(\L^{-1} \left( \frac{e^{-10s}}{s}\right) \).
-\begin{enumerate}[(a)]
-\item \(u(t-10)\)
-\item \(\delta(t-10)\)
-\item \(u(t-10)e^{-t}\)
-\item \(\delta(t-10)e^{-t}\)
-\end{enumerate}
-\end{activity}
-
-
-\begin{activity}{5}
-Compute \(\L^{-1} \left( \frac{1}{s+5}\right) \).
+Compute \(\L^{-1} \left\{ \frac{1}{s+5}\right\} \).
 \begin{enumerate}[(a)]
 \item \(u(t-5)\)
 \item \(\delta(t-5)\)
@@ -31,7 +20,20 @@ Compute \(\L^{-1} \left( \frac{1}{s+5}\right) \).
 \end{activity}
 
 \begin{activity}{5}
-Compute \(\L^{-1}\left(\frac{2e^{-2s}}{s^2+4}\right) \).
+Compute \(\L^{-1} \left\{ \frac{e^{-10s}}{s}\right\} \).
+\begin{enumerate}[(a)]
+\item \(u(t-10)\)
+\item \(\delta(t-10)\)
+\item \(u(t-10)e^{-t}\)
+\item \(\delta(t-10)e^{-t}\)
+\end{enumerate}
+\end{activity}
+
+
+
+
+\begin{activity}{5}
+Compute \(\L^{-1}\left\{\frac{2e^{-2s}}{s^2+4}\right\} \).
 \begin{enumerate}[(a)]
 \item \(u(t)\sin(2t)\)
 \item \(u(t-2)\sin(2t)\)
@@ -41,7 +43,7 @@ Compute \(\L^{-1}\left(\frac{2e^{-2s}}{s^2+4}\right) \).
 \end{activity}
 
 \begin{activity}{5}
-Compute \(\L^{-1} \left( \frac{e^{-100s}}{s^2}\right) \).
+Compute \(\L^{-1} \left\{ \frac{e^{-100s}}{s^2}\right\} \).
 \begin{enumerate}[(a)]
 \item \(u(t)t\)
 \item \(u(t)(t-100)\)
