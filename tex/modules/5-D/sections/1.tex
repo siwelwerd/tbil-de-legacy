@@ -13,7 +13,7 @@ Today we will learn how to model these forces, and introduce a tool called them 
 
 
 \begin{activity}{10}
-A \(1\ {\rm kg}\) mass is hung from a spring with spring constant \(k=1\ {\rm N/m}\).  The mass is at rest, when it is hit with a hammer imparting \(3 {\rm N s}\) of upward impulse.
+A \(4\ {\rm kg}\) mass is hung from a spring with spring constant \(k=16\ {\rm N/m}\).  The mass is at rest, when it is hit with a hammer imparting \(3 {\rm N s}\) of upward impulse.
 \vfill
 \begin{columns}
 \begin{column}{0.3\textwidth}
@@ -22,12 +22,7 @@ A \(1\ {\rm kg}\) mass is hung from a spring with spring constant \(k=1\ {\rm N/
 \end{center}
 \end{column}
 \begin{column}{0.7\textwidth}
-\begin{subactivity}
-Draw a graph of the kinetic energy in the system with respect to time.
-\end{subactivity}
-\begin{subactivity}
 Write an initial value problem modelling this system.
-\end{subactivity}
 \end{column}
 \end{columns}
 \end{activity}
@@ -38,12 +33,17 @@ The \term{Dirac delta distribution} \(\delta(t)\) models the application of inst
 If \(a,b\) is any open interval containing \(0\), then
 \[ \int _a ^b f(t)\delta(t)dt = f(0)\]
 for any function \(f(t)\) that is continuous around \(0\).
+\vfill
+Thus, we can model the situation in the previous activity by
+\[ 4y''+16y=3\delta(t), \hspace{5em} y(0)=0,\ y'(0)=0\]
 \end{definition}
 
 \begin{definition}
+We can make sense of \(\delta\) in another way: as the ``derivative'' of a non-differentiable function.
+\vfill
 The \term{unit impulse function} \(u(t)\) is given by \[u(t)=\begin{cases} 1 & t > 0 \\ 0 & t<0. \end{cases}\]
 \vfill
-Note that \(u(s)=\int _{-\infty} ^s  \delta(t)\ dt\); in this fuzzy sense, \(\delta\) is the derivative of \(u(t)\) (which is not differentiable everywhere!)
+Note that \(u(s)=\int _{-\infty} ^s  \delta(t)\ dt\); in this fuzzy sense, \(\delta\) is the ``derivative'' of \(u(t)\) (which is not differentiable everywhere!)
 \end{definition}
 
 \begin{activity}{10}
