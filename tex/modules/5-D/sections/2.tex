@@ -20,7 +20,7 @@ We computed a few Laplace Transforms:
 \end{itemize}
 \end{observation}
 
-\begin{activity}{10}
+\begin{activity}{15}
 Recall that \[\L\{f\}(s)=\int _0 ^\infty e^{-st} f(t)\ dt.\]
 \begin{subactivity}
 Compute \(\L\{1\}\)
@@ -37,7 +37,7 @@ Compute \(\L\{t^2\}\)
 \begin{activity}{10}
 Recall \[\L\{f\}(s)=\int _0 ^\infty e^{-st}f(t)dt.\]
 \begin{subactivity}
-Compute \(\L\{\sin(t)\}\).
+Compute \(\L\{\sin(t)\}\) ({\bf Hint: } \(\int e^(ax)\sin(bx)\ dx = \frac{1}{a^2+b^2} e^{ax}\left(a \sin(bx)-b\cos(bx)\right)+C\).)
 \end{subactivity}
 \begin{subactivity}
 Compute \(\L\{\cos(t)\}\).
@@ -64,7 +64,7 @@ Suppose we want to apply the Laplace transform to an IVP: we will need to know h
 Use integration by parts to relate \(\L\{y'\}\) to \(\L\{y\}\).
 \end{subactivity}
 \begin{subactivity}
-Use integration by parts (and the fact that \(\L\{y'\}=s\L\{y\}-y(0)\)) to relate \(\L\{y''\}\) to \(\L\{y\}\).
+Use the fact that \(\L\{y'\}=s\L\{y\}-y(0)\) to relate \(\L\{y''\}\) to \(\L\{y\}\).
 \end{subactivity}
 \end{activity}
 
@@ -78,7 +78,7 @@ We have
 This allows us to easily rewrite expressions like \(ay''+by'+cy\) in terms of \(\L\{y\}\).
 \end{observation}
 
-\begin{activity}{10}
+\begin{activity}{15}
 Consider the simple IVP
 \[y''+y=\delta(t),\hspace{5em} y(0)=0, y'(0)=0.\]
 \begin{subactivity}
@@ -88,12 +88,6 @@ Apply the Laplace transform to this IVP, and simplify.  Solve for \(\L\{y\}\).
 Find a function \(y\) satisfying \(\L\{y\}=\frac{1}{s^2+1}\).  We write \(y=\L^{-1}\left\{\frac{1}{s^2+1}\right\}\).
 \end{subactivity}
 \end{activity}
-
-\begin{activity}{15}
-Solve the IVP
-\[y''+y=\delta(t),\hspace{5em} y(0)=1, y'(0)=2.\]
-\end{activity}
-
 
 
 \end{applicationActivities}
